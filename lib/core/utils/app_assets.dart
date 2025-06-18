@@ -158,3 +158,4 @@ class Assets {
   /// assets/images/watch.svg
   static const String imagesWatch = "assets/images/watch.svg";
 }
+
