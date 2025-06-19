@@ -5,10 +5,19 @@ import 'package:go_router/go_router.dart';
 
 // GoRouter configuration
 final router = GoRouter(
+  initialLocation: '',
   routes: [
     GoRoute(path: '/', builder: (context, state) => SplashView()),
     GoRoute(
       path: Routes.onboardingView,
+      builder: (context, state) => OnboardingView(),
+    ),
+    GoRoute(
+      path: Routes.signinView,
+      builder: (context, state) => OnboardingView(),
+    ),
+    GoRoute(
+      path: Routes.signupView,
       builder: (context, state) => OnboardingView(),
     ),
   ],

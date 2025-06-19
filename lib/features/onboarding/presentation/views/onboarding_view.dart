@@ -5,8 +5,10 @@ import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 import 'package:food_delivery_app/core/widgets/custom_button.dart';
 import 'package:food_delivery_app/features/onboarding/presentation/widgets/first_onboarding.dart';
+import 'package:food_delivery_app/features/onboarding/presentation/widgets/onboarding_navigator_widget.dart';
 import 'package:food_delivery_app/features/onboarding/presentation/widgets/second_onboarding.dart';
 import 'package:food_delivery_app/features/onboarding/presentation/widgets/third_onboarding.dart';
+import 'package:go_router/go_router.dart';
 
 class OnboardingView extends StatefulWidget {
   const OnboardingView({super.key});
@@ -63,39 +65,24 @@ class _OnboardingViewState extends State<OnboardingView> {
                 ),
               ),
             ),
-            Column(
-              mainAxisSize: MainAxisSize.min,
-              spacing: 8,
-              children: [
-                SizedBox(
-                  width: double.infinity,
-                  child: CustomButton(
-                    text: AppStrings.next,
-                    textStyle: AppTextStyle.bold14.copyWith(
-                      color: Colors.white,
+            _currentPage == 2
+                ? SizedBox(
+                    width: double.infinity,
+                    child: CustomButton(
+                      text: AppStrings.getStarted,
+                      buttonColor: AppColors.primaryColor,
+                      textStyle: AppTextStyle.bold14.copyWith(
+                        color: Colors.white,
+                      ),
+                      onPressed: () {
+                        context.go('');
+                      },
                     ),
-                    buttonColor: AppColors.primaryColor,
-                    onPressed: () {
-                      _pageController.animateToPage(
-                        _currentPage + 1,
-                        duration: const Duration(milliseconds: 500),
-                        curve: Curves.ease,
-                      );
-                    },
+                  )
+                : OnboardingNavigatorWidget(
+                    currentPage: _currentPage,
+                    pageController: _pageController,
                   ),
-                ),
-                SizedBox(
-                  width: double.infinity,
-                  child: CustomButton(
-                    text: AppStrings.skip,
-                    textStyle: AppTextStyle.bold14.copyWith(
-                      color: AppColors.subTextColor,
-                    ),
-                    onPressed: () {},
-                  ),
-                ),
-              ],
-            ),
             SizedBox(height: 24),
           ],
         ),

@@ -198,10 +198,12 @@ class AppStrings {
   static const String cardNumberHidden = "********** 436";
   static const String addNew = "+ ADD NEW";
   static const String noMasterCard = "No master card added";
-  static const String masterCardDescription = "You can add a mastercard and save it for later";
+  static const String masterCardDescription =
+      "You can add a mastercard and save it for later";
   static const String payConfirm = "PAY & CONFIRM";
   static const String congratulations = "Congratulations!";
-  static const String paymentSuccess = "You successfully maked a payment,\n\nenjoy our service!";
+  static const String paymentSuccess =
+      "You successfully maked a payment,\n\nenjoy our service!";
   static const String trackOrderButton = "TRACK ORDER";
   static const String spicyRestaurant = "Spicy Restaurant";
   static const String burger = "Burger";
@@ -223,7 +225,8 @@ class AppStrings {
   static const String popularFastFood = "Popular Fast Food";
   static const String europeanPizza = "European Pizza";
   static const String buffaloPizza = "Buffalo Pizza";
-  static const String getStarted = "Please sign up to get started";
+  static const String getStartedHint = "Please sign up to get started";
+  static const String getStarted = "GET STARTED";
   static const String name = "NAME";
   static const String johnDoe = "John doe";
   static const String reTypePassword = "RE-TYPE PASSWORD";
@@ -234,12 +237,14 @@ class AppStrings {
   static const String estimatedDeliveryTime = "ESTIMATED DELIVERY TIME";
   static const String orderReceived = "Your order has been received";
   static const String preparingFood = "The restaurant is preparing your food";
-  static const String orderPickedUp = "Your order has been picked up for delivery";
+  static const String orderPickedUp =
+      "Your order has been picked up for delivery";
   static const String orderArriving = "Order arriving soon!";
   static const String robertF = "Robert F.";
   static const String courier = "Courier";
   static const String verification = "Verification";
-  static const String codeSent = "We have sent a code to your email example@gmail.com";
+  static const String codeSent =
+      "We have sent a code to your email example@gmail.com";
   static const String code = "CODE";
   static const String resendIn50sec = "Resend in.50sec";
   static const String verify = "VERIFY";

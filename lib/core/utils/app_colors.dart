@@ -9,4 +9,5 @@ class AppColors {
   static const backgrdContainerColor = Color(0xffF0F5FA);
   static const iconColor = Color(0xffB4B9CA);
   static const facebookBackgrdColor = Color(0xff395998);
+  static const authBackgrdColor = Color(0xff1E1E2E);
 }
