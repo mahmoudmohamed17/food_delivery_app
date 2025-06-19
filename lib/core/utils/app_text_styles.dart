@@ -20,6 +20,10 @@ class AppTextStyle {
     fontSize: 16,
     fontWeight: FontWeight.bold,
   );
+  static const TextStyle bold14 = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.bold,
+  );
 
   static const TextStyle medium16 = TextStyle(
     fontSize: 16,
@@ -49,15 +53,5 @@ class AppTextStyle {
   static const TextStyle regular12 = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.normal,
-  );
-
-  static const TextStyle buttonBold16 = TextStyle(
-    fontSize: 16,
-    fontWeight: FontWeight.bold,
-  );
-
-  static const TextStyle buttonMedium14 = TextStyle(
-    fontSize: 14,
-    fontWeight: FontWeight.w500,
   );
 }

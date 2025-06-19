@@ -110,6 +110,18 @@ class Assets {
   /// assets/images/more.svg
   static const String imagesMore = "assets/images/more.svg";
 
+  /// Assets for imagesOnboarding1
+  /// assets/images/onboarding1.svg
+  static const String imagesOnboarding1 = "assets/images/onboarding1.svg";
+
+  /// Assets for imagesOnboarding2
+  /// assets/images/onboarding2.svg
+  static const String imagesOnboarding2 = "assets/images/onboarding2.svg";
+
+  /// Assets for imagesOnboarding3
+  /// assets/images/onboarding3.svg
+  static const String imagesOnboarding3 = "assets/images/onboarding3.svg";
+
   /// Assets for imagesPaypal
   /// assets/images/paypal.svg
   static const String imagesPaypal = "assets/images/paypal.svg";
