@@ -6,6 +6,10 @@ class Assets {
   /// assets/images/app_logo.png
   static const String imagesAppLogo = "assets/images/app_logo.png";
 
+  /// Assets for imagesApple
+  /// assets/images/apple.svg
+  static const String imagesApple = "assets/images/apple.svg";
+
   /// Assets for imagesArrow
   /// assets/images/arrow.svg
   static const String imagesArrow = "assets/images/arrow.svg";
@@ -61,6 +65,10 @@ class Assets {
   /// Assets for imagesEllipseUpForAuth
   /// assets/images/ellipse_up_for_auth.svg
   static const String imagesEllipseUpForAuth = "assets/images/ellipse_up_for_auth.svg";
+
+  /// Assets for imagesFacebook
+  /// assets/images/facebook.svg
+  static const String imagesFacebook = "assets/images/facebook.svg";
 
   /// Assets for imagesFilter
   /// assets/images/filter.svg
@@ -157,6 +165,10 @@ class Assets {
   /// Assets for imagesTag
   /// assets/images/tag.svg
   static const String imagesTag = "assets/images/tag.svg";
+
+  /// Assets for imagesTwitter
+  /// assets/images/twitter.svg
+  static const String imagesTwitter = "assets/images/twitter.svg";
 
   /// Assets for imagesUser
   /// assets/images/user.svg
