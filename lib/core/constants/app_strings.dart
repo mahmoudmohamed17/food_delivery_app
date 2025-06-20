@@ -140,6 +140,7 @@ class AppStrings {
   static const String dfoodAccess = "DFOOD WILL ACCESS YOUR LOCATION";
   static const String onlyWhileUsingApp = "ONLY WHILE USING THE APP";
   static const String logIn = "Log In";
+  static const String logInHint = "Please sign in to your existing account";
   static const String password = "PASSWORD";
   static const String passwordValue = "123456789";
   static const String rememberMe = "Remember me";
@@ -225,7 +226,6 @@ class AppStrings {
   static const String popularFastFood = "Popular Fast Food";
   static const String europeanPizza = "European Pizza";
   static const String buffaloPizza = "Buffalo Pizza";
-  static const String getStartedHint = "Please sign up to get started";
   static const String getStarted = "GET STARTED";
   static const String name = "NAME";
   static const String johnDoe = "John doe";

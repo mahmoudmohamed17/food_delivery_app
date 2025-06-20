@@ -58,6 +58,10 @@ class Assets {
   /// assets/images/ellipse_up.svg
   static const String imagesEllipseUp = "assets/images/ellipse_up.svg";
 
+  /// Assets for imagesEllipseUpForAuth
+  /// assets/images/ellipse_up_for_auth.svg
+  static const String imagesEllipseUpForAuth = "assets/images/ellipse_up_for_auth.svg";
+
   /// Assets for imagesFilter
   /// assets/images/filter.svg
   static const String imagesFilter = "assets/images/filter.svg";
