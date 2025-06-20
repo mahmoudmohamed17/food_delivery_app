@@ -74,6 +74,10 @@ class Assets {
   /// assets/images/filter.svg
   static const String imagesFilter = "assets/images/filter.svg";
 
+  /// Assets for imagesGoogle
+  /// assets/images/google.svg
+  static const String imagesGoogle = "assets/images/google.svg";
+
   /// Assets for imagesGrids
   /// assets/images/grids.svg
   static const String imagesGrids = "assets/images/grids.svg";

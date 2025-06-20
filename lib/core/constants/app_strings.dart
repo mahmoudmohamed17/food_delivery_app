@@ -142,7 +142,7 @@ class AppStrings {
   static const String logIn = "Log In";
   static const String logInHint = "Please sign in to your existing account";
   static const String password = "PASSWORD";
-  static const String passwordValue = "123456789";
+  static const String passwordValue = "Enter your password";
   static const String rememberMe = "Remember me";
   static const String forgotPasswordText = "Forgot Password";
   static const String logInButton = "LOG IN";
