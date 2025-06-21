@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/constants/app_strings.dart';
+import 'package:food_delivery_app/core/routing/routes.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 import 'package:food_delivery_app/core/widgets/custom_arrow_back_widget.dart';
@@ -7,6 +8,7 @@ import 'package:food_delivery_app/core/widgets/custom_button.dart';
 import 'package:food_delivery_app/core/widgets/custom_text_form_field.dart';
 import 'package:food_delivery_app/features/auth/presentation/widgets/auth_body_title.dart';
 import 'package:food_delivery_app/features/auth/presentation/widgets/auth_template_body_widget.dart';
+import 'package:go_router/go_router.dart';
 
 class ForgotPasswordViewBody extends StatefulWidget {
   const ForgotPasswordViewBody({super.key});
@@ -51,7 +53,9 @@ class _ForgotPasswordViewBodyState extends State<ForgotPasswordViewBody> {
                 text: AppStrings.sendCode,
                 textStyle: AppTextStyle.bold14.copyWith(color: Colors.white),
                 buttonColor: AppColors.primaryColor,
-                onPressed: () {},
+                onPressed: () {
+                  context.push(Routes.verificationView);
+                },
               ),
             ),
           ],

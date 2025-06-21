@@ -247,6 +247,6 @@ class AppStrings {
   static const String codeSent =
       "We have sent a code to your email example@gmail.com";
   static const String code = "CODE";
-  static const String resendIn50sec = "Resend in.50sec";
+  static const String resendCode = "Resend";
   static const String verify = "VERIFY";
 }
