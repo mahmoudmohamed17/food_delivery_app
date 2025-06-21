@@ -4,6 +4,7 @@ import 'package:food_delivery_app/features/auth/presentation/views/location_acce
 import 'package:food_delivery_app/features/auth/presentation/views/signin_view.dart';
 import 'package:food_delivery_app/features/auth/presentation/views/signup_view.dart';
 import 'package:food_delivery_app/features/auth/presentation/views/verification_view.dart';
+import 'package:food_delivery_app/features/home/presentation/views/home_view.dart';
 import 'package:food_delivery_app/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:food_delivery_app/features/splash/presentation/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
@@ -29,6 +30,10 @@ final router = GoRouter(
     GoRoute(
       path: Routes.locationAccessView,
       builder: (context, state) => LocationAccessView(),
+    ),
+    GoRoute(
+      path: Routes.homeView,
+      builder: (context, state) => HomeView(),
     ),
   ],
 );

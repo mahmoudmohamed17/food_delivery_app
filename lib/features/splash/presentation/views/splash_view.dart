@@ -19,13 +19,18 @@ class _SplashViewState extends State<SplashView> {
     super.didChangeDependencies();
     Future.delayed(const Duration(seconds: 2), () async {
       if (context.mounted) {
-        SharedPrefs.getBool(isOnboardingSeen)
-            // ignore: use_build_context_synchronously
-            ? context.go(Routes.signinView)
-            // ignore: use_build_context_synchronously
-            : context.go(Routes.onboardingView);
+        // ignore: use_build_context_synchronously
+        navigateToNextView(context);
       }
     });
+  }
+
+  void navigateToNextView(BuildContext context) {
+    SharedPrefs.getBool(isOnboardingSeen)
+        ? SharedPrefs.getBool(isUserAuthenticated)
+              ? context.go(Routes.homeView)
+              : context.go(Routes.signinView)
+        : context.go(Routes.onboardingView);
   }
 
   @override

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/core/constants/app_constanst.dart';
 import 'package:food_delivery_app/core/constants/app_strings.dart';
+import 'package:food_delivery_app/core/routing/routes.dart';
+import 'package:food_delivery_app/core/services/shared_prefs.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 import 'package:food_delivery_app/core/widgets/custom_button.dart';
@@ -10,6 +13,7 @@ import 'package:food_delivery_app/features/auth/presentation/widgets/auth_templa
 import 'package:food_delivery_app/features/auth/presentation/widgets/dont_have_account_widget.dart';
 import 'package:food_delivery_app/features/auth/presentation/widgets/remember_me_and_forgot_password_widget.dart';
 import 'package:food_delivery_app/features/auth/presentation/widgets/social_auth_widget.dart';
+import 'package:go_router/go_router.dart';
 
 class SigninViewBody extends StatefulWidget {
   const SigninViewBody({super.key});
@@ -78,7 +82,10 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   text: AppStrings.logInButton,
                   textStyle: AppTextStyle.bold14.copyWith(color: Colors.white),
                   buttonColor: AppColors.primaryColor,
-                  onPressed: () {},
+                  onPressed: () async {
+                    context.go(Routes.homeView);
+                    await SharedPrefs.setBool(isUserAuthenticated, true);
+                  },
                 ),
               ),
               SizedBox(height: 32),
