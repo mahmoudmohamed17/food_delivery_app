@@ -6,7 +6,7 @@ import 'package:food_delivery_app/core/widgets/custom_button.dart';
 import 'package:food_delivery_app/core/widgets/custom_password_text_form_field.dart';
 import 'package:food_delivery_app/core/widgets/custom_text_form_field.dart';
 import 'package:food_delivery_app/features/auth/presentation/widgets/auth_body_title.dart';
-import 'package:food_delivery_app/features/auth/presentation/widgets/auth_template_widget.dart';
+import 'package:food_delivery_app/features/auth/presentation/widgets/auth_template_body_widget.dart';
 import 'package:food_delivery_app/features/auth/presentation/widgets/dont_have_account_widget.dart';
 import 'package:food_delivery_app/features/auth/presentation/widgets/remember_me_and_forgot_password_widget.dart';
 import 'package:food_delivery_app/features/auth/presentation/widgets/social_auth_widget.dart';
@@ -31,7 +31,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
 
   @override
   Widget build(BuildContext context) {
-    return AuthTemplateWidget(
+    return AuthTemplateBodyWidget(
       body: SingleChildScrollView(
         child: Column(
           children: [

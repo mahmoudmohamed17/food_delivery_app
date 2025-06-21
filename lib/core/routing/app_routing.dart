@@ -1,5 +1,6 @@
 import 'package:food_delivery_app/core/routing/check_initial_route.dart';
 import 'package:food_delivery_app/core/routing/routes.dart';
+import 'package:food_delivery_app/features/auth/presentation/views/forgot_password_view.dart';
 import 'package:food_delivery_app/features/auth/presentation/views/signin_view.dart';
 import 'package:food_delivery_app/features/auth/presentation/views/signup_view.dart';
 import 'package:food_delivery_app/features/onboarding/presentation/views/onboarding_view.dart';
@@ -22,6 +23,10 @@ final router = GoRouter(
     GoRoute(
       path: Routes.signupView,
       builder: (context, state) => SignupView(),
+    ),
+    GoRoute(
+      path: Routes.forgotPasswordView,
+      builder: (context, state) => ForgotPasswordView(),
     ),
   ],
 );

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/constants/app_strings.dart';
+import 'package:food_delivery_app/core/routing/routes.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
+import 'package:go_router/go_router.dart';
 
 class RememberMeAndForgotPasswordWidget extends StatefulWidget {
   const RememberMeAndForgotPasswordWidget({super.key});
@@ -44,7 +46,9 @@ class _RememberMeAndForgotPasswordWidgetState
           ],
         ),
         TextButton(
-          onPressed: () {},
+          onPressed: () {
+            context.push(Routes.forgotPasswordView);
+          },
           child: Text(
             AppStrings.forgotPassword,
             style: AppTextStyle.regular14.copyWith(

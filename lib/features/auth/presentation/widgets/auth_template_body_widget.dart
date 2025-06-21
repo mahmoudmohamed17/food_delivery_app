@@ -3,8 +3,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:go_router/go_router.dart';
 
-class AuthTemplateWidget extends StatelessWidget {
-  const AuthTemplateWidget({
+class AuthTemplateBodyWidget extends StatelessWidget {
+  const AuthTemplateBodyWidget({
     super.key,
     this.backArrow,
     required this.body,
@@ -33,7 +33,7 @@ class AuthTemplateWidget extends StatelessWidget {
         ),
         Positioned(
           left: 24,
-          top: 60,
+          top: 40,
           child: GestureDetector(
             onTap: () {
               context.pop();

@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:food_delivery_app/core/constants/app_strings.dart';
-import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
+import 'package:food_delivery_app/core/widgets/custom_arrow_back_widget.dart';
 import 'package:food_delivery_app/core/widgets/custom_button.dart';
 import 'package:food_delivery_app/core/widgets/custom_password_text_form_field.dart';
 import 'package:food_delivery_app/core/widgets/custom_text_form_field.dart';
 import 'package:food_delivery_app/features/auth/presentation/widgets/auth_body_title.dart';
-import 'package:food_delivery_app/features/auth/presentation/widgets/auth_template_widget.dart';
+import 'package:food_delivery_app/features/auth/presentation/widgets/auth_template_body_widget.dart';
 
 class SignupViewBody extends StatefulWidget {
   const SignupViewBody({super.key});
@@ -35,7 +34,7 @@ class _SignupViewBodyState extends State<SignupViewBody> {
 
   @override
   Widget build(BuildContext context) {
-    return AuthTemplateWidget(
+    return AuthTemplateBodyWidget(
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -69,7 +68,6 @@ class _SignupViewBodyState extends State<SignupViewBody> {
               controller: _emailController,
             ),
             SizedBox(height: 24),
-
             Align(
               alignment: Alignment.centerLeft,
               child: Text(
@@ -112,14 +110,7 @@ class _SignupViewBodyState extends State<SignupViewBody> {
           ],
         ),
       ),
-      backArrow: CircleAvatar(
-        backgroundColor: Colors.white,
-        radius: 24,
-        child: RotatedBox(
-          quarterTurns: 1,
-          child: SvgPicture.asset(Assets.imagesArrow),
-        ),
-      ),
+      backArrow: CustomArrowBackWidget(),
       title: AuthBodyTitle(
         title: AppStrings.signUp,
         subTitle: AppStrings.signUpHint,
@@ -127,3 +118,4 @@ class _SignupViewBodyState extends State<SignupViewBody> {
     );
   }
 }
+
