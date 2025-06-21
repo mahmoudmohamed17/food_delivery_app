@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
+import 'package:go_router/go_router.dart';
 
 class AuthTemplateWidget extends StatelessWidget {
   const AuthTemplateWidget({
@@ -30,10 +31,19 @@ class AuthTemplateWidget extends StatelessWidget {
             colorFilter: ColorFilter.mode(Color(0xff2C313C), BlendMode.srcIn),
           ),
         ),
-        Positioned(left: 24, top: 80, child: backArrow ?? SizedBox.shrink()),
-        Positioned(top: 120, right: 0, left: 0, child: title),
         Positioned(
-          top: 240,
+          left: 24,
+          top: 60,
+          child: GestureDetector(
+            onTap: () {
+              context.pop();
+            },
+            child: backArrow ?? SizedBox.shrink(),
+          ),
+        ),
+        Positioned(top: 100, right: 0, left: 0, child: title),
+        Positioned(
+          top: 230,
           bottom: 0,
           right: 0,
           left: 0,

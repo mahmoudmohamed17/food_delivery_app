@@ -1,6 +1,7 @@
 import 'package:food_delivery_app/core/routing/check_initial_route.dart';
 import 'package:food_delivery_app/core/routing/routes.dart';
 import 'package:food_delivery_app/features/auth/presentation/views/signin_view.dart';
+import 'package:food_delivery_app/features/auth/presentation/views/signup_view.dart';
 import 'package:food_delivery_app/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:food_delivery_app/features/splash/presentation/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
@@ -20,7 +21,7 @@ final router = GoRouter(
     ),
     GoRoute(
       path: Routes.signupView,
-      builder: (context, state) => OnboardingView(),
+      builder: (context, state) => SignupView(),
     ),
   ],
 );

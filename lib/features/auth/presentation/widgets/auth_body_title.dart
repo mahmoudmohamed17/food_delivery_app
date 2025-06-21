@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app/core/constants/app_strings.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 
-class SigninBodyTitle extends StatelessWidget {
-  const SigninBodyTitle({
-    super.key,
-  });
+class AuthBodyTitle extends StatelessWidget {
+  const AuthBodyTitle({super.key, required this.title, required this.subTitle});
+  final String title;
+  final String subTitle;
 
   @override
   Widget build(BuildContext context) {
@@ -14,12 +13,12 @@ class SigninBodyTitle extends StatelessWidget {
       spacing: 4,
       children: [
         Text(
-          AppStrings.logIn,
+          title,
           textAlign: TextAlign.center,
           style: AppTextStyle.bold30.copyWith(color: Colors.white),
         ),
         Text(
-          AppStrings.logInHint,
+          subTitle,
           textAlign: TextAlign.center,
           style: AppTextStyle.regular16.copyWith(color: Colors.white),
         ),

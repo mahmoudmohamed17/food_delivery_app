@@ -113,7 +113,6 @@ class AppStrings {
   static const String maccenasDescription =
       "Maccenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dopibus posuere velit aliquet.";
   static const String forgotPassword = "Forgot Password";
-  static const String pleaseSignIn = "Please sign in to your existing account";
   static const String exampleEmail = "example@gmail.com";
   static const String sendCode = "SEND CODE";
   static const String space = "space";
@@ -148,6 +147,7 @@ class AppStrings {
   static const String logInButton = "LOG IN";
   static const String dontHaveAccount = "Don't have an account?";
   static const String signUp = "SIGN UP";
+  static const String signUpHint = "Please sign up to get started";
   static const String or = "Or";
   static const String profile = "Profile";
   static const String personalInfo = "Personal Info";
