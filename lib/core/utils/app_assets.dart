@@ -106,6 +106,10 @@ class Assets {
   /// assets/images/logout.svg
   static const String imagesLogout = "assets/images/logout.svg";
 
+  /// Assets for imagesMapPin
+  /// assets/images/map_pin.svg
+  static const String imagesMapPin = "assets/images/map_pin.svg";
+
   /// Assets for imagesMastercard
   /// assets/images/mastercard.svg
   static const String imagesMastercard = "assets/images/mastercard.svg";

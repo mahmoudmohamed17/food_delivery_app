@@ -138,8 +138,8 @@ class AppStrings {
   static const String pi = "Pi";
   static const String stc = "Stc";
   static const String accessLocation = "ACCESS LOCATION";
-  static const String dfoodAccess = "DFOOD WILL ACCESS YOUR LOCATION";
-  static const String onlyWhileUsingApp = "ONLY WHILE USING THE APP";
+  static const String accessLocationHint =
+      "FOODLY WILL ACCESS YOUR LOCATION ONLY WHILE USING THE APP";
   static const String logIn = "Log In";
   static const String logInHint = "Please sign in to your existing account";
   static const String password = "PASSWORD";

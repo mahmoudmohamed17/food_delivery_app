@@ -21,6 +21,8 @@ class SigninViewBody extends StatefulWidget {
 class _SigninViewBodyState extends State<SigninViewBody> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
+  final GlobalKey _formKey = GlobalKey<FormState>();
+  final AutovalidateMode _autovalidateMode = AutovalidateMode.disabled;
   @override
   void dispose() {
     _emailController.dispose();
@@ -32,63 +34,67 @@ class _SigninViewBodyState extends State<SigninViewBody> {
   @override
   Widget build(BuildContext context) {
     return AuthTemplateBodyWidget(
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                AppStrings.email,
-                style: AppTextStyle.regular14.copyWith(
-                  color: AppColors.primaryTextColor,
+      body: Form(
+        key: _formKey,
+        autovalidateMode: _autovalidateMode,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  AppStrings.email,
+                  style: AppTextStyle.regular14.copyWith(
+                    color: AppColors.primaryTextColor,
+                  ),
                 ),
               ),
-            ),
-            SizedBox(height: 8),
-            CustomTextFormField(
-              hintText: AppStrings.exampleEmail,
-              controller: _emailController,
-            ),
-            SizedBox(height: 24),
-            Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                AppStrings.password,
-                style: AppTextStyle.regular14.copyWith(
-                  color: AppColors.primaryTextColor,
+              SizedBox(height: 8),
+              CustomTextFormField(
+                hintText: AppStrings.exampleEmail,
+                controller: _emailController,
+              ),
+              SizedBox(height: 24),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  AppStrings.password,
+                  style: AppTextStyle.regular14.copyWith(
+                    color: AppColors.primaryTextColor,
+                  ),
                 ),
               ),
-            ),
-            SizedBox(height: 8),
-            CustomPasswordTextFormField(
-              hintText: AppStrings.passwordValue,
-              controller: _passwordController,
-            ),
-            SizedBox(height: 24),
-            RememberMeAndForgotPasswordWidget(),
-            SizedBox(height: 32),
-            SizedBox(
-              width: double.infinity,
-              child: CustomButton(
-                text: AppStrings.logInButton,
-                textStyle: AppTextStyle.bold14.copyWith(color: Colors.white),
-                buttonColor: AppColors.primaryColor,
-                onPressed: () {},
+              SizedBox(height: 8),
+              CustomPasswordTextFormField(
+                hintText: AppStrings.passwordValue,
+                controller: _passwordController,
               ),
-            ),
-            SizedBox(height: 32),
-            DontHaveAccountWidget(),
-            SizedBox(height: 24),
-            Text(
-              AppStrings.or,
-              style: AppTextStyle.regular16.copyWith(
-                color: AppColors.subTextColor,
+              SizedBox(height: 24),
+              RememberMeAndForgotPasswordWidget(),
+              SizedBox(height: 32),
+              SizedBox(
+                width: double.infinity,
+                child: CustomButton(
+                  text: AppStrings.logInButton,
+                  textStyle: AppTextStyle.bold14.copyWith(color: Colors.white),
+                  buttonColor: AppColors.primaryColor,
+                  onPressed: () {},
+                ),
               ),
-            ),
-            SizedBox(height: 20),
-            SocialAuthWidget(),
-            SizedBox(height: 24),
-          ],
+              SizedBox(height: 32),
+              DontHaveAccountWidget(),
+              SizedBox(height: 24),
+              Text(
+                AppStrings.or,
+                style: AppTextStyle.regular16.copyWith(
+                  color: AppColors.subTextColor,
+                ),
+              ),
+              SizedBox(height: 20),
+              SocialAuthWidget(),
+              SizedBox(height: 24),
+            ],
+          ),
         ),
       ),
       title: AuthBodyTitle(
