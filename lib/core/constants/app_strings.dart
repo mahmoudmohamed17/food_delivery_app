@@ -121,7 +121,8 @@ class AppStrings {
   static const String go = "Go";
   static const String deliverTo = "DELIVER TO";
   static const String halalLabOffice = "Halal Lab office";
-  static const String goodAfternoon = "Hey Halal, Good Afternoon!";
+  static const String heyUser = "Hey Halal, ";
+  static const String welcomeBack = "Welcome Back!";
   static const String searchDishes = "Search dishes, restaurants";
   static const String allCategories = "All Categories";
   static const String seeAll = "See All";

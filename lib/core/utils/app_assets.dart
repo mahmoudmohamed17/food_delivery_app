@@ -26,6 +26,10 @@ class Assets {
   /// assets/images/bell.svg
   static const String imagesBell = "assets/images/bell.svg";
 
+  /// Assets for imagesBurger
+  /// assets/images/burger.png
+  static const String imagesBurger = "assets/images/burger.png";
+
   /// Assets for imagesCall
   /// assets/images/call.svg
   static const String imagesCall = "assets/images/call.svg";
@@ -94,6 +98,10 @@ class Assets {
   /// assets/images/home.svg
   static const String imagesHome = "assets/images/home.svg";
 
+  /// Assets for imagesHotDog
+  /// assets/images/hot_dog.png
+  static const String imagesHotDog = "assets/images/hot_dog.png";
+
   /// Assets for imagesInfo
   /// assets/images/info.svg
   static const String imagesInfo = "assets/images/info.svg";
@@ -150,9 +158,17 @@ class Assets {
   /// assets/images/onboarding3.svg
   static const String imagesOnboarding3 = "assets/images/onboarding3.svg";
 
+  /// Assets for imagesPasta
+  /// assets/images/pasta.png
+  static const String imagesPasta = "assets/images/pasta.png";
+
   /// Assets for imagesPaypal
   /// assets/images/paypal.svg
   static const String imagesPaypal = "assets/images/paypal.svg";
+
+  /// Assets for imagesPizza
+  /// assets/images/pizza.png
+  static const String imagesPizza = "assets/images/pizza.png";
 
   /// Assets for imagesPlus
   /// assets/images/plus.svg
@@ -161,6 +177,10 @@ class Assets {
   /// Assets for imagesQuestion
   /// assets/images/question.svg
   static const String imagesQuestion = "assets/images/question.svg";
+
+  /// Assets for imagesRestaurantPicture
+  /// assets/images/restaurant_picture.jpg
+  static const String imagesRestaurantPicture = "assets/images/restaurant_picture.jpg";
 
   /// Assets for imagesSearch
   /// assets/images/search.svg
