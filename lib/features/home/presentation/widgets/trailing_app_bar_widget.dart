@@ -5,9 +5,7 @@ import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 
 class TrailingAppBarWidget extends StatelessWidget {
-  const TrailingAppBarWidget({
-    super.key,
-  });
+  const TrailingAppBarWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +32,7 @@ class TrailingAppBarWidget extends StatelessWidget {
         ),
         Positioned(
           top: -12,
-          right: -8,
+          right: 0,
           child: DecoratedBox(
             decoration: BoxDecoration(
               color: AppColors.primaryColor,

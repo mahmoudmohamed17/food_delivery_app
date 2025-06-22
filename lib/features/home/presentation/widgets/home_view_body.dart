@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/constants/app_strings.dart';
 import 'package:food_delivery_app/core/widgets/custom_search_text_field.dart';
+import 'package:food_delivery_app/features/home/presentation/widgets/all_categories_widget.dart';
 import 'package:food_delivery_app/features/home/presentation/widgets/home_view_app_bar.dart';
 import 'package:food_delivery_app/features/home/presentation/widgets/user_welcome_back_widget.dart';
 
@@ -12,19 +13,25 @@ class HomeViewBody extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
       child: SafeArea(
-        child: Column(
-          children: [
-            HomeViewAppBar(),
-            SizedBox(height: 20),
-            Align(
-              alignment: Alignment.centerLeft,
-              child: UserWelcomeBackWidget(),
+        child: CustomScrollView(
+          slivers: [
+            SliverToBoxAdapter(child: HomeViewAppBar()),
+            SliverToBoxAdapter(child: SizedBox(height: 20)),
+            SliverToBoxAdapter(
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: UserWelcomeBackWidget(),
+              ),
             ),
-            SizedBox(height: 20),
-            CustomSearchTextField(
-              hintText: AppStrings.searchDishes,
-              controller: TextEditingController(),
+            SliverToBoxAdapter(child: SizedBox(height: 20)),
+            SliverToBoxAdapter(
+              child: CustomSearchTextField(
+                hintText: AppStrings.searchDishes,
+                controller: TextEditingController(),
+              ),
             ),
+            SliverToBoxAdapter(child: SizedBox(height: 3)),
+            SliverToBoxAdapter(child: AllCategoriesWidget()),
           ],
         ),
       ),
