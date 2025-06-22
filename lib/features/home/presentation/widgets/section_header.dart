@@ -5,8 +5,10 @@ import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 
-class AllCategoriesHeader extends StatelessWidget {
-  const AllCategoriesHeader({super.key});
+class SectionHeader extends StatelessWidget {
+  const SectionHeader({super.key, required this.title, required this.onTap});
+  final String title;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -14,13 +16,13 @@ class AllCategoriesHeader extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
-          AppStrings.allCategories,
+          title,
           style: AppTextStyle.regular20.copyWith(
             color: AppColors.primaryTextColor,
           ),
         ),
         InkWell(
-          onTap: () {},
+          onTap: onTap,
           child: Row(
             mainAxisSize: MainAxisSize.min,
             spacing: 2,

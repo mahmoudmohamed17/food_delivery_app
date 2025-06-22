@@ -6,9 +6,7 @@ import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 
 class CategoryItem extends StatelessWidget {
-  const CategoryItem({
-    super.key,
-  });
+  const CategoryItem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,6 +21,14 @@ class CategoryItem extends StatelessWidget {
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(24),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey[350]!,
+                spreadRadius: 0.5,
+                blurRadius: 5,
+                offset: Offset(1, 1),
+              ),
+            ],
           ),
           padding: EdgeInsets.all(16),
           child: Column(
@@ -74,10 +80,7 @@ class CategoryItem extends StatelessWidget {
           left: 0,
           right: 0,
           top: -(context.height * 0.2) / 2,
-          child: Image.asset(
-            Assets.imagesPizza,
-            height: context.height * 0.2,
-          ),
+          child: Image.asset(Assets.imagesPizza, height: context.height * 0.2),
         ),
       ],
     );

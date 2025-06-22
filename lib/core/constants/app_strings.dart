@@ -87,7 +87,7 @@ class AppStrings {
   static const String filter = "FILTER";
   static const String popularBurgers = "Popular Burgers";
   static const String burgerBistro = "Burger Bistro";
-  static const String roseGarden = "Rose Garden";
+  static const String roseGarden = "Rose Garden Restaurant";
   static const String price40 = "\$40";
   static const String smokinBurger = "Smokin' Burger";
   static const String cofenioRestaurant = "Cofenio Restaurant";
@@ -98,7 +98,7 @@ class AppStrings {
   static const String bullseyeBurgers = "Bullseye Burgers";
   static const String kababRestaurant = "Kabab Restaurant";
   static const String price94 = "\$94";
-  static const String openRestaurants = "Open Resturants";
+  static const String openRestaurants = "Open Restaurants";
   static const String tastyTreatGallery = "Tasty Treat Gallery";
   static const String uttoraCoffeeHouse = "Uttora Coffe House";
   static const String prosciuttoDescription =
@@ -120,7 +120,7 @@ class AppStrings {
   static const String space = "space";
   static const String go = "Go";
   static const String deliverTo = "DELIVER TO";
-  static const String halalLabOffice = "Halal Lab office";
+  static const String halalLabOffice = "Halal Lab Office";
   static const String heyUser = "Hey Halal, ";
   static const String welcomeBack = "Welcome Back!";
   static const String searchDishes = "Search dishes, restaurants";
@@ -179,6 +179,7 @@ class AppStrings {
   static const String jan29 = "29 JAN, 12:30";
   static const String jan30 = "30 JAN, 12:30";
   static const String rate = "Rate";
+  static const String dummyRate = "4.7";
   static const String reOrder = "Re-Order";
   static const String mcdonald = "McDonald";
   static const String order242432 = "#242432";

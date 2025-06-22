@@ -1,0 +1,47 @@
+import 'package:flutter/material.dart';
+import 'package:food_delivery_app/core/constants/app_strings.dart';
+import 'package:food_delivery_app/core/utils/app_assets.dart';
+import 'package:food_delivery_app/core/utils/app_colors.dart';
+import 'package:food_delivery_app/core/utils/app_text_styles.dart';
+import 'package:food_delivery_app/features/home/data/models/restaurant_info_item_model.dart';
+import 'package:food_delivery_app/features/home/presentation/widgets/restaurant_info_item.dart';
+
+class RestaurantInfoWidget extends StatelessWidget {
+  const RestaurantInfoWidget({super.key});
+  static final items = [
+    RestaurantInfoItemModel(
+      icon: Assets.imagesStar,
+      text: AppStrings.dummyRate,
+      textStyle: AppTextStyle.bold16.copyWith(
+        color: AppColors.primaryTextColor,
+      ),
+    ),
+    RestaurantInfoItemModel(
+      icon: Assets.imagesDelivery,
+      text: AppStrings.free,
+      textStyle: AppTextStyle.regular14.copyWith(
+        color: AppColors.primaryTextColor,
+      ),
+    ),
+    RestaurantInfoItemModel(
+      icon: Assets.imagesClock,
+      text: AppStrings.min20,
+      textStyle: AppTextStyle.regular14.copyWith(
+        color: AppColors.primaryTextColor,
+      ),
+    ),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      spacing: 16,
+      children: List.generate(items.length, (index) {
+        return Padding(
+          padding: EdgeInsets.only(right: 24),
+          child: RestaurantInfoItem(model: items[index]),
+        );
+      }),
+    );
+  }
+}

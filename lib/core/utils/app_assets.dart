@@ -34,10 +34,6 @@ class Assets {
   /// assets/images/call.svg
   static const String imagesCall = "assets/images/call.svg";
 
-  /// Assets for imagesCar
-  /// assets/images/car.svg
-  static const String imagesCar = "assets/images/car.svg";
-
   /// Assets for imagesCard
   /// assets/images/card.svg
   static const String imagesCard = "assets/images/card.svg";
@@ -50,6 +46,10 @@ class Assets {
   /// assets/images/check.svg
   static const String imagesCheck = "assets/images/check.svg";
 
+  /// Assets for imagesClock
+  /// assets/images/clock.svg
+  static const String imagesClock = "assets/images/clock.svg";
+
   /// Assets for imagesCreditCard
   /// assets/images/credit_card.svg
   static const String imagesCreditCard = "assets/images/credit_card.svg";
@@ -57,6 +57,10 @@ class Assets {
   /// Assets for imagesCross
   /// assets/images/cross.svg
   static const String imagesCross = "assets/images/cross.svg";
+
+  /// Assets for imagesDelivery
+  /// assets/images/delivery.svg
+  static const String imagesDelivery = "assets/images/delivery.svg";
 
   /// Assets for imagesDonate
   /// assets/images/donate.svg
@@ -198,6 +202,10 @@ class Assets {
   /// assets/images/smile.svg
   static const String imagesSmile = "assets/images/smile.svg";
 
+  /// Assets for imagesStar
+  /// assets/images/star.svg
+  static const String imagesStar = "assets/images/star.svg";
+
   /// Assets for imagesTag
   /// assets/images/tag.svg
   static const String imagesTag = "assets/images/tag.svg";
@@ -217,9 +225,5 @@ class Assets {
   /// Assets for imagesVisa
   /// assets/images/visa.svg
   static const String imagesVisa = "assets/images/visa.svg";
-
-  /// Assets for imagesWatch
-  /// assets/images/watch.svg
-  static const String imagesWatch = "assets/images/watch.svg";
 }
 

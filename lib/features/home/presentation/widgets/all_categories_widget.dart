@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/core/constants/app_strings.dart';
 import 'package:food_delivery_app/core/extensions/context_extension.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/all_categories_header.dart';
+import 'package:food_delivery_app/features/home/presentation/widgets/section_header.dart';
 import 'package:food_delivery_app/features/home/presentation/widgets/categories_list_view.dart';
 
 class AllCategoriesWidget extends StatelessWidget {
@@ -9,15 +10,12 @@ class AllCategoriesWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisSize: MainAxisSize.min,
       children: [
-        AllCategoriesHeader(),
+        SectionHeader(title: AppStrings.allCategories, onTap: () {}),
         SizedBox(height: (context.height * 0.2) / 2),
-        SizedBox(
-          height: context.height * 0.1847 + (context.height * 0.2) / 2,
-          child: CategoriesListView(),
-        ),
+        SizedBox(height: context.height * 0.1847, child: CategoriesListView()),
       ],
     );
   }
 }
-
