@@ -6,4 +6,5 @@ class Routes {
   static const verificationView = '/verificationView';
   static const locationAccessView = '/locationAccessView';
   static const homeView = '/homeView';
+  static const restaurantDetailsView = '/restaurantDetailsView';
 }
