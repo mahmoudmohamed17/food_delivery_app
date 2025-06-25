@@ -133,6 +133,10 @@ class AppStrings {
   static const String burgerChickenRicheWings =
       "Burger - Chiken - Riche - Wings";
   static const String pizza = "Pizza";
+  static const String pasta = "Pasta";
+  static const String chicken = "Chicken";
+  static const String salad = "Salad";
+  static const String drinks = "Drinks";
   static const String starting = "Starting";
   static const String price70 = "\$70";
   static const String price50 = "\$50";
@@ -169,7 +173,6 @@ class AppStrings {
   static const String completed = "Completed";
   static const String canceled = "Canceled";
   static const String food = "Food";
-  static const String drink = "Drink";
   static const String pizzaHut = "Pizza Hut";
   static const String order162432 = "#162432";
   static const String price35_25 = "\$35.25";
