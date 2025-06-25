@@ -7,4 +7,5 @@ class Routes {
   static const locationAccessView = '/locationAccessView';
   static const homeView = '/homeView';
   static const restaurantDetailsView = '/restaurantDetailsView';
+  static const foodCategoryDetailsView = '/foodCategoryDetailsView';
 }

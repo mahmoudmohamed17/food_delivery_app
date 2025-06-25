@@ -4,8 +4,8 @@ import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 
-class TrailingAppBarWidget extends StatelessWidget {
-  const TrailingAppBarWidget({super.key});
+class TrailingHomeAppBarWidget extends StatelessWidget {
+  const TrailingHomeAppBarWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

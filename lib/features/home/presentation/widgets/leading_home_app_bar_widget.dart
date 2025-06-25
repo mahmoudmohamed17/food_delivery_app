@@ -3,10 +3,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 
-class LeadingAppBarWidget extends StatelessWidget {
-  const LeadingAppBarWidget({
-    super.key,
-  });
+class LeadingHomeAppBarWidget extends StatelessWidget {
+  const LeadingHomeAppBarWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +18,7 @@ class LeadingAppBarWidget extends StatelessWidget {
       icon: DecoratedBox(
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: AppColors.backgrdContainerColor,
+          color: AppColors.iconBackgrnColor,
         ),
         child: Padding(
           padding: const EdgeInsets.all(16),

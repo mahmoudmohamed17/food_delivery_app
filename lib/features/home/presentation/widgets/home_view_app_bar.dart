@@ -4,8 +4,8 @@ import 'package:food_delivery_app/core/constants/app_strings.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/leading_app_bar_widget.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/trailing_app_bar_widget.dart';
+import 'package:food_delivery_app/features/home/presentation/widgets/leading_home_app_bar_widget.dart';
+import 'package:food_delivery_app/features/home/presentation/widgets/trailing_home_app_bar_widget.dart';
 
 class HomeViewAppBar extends StatelessWidget {
   const HomeViewAppBar({super.key});
@@ -14,7 +14,7 @@ class HomeViewAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       contentPadding: EdgeInsets.zero,
-      leading: LeadingAppBarWidget(),
+      leading: LeadingHomeAppBarWidget(),
       title: Text(
         AppStrings.deliverTo,
         style: AppTextStyle.bold12.copyWith(color: AppColors.primaryColor),
@@ -46,7 +46,7 @@ class HomeViewAppBar extends StatelessWidget {
       ),
       trailing: SizedBox(
         width: 50,
-        child: TrailingAppBarWidget(),
+        child: TrailingHomeAppBarWidget(),
       ),
     );
   }
