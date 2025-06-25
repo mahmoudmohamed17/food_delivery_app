@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/constants/app_strings.dart';
 import 'package:food_delivery_app/core/extensions/context_extension.dart';
-import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
+import 'package:food_delivery_app/features/home/data/models/category_item_model.dart';
 
 class CategoryItem extends StatelessWidget {
-  const CategoryItem({super.key});
+  const CategoryItem({super.key, required this.model});
+
+  final CategoryItemModel model;
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +17,8 @@ class CategoryItem extends StatelessWidget {
       children: [
         Container(
           constraints: BoxConstraints(
-            maxHeight: context.height * 0.1847,
-            maxWidth: context.width * 0.4,
+            maxHeight: context.height * 0.2,
+            maxWidth: context.width * 0.45,
           ),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -42,7 +44,7 @@ class CategoryItem extends StatelessWidget {
                   child: FractionallySizedBox(
                     widthFactor: 0.85,
                     child: Text(
-                      AppStrings.pizza,
+                      model.title,
                       overflow: TextOverflow.ellipsis,
                       style: AppTextStyle.bold18.copyWith(
                         color: AppColors.primaryTextColor,
@@ -64,7 +66,8 @@ class CategoryItem extends StatelessWidget {
                   Flexible(
                     flex: 1,
                     child: Text(
-                      AppStrings.price75,
+                      '${model.startingPrice.toStringAsFixed(2)}'
+                      r'$',
                       overflow: TextOverflow.ellipsis,
                       style: AppTextStyle.regular16.copyWith(
                         color: AppColors.primaryTextColor,
@@ -79,8 +82,12 @@ class CategoryItem extends StatelessWidget {
         Positioned(
           left: 0,
           right: 0,
-          top: -(context.height * 0.2) / 2,
-          child: Image.asset(Assets.imagesPizza, height: context.height * 0.2),
+          top: -(context.height * 0.19) / 2,
+          child: Image.asset(
+            model.image,
+            height: context.height * 0.2,
+            fit: BoxFit.cover,
+          ),
         ),
       ],
     );
