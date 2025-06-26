@@ -6,8 +6,8 @@ import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 
-class RestaurantCategoryFoodItem extends StatelessWidget {
-  const RestaurantCategoryFoodItem({super.key});
+class FoodItem extends StatelessWidget {
+  const FoodItem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,8 +30,7 @@ class RestaurantCategoryFoodItem extends StatelessWidget {
           Expanded(
             child: ClipRRect(
               borderRadius: BorderRadius.circular(24),
-
-              child: Image.asset(AppAssets.imagesBurger, fit: BoxFit.fill),
+              child: Image.asset(AppAssets.imagesBurger),
             ),
           ),
           SizedBox(height: 4),
@@ -54,7 +53,6 @@ class RestaurantCategoryFoodItem extends StatelessWidget {
           SizedBox(height: 4),
           SizedBox(
             width: context.width * 0.408,
-
             child: Align(
               alignment: Alignment.centerLeft,
               child: FractionallySizedBox(

@@ -13,7 +13,7 @@ class AllCategoriesWidget extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         SectionHeader(title: AppStrings.allCategories, onTap: () {}),
-        SizedBox(height: (context.height * 0.2) / 2),
+        SizedBox(height: (context.height * 0.22) / 2),
         SizedBox(height: context.height * 0.1847, child: CategoriesListView()),
       ],
     );

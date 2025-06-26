@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/constants/app_strings.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/restaurant_category_foods.dart';
+import 'package:food_delivery_app/features/home/presentation/widgets/food_items_grid.dart';
 import 'package:food_delivery_app/features/home/presentation/widgets/restaurant_details_view_header.dart';
 import 'package:food_delivery_app/features/home/presentation/widgets/restaurant_food_categorie_tabs.dart';
 import 'package:food_delivery_app/features/home/presentation/widgets/restaurant_info_widget.dart';
@@ -49,7 +49,7 @@ class RestaurantDetailsViewBody extends StatelessWidget {
         SliverToBoxAdapter(child: SizedBox(height: 16)),
         SliverPadding(
           padding: EdgeInsets.symmetric(horizontal: 24),
-          sliver: RestaurantCategoryFoods(),
+          sliver: FoodItemsGrid(),
         ),
         SliverToBoxAdapter(child: SizedBox(height: 32)),
       ],

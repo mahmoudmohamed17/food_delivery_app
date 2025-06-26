@@ -7,16 +7,16 @@ import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 import 'package:food_delivery_app/core/widgets/custom_arrow_back_widget.dart';
 import 'package:go_router/go_router.dart';
 
-class FoodCategoryDetailsViewAppBar extends StatefulWidget {
-  const FoodCategoryDetailsViewAppBar({super.key});
+class CategoryDetailsViewAppBar extends StatefulWidget {
+  const CategoryDetailsViewAppBar({super.key});
 
   @override
-  State<FoodCategoryDetailsViewAppBar> createState() =>
-      _FoodCategoryDetailsViewAppBarState();
+  State<CategoryDetailsViewAppBar> createState() =>
+      _CategoryDetailsViewAppBarState();
 }
 
-class _FoodCategoryDetailsViewAppBarState
-    extends State<FoodCategoryDetailsViewAppBar> {
+class _CategoryDetailsViewAppBarState
+    extends State<CategoryDetailsViewAppBar>{
   bool _isTapped = false;
   @override
   Widget build(BuildContext context) {

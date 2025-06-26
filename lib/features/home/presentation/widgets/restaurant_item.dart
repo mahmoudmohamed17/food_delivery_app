@@ -18,18 +18,10 @@ class RestaurantItem extends StatelessWidget {
         context.push(Routes.restaurantDetailsView);
       },
       child: Container(
-        constraints: BoxConstraints(maxWidth: context.width * 0.87),
+        constraints: BoxConstraints(maxWidth: context.width),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(16),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey[350]!,
-              spreadRadius: 0.5,
-              blurRadius: 5,
-              offset: Offset(1, 1),
-            ),
-          ],
         ),
         child: Column(
           children: [
@@ -37,42 +29,39 @@ class RestaurantItem extends StatelessWidget {
               borderRadius: BorderRadius.circular(16),
               child: Image.asset(
                 AppAssets.imagesRestaurantPicture,
-                height: context.height * 0.19,
-                width: context.width * 0.87,
+                height: context.height * 0.2,
+                width: context.width,
                 fit: BoxFit.cover,
               ),
             ),
             SizedBox(height: 8),
-            Padding(
-              padding: const EdgeInsets.all(12),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      AppStrings.roseGarden,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTextStyle.regular20.copyWith(
-                        color: AppColors.primaryTextColor,
-                      ),
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    AppStrings.roseGarden,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTextStyle.regular20.copyWith(
+                      color: AppColors.primaryTextColor,
                     ),
                   ),
-                  SizedBox(height: 4),
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      AppStrings.burgerChickenRicheWings,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTextStyle.regular14.copyWith(
-                        color: AppColors.subTextColor,
-                      ),
+                ),
+                SizedBox(height: 4),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    AppStrings.burgerChickenRicheWings,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTextStyle.regular14.copyWith(
+                      color: AppColors.subTextColor,
                     ),
                   ),
-                  SizedBox(height: 16),
-                  RestaurantInfoWidget(),
-                ],
-              ),
+                ),
+                SizedBox(height: 16),
+                RestaurantInfoWidget(),
+              ],
             ),
           ],
         ),

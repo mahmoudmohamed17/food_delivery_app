@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/home_view_body.dart';
+import 'package:food_delivery_app/features/home/presentation/widgets/category_details_view_body.dart';
 
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+class CategoryDetailsView extends StatelessWidget {
+  const CategoryDetailsView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class HomeView extends StatelessWidget {
       backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
-        child: HomeViewBody(),
+        child: CategoryDetailsViewBody(),
       ),
     );
   }

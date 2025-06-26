@@ -16,10 +16,7 @@ class CategoryItem extends StatelessWidget {
       clipBehavior: Clip.none,
       children: [
         Container(
-          constraints: BoxConstraints(
-            maxHeight: context.height * 0.2,
-            maxWidth: context.width * 0.45,
-          ),
+          constraints: BoxConstraints(maxWidth: context.width * 0.45),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(24),
@@ -82,12 +79,8 @@ class CategoryItem extends StatelessWidget {
         Positioned(
           left: 0,
           right: 0,
-          top: -(context.height * 0.19) / 2,
-          child: Image.asset(
-            model.image,
-            height: context.height * 0.2,
-            fit: BoxFit.cover,
-          ),
+          top: -(context.height * 0.177) / 2,
+          child: Image.asset(model.image, height: context.height * 0.177),
         ),
       ],
     );

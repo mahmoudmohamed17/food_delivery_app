@@ -11,32 +11,29 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
-      child: SafeArea(
-        child: CustomScrollView(
-          slivers: [
-            SliverToBoxAdapter(child: HomeViewAppBar()),
-            SliverToBoxAdapter(child: SizedBox(height: 20)),
-            SliverToBoxAdapter(
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: UserWelcomeBackWidget(),
-              ),
+    return SafeArea(
+      child: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(child: HomeViewAppBar()),
+          SliverToBoxAdapter(child: SizedBox(height: 20)),
+          SliverToBoxAdapter(
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: UserWelcomeBackWidget(),
             ),
-            SliverToBoxAdapter(child: SizedBox(height: 20)),
-            SliverToBoxAdapter(
-              child: CustomSearchTextField(
-                hintText: AppStrings.searchDishes,
-                controller: TextEditingController(),
-              ),
+          ),
+          SliverToBoxAdapter(child: SizedBox(height: 20)),
+          SliverToBoxAdapter(
+            child: CustomSearchTextField(
+              hintText: AppStrings.searchDishes,
+              controller: TextEditingController(),
             ),
-            SliverToBoxAdapter(child: SizedBox(height: 32)),
-            SliverToBoxAdapter(child: AllCategoriesWidget()),
-            SliverToBoxAdapter(child: SizedBox(height: 32)),
-            SliverToBoxAdapter(child: OpenRestaurantsWidget()),
-          ],
-        ),
+          ),
+          SliverToBoxAdapter(child: SizedBox(height: 32)),
+          SliverToBoxAdapter(child: AllCategoriesWidget()),
+          SliverToBoxAdapter(child: SizedBox(height: 32)),
+          SliverToBoxAdapter(child: OpenRestaurantsWidget()),
+        ],
       ),
     );
   }
