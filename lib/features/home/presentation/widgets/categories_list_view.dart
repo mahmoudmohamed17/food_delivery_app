@@ -41,7 +41,7 @@ class CategoriesListView extends StatelessWidget {
       itemBuilder: (context, index) {
         return Padding(
           padding: EdgeInsets.only(right: index == items.length - 1 ? 0 : 16),
-          child: GestureDetector(
+          child: InkWell(
             onTap: () {
               context.push(Routes.foodCategoryDetailsView);
             },

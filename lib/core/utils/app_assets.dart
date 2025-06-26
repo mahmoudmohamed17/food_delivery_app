@@ -92,7 +92,7 @@ class AppAssets {
 
   static const String imagesQuestion = "assets/images/question.svg";
 
-  static const String imagesRestaurantPicture = "assets/images/restaurant_picture.jpg";
+  static const String imagesRestaurantPicture = "assets/images/restaurant_picture.png";
 
   static const String imagesSearch = "assets/images/search.svg";
 
