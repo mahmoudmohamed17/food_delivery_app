@@ -31,7 +31,7 @@ class RestaurantCategoryFoodItem extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(24),
 
-              child: Image.asset(Assets.imagesBurger, fit: BoxFit.fill),
+              child: Image.asset(AppAssets.imagesBurger, fit: BoxFit.fill),
             ),
           ),
           SizedBox(height: 4),
@@ -96,7 +96,7 @@ class RestaurantCategoryFoodItem extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: SvgPicture.asset(
-                    Assets.imagesPlus,
+                    AppAssets.imagesPlus,
                     colorFilter: ColorFilter.mode(
                       Colors.white,
                       BlendMode.srcIn,

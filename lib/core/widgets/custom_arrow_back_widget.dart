@@ -13,7 +13,7 @@ class CustomArrowBackWidget extends StatelessWidget {
       radius: 24,
       child: RotatedBox(
         quarterTurns: 1,
-        child: SvgPicture.asset(Assets.imagesArrow),
+        child: SvgPicture.asset(AppAssets.imagesArrow),
       ),
     );
   }

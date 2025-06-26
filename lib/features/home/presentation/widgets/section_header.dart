@@ -36,7 +36,7 @@ class SectionHeader extends StatelessWidget {
               RotatedBox(
                 quarterTurns: 3,
                 child: SvgPicture.asset(
-                  Assets.imagesArrow,
+                  AppAssets.imagesArrow,
                   colorFilter: ColorFilter.mode(
                     AppColors.subTextColor,
                     BlendMode.srcIn,

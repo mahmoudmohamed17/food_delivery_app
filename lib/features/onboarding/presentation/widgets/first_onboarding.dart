@@ -13,7 +13,7 @@ class FirstOnboarding extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        SvgPicture.asset(Assets.imagesOnboarding1),
+        SvgPicture.asset(AppAssets.imagesOnboarding1),
         SizedBox(height: 4),
         Text(
           AppStrings.onboardingTitle1,

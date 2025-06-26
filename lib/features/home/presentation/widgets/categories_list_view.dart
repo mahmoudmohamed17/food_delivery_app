@@ -14,22 +14,22 @@ class CategoriesListView extends StatelessWidget {
     final items = [
       CategoryItemModel(
         title: AppStrings.pizza,
-        image: Assets.imagesPizza,
+        image: AppAssets.imagesPizza,
         startingPrice: 75,
       ),
       CategoryItemModel(
         title: AppStrings.burger,
-        image: Assets.imagesBurger,
+        image: AppAssets.imagesBurger,
         startingPrice: 75,
       ),
       CategoryItemModel(
         title: AppStrings.pasta,
-        image: Assets.imagesPasta,
+        image: AppAssets.imagesPasta,
         startingPrice: 75,
       ),
       CategoryItemModel(
         title: AppStrings.hotDog,
-        image: Assets.imagesHotDog,
+        image: AppAssets.imagesHotDog,
         startingPrice: 75,
       ),
     ];

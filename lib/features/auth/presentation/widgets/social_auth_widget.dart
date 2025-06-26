@@ -11,17 +11,17 @@ class SocialAuthWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final items = [
       SocialAuthModel(
-        icon: Assets.imagesFacebook,
+        icon: AppAssets.imagesFacebook,
         color: AppColors.facebookBackgrdColor,
         onPresed: () {},
       ),
       SocialAuthModel(
-        icon: Assets.imagesGoogle,
+        icon: AppAssets.imagesGoogle,
         color: AppColors.backgrdContainerColor,
         onPresed: () {},
       ),
       SocialAuthModel(
-        icon: Assets.imagesApple,
+        icon: AppAssets.imagesApple,
         color: AppColors.primaryTextColor,
         onPresed: () {},
       ),

@@ -42,12 +42,12 @@ class _SplashViewState extends State<SplashView> {
         children: [
           Align(
             alignment: Alignment.topLeft,
-            child: SvgPicture.asset(Assets.imagesEllipseUp),
+            child: SvgPicture.asset(AppAssets.imagesEllipseUp),
           ),
-          Center(child: SvgPicture.asset(Assets.imagesLogo)),
+          Center(child: SvgPicture.asset(AppAssets.imagesLogo)),
           Align(
             alignment: Alignment.bottomRight,
-            child: SvgPicture.asset(Assets.imagesEllipseDown),
+            child: SvgPicture.asset(AppAssets.imagesEllipseDown),
           ),
         ],
       ),

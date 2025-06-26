@@ -21,7 +21,7 @@ class LocationAccessView extends StatelessWidget {
               CircleAvatar(
                 backgroundColor: AppColors.extraLightPrimaryColor,
                 radius: 150,
-                child: SvgPicture.asset(Assets.imagesLocationAccess),
+                child: SvgPicture.asset(AppAssets.imagesLocationAccess),
               ),
               SizedBox(height: 64),
               SizedBox(width: double.infinity, child: AccessLocationButton()),

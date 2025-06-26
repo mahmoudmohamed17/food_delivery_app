@@ -43,7 +43,7 @@ class AccessLocationButton extends StatelessWidget {
           child: Padding(
             padding: EdgeInsetsGeometry.all(6),
             child: SvgPicture.asset(
-              Assets.imagesMapPin,
+              AppAssets.imagesMapPin,
               height: 24,
               width: 24,
             ),

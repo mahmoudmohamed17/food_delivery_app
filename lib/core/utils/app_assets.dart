@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_single_quotes
-class Assets {
-  Assets._();
-  
+class AppAssets {
+  AppAssets._();
+
   /// Assets for imagesAppLogo
   /// assets/images/app_logo.png
   static const String imagesAppLogo = "assets/images/app_logo.png";
@@ -76,7 +76,8 @@ class Assets {
 
   /// Assets for imagesEllipseUpForAuth
   /// assets/images/ellipse_up_for_auth.svg
-  static const String imagesEllipseUpForAuth = "assets/images/ellipse_up_for_auth.svg";
+  static const String imagesEllipseUpForAuth =
+      "assets/images/ellipse_up_for_auth.svg";
 
   /// Assets for imagesFacebook
   /// assets/images/facebook.svg
@@ -112,7 +113,8 @@ class Assets {
 
   /// Assets for imagesLocationAccess
   /// assets/images/location_access.svg
-  static const String imagesLocationAccess = "assets/images/location_access.svg";
+  static const String imagesLocationAccess =
+      "assets/images/location_access.svg";
 
   /// Assets for imagesLogo
   /// assets/images/logo.svg
@@ -184,7 +186,8 @@ class Assets {
 
   /// Assets for imagesRestaurantPicture
   /// assets/images/restaurant_picture.jpg
-  static const String imagesRestaurantPicture = "assets/images/restaurant_picture.jpg";
+  static const String imagesRestaurantPicture =
+      "assets/images/restaurant_picture.jpg";
 
   /// Assets for imagesSearch
   /// assets/images/search.svg
@@ -226,4 +229,3 @@ class Assets {
   /// assets/images/visa.svg
   static const String imagesVisa = "assets/images/visa.svg";
 }
-

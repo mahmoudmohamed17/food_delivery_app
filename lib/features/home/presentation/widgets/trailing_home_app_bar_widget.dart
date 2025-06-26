@@ -26,7 +26,7 @@ class TrailingHomeAppBarWidget extends StatelessWidget {
             ),
             child: Padding(
               padding: EdgeInsets.all(16),
-              child: SvgPicture.asset(Assets.imagesBasket),
+              child: SvgPicture.asset(AppAssets.imagesBasket),
             ),
           ),
         ),

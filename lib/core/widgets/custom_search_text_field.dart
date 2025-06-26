@@ -30,7 +30,7 @@ class CustomSearchTextField extends StatelessWidget {
           color: AppColors.subTextColor,
         ),
         prefixIcon: SvgPicture.asset(
-          Assets.imagesSearch,
+          AppAssets.imagesSearch,
           fit: BoxFit.scaleDown,
           colorFilter: ColorFilter.mode(
             AppColors.subTextColor,

@@ -32,7 +32,7 @@ class _RestaurantDetailsViewHeaderState
                 bottomRight: Radius.circular(24),
               ),
               child: Image.asset(
-                Assets.imagesRestaurantPicture,
+                AppAssets.imagesRestaurantPicture,
                 fit: BoxFit.cover,
               ),
             );
@@ -63,7 +63,7 @@ class _RestaurantDetailsViewHeaderState
                 radius: 24,
                 child: RotatedBox(
                   quarterTurns: 1,
-                  child: SvgPicture.asset(Assets.imagesMore),
+                  child: SvgPicture.asset(AppAssets.imagesMore),
                 ),
               ),
             ],

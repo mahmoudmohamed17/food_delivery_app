@@ -22,7 +22,7 @@ class LeadingHomeAppBarWidget extends StatelessWidget {
         ),
         child: Padding(
           padding: const EdgeInsets.all(16),
-          child: SvgPicture.asset(Assets.imagesMenu),
+          child: SvgPicture.asset(AppAssets.imagesMenu),
         ),
       ),
     );

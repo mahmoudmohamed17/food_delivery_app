@@ -62,7 +62,7 @@ class _FoodCategoryDetailsViewAppBarState
                 icon: RotatedBox(
                   quarterTurns: _isTapped ? 2 : 0,
                   child: SvgPicture.asset(
-                    Assets.imagesArrowDown,
+                    AppAssets.imagesArrowDown,
                     height: 16,
                     width: 16,
                     colorFilter: ColorFilter.mode(
@@ -83,7 +83,7 @@ class _FoodCategoryDetailsViewAppBarState
             backgroundColor: AppColors.authBackgrdColor,
             radius: 24,
             child: SvgPicture.asset(
-              Assets.imagesSearch,
+              AppAssets.imagesSearch,
               colorFilter: ColorFilter.mode(Colors.white, BlendMode.srcIn),
             ),
           ),
@@ -95,7 +95,7 @@ class _FoodCategoryDetailsViewAppBarState
           child: CircleAvatar(
             backgroundColor: AppColors.iconBackgrnColor,
             radius: 24,
-            child: SvgPicture.asset(Assets.imagesFilter),
+            child: SvgPicture.asset(AppAssets.imagesFilter),
           ),
         ),
       ],

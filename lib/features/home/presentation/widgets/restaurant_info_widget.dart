@@ -10,21 +10,21 @@ class RestaurantInfoWidget extends StatelessWidget {
   const RestaurantInfoWidget({super.key});
   static final items = [
     RestaurantInfoItemModel(
-      icon: Assets.imagesStar,
+      icon: AppAssets.imagesStar,
       text: AppStrings.dummyRate,
       textStyle: AppTextStyle.bold16.copyWith(
         color: AppColors.primaryTextColor,
       ),
     ),
     RestaurantInfoItemModel(
-      icon: Assets.imagesDelivery,
+      icon: AppAssets.imagesDelivery,
       text: AppStrings.free,
       textStyle: AppTextStyle.regular14.copyWith(
         color: AppColors.primaryTextColor,
       ),
     ),
     RestaurantInfoItemModel(
-      icon: Assets.imagesClock,
+      icon: AppAssets.imagesClock,
       text: AppStrings.min20,
       textStyle: AppTextStyle.regular14.copyWith(
         color: AppColors.primaryTextColor,

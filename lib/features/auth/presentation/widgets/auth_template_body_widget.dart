@@ -20,14 +20,14 @@ class AuthTemplateBodyWidget extends StatelessWidget {
       clipBehavior: Clip.none,
       children: [
         SvgPicture.asset(
-          Assets.imagesEllipseUpForAuth,
+          AppAssets.imagesEllipseUpForAuth,
           colorFilter: ColorFilter.mode(Color(0xff2C313C), BlendMode.srcIn),
           fit: BoxFit.fill,
         ),
         Align(
           alignment: Alignment.topRight,
           child: SvgPicture.asset(
-            Assets.imagesVector,
+            AppAssets.imagesVector,
             colorFilter: ColorFilter.mode(Color(0xff2C313C), BlendMode.srcIn),
           ),
         ),

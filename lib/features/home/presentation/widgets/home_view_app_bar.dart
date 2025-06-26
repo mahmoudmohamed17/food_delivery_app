@@ -37,7 +37,7 @@ class HomeViewAppBar extends StatelessWidget {
             ),
             onPressed: () {},
             icon: SvgPicture.asset(
-              Assets.imagesArrowDown,
+              AppAssets.imagesArrowDown,
               height: 20,
               width: 20,
             ),
