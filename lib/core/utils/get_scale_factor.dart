@@ -1,4 +1,7 @@
-double getScaleFactor(context) {
+import 'package:flutter/material.dart';
+import 'package:food_delivery_app/core/extensions/context_extension.dart';
+
+double getScaleFactor(BuildContext context) {
   double width = context.width;
   // For tablet
   if (width < 800) {
