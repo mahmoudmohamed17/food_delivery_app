@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 import 'package:food_delivery_app/core/widgets/custom_icon_button.dart';
@@ -13,17 +13,16 @@ class TrailingHomeAppBarWidget extends StatelessWidget {
       clipBehavior: Clip.none,
       children: [
         CustomIconButton(
-          icon: FontAwesomeIcons.bagShopping,
+          svgPicture: AppAssets.imagesBasket,
           backgrnColor: AppColors.authBackgrdColor,
           iconColor: Colors.white,
-          iconSize: 20,
           onTap: () {},
         ),
         Positioned(
-          top: -12,
+          top: -8,
           right: 0,
           child: CircleAvatar(
-            radius: 16,
+            radius: 14,
             backgroundColor: AppColors.primaryColor,
             child: Text(
               '2',

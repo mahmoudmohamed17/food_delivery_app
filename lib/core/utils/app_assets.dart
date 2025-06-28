@@ -92,6 +92,8 @@ class AppAssets {
 
   static const String imagesQuestion = "assets/images/question.svg";
 
+  static const String imagesRestaurantLogo = "assets/images/restaurant_logo.png";
+
   static const String imagesRestaurantPicture = "assets/images/restaurant_picture.png";
 
   static const String imagesSearch = "assets/images/search.svg";

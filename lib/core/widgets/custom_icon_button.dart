@@ -30,7 +30,12 @@ class CustomIconButton extends StatelessWidget {
         radius: backgrnRadius,
         child: svgPicture == null
             ? Icon(icon, color: iconColor, size: iconSize)
-            : SvgPicture.asset(svgPicture!),
+            : SvgPicture.asset(
+                svgPicture!,
+                height: iconSize,
+                width: iconSize,
+                colorFilter: ColorFilter.mode(iconColor, BlendMode.srcIn),
+              ),
       ),
     );
   }

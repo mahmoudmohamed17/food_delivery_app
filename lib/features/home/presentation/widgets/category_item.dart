@@ -23,8 +23,8 @@ class CategoryItem extends StatelessWidget {
             boxShadow: [
               BoxShadow(
                 color: Colors.grey[350]!,
-                spreadRadius: 0.5,
-                blurRadius: 5,
+                spreadRadius: 0.9,
+                blurRadius: 10,
                 offset: const Offset(1, 1),
               ),
             ],

@@ -6,6 +6,9 @@ class RestaurantDetailsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: RestaurantDetailsViewBody());
+    return const Scaffold(
+      backgroundColor: Colors.white,
+      body: RestaurantDetailsViewBody(),
+    );
   }
 }

@@ -8,4 +8,5 @@ class Routes {
   static const homeView = '/homeView';
   static const restaurantDetailsView = '/restaurantDetailsView';
   static const foodCategoryDetailsView = '/foodCategoryDetailsView';
+  static const foodDetailsView = '/foodDetailsView';
 }
