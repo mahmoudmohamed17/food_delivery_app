@@ -48,7 +48,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                 alignment: Alignment.centerLeft,
                 child: Text(
                   AppStrings.email,
-                  style: AppTextStyle.regular14.copyWith(
+                  style: AppTextStyle.regular14(context).copyWith(
                     color: AppColors.primaryTextColor,
                   ),
                 ),
@@ -63,7 +63,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                 alignment: Alignment.centerLeft,
                 child: Text(
                   AppStrings.password,
-                  style: AppTextStyle.regular14.copyWith(
+                  style: AppTextStyle.regular14(context).copyWith(
                     color: AppColors.primaryTextColor,
                   ),
                 ),
@@ -80,7 +80,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                 width: double.infinity,
                 child: CustomButton(
                   text: AppStrings.logInButton,
-                  textStyle: AppTextStyle.bold14.copyWith(color: Colors.white),
+                  textStyle: AppTextStyle.bold14(context).copyWith(color: Colors.white),
                   buttonColor: AppColors.primaryColor,
                   onPressed: () async {
                     context.go(Routes.homeView);
@@ -93,7 +93,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
               SizedBox(height: 24),
               Text(
                 AppStrings.or,
-                style: AppTextStyle.regular16.copyWith(
+                style: AppTextStyle.regular16(context).copyWith(
                   color: AppColors.subTextColor,
                 ),
               ),

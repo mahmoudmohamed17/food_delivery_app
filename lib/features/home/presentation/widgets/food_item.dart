@@ -43,9 +43,9 @@ class FoodItem extends StatelessWidget {
                 child: Text(
                   AppStrings.burgerFerguson,
                   overflow: TextOverflow.ellipsis,
-                  style: AppTextStyle.bold16.copyWith(
-                    color: AppColors.primaryTextColor,
-                  ),
+                  style: AppTextStyle.bold16(
+                    context,
+                  ).copyWith(color: AppColors.primaryTextColor),
                 ),
               ),
             ),
@@ -60,9 +60,9 @@ class FoodItem extends StatelessWidget {
                 child: Text(
                   AppStrings.spicyRestaurant,
                   overflow: TextOverflow.ellipsis,
-                  style: AppTextStyle.regular14.copyWith(
-                    color: AppColors.subTextColor,
-                  ),
+                  style: AppTextStyle.regular14(
+                    context,
+                  ).copyWith(color: AppColors.subTextColor),
                 ),
               ),
             ),
@@ -74,9 +74,9 @@ class FoodItem extends StatelessWidget {
               Text(
                 AppStrings.price40,
                 overflow: TextOverflow.ellipsis,
-                style: AppTextStyle.bold16.copyWith(
-                  color: AppColors.primaryTextColor,
-                ),
+                style: AppTextStyle.bold16(
+                  context,
+                ).copyWith(color: AppColors.primaryTextColor),
               ),
               ElevatedButton(
                 onPressed: () {},

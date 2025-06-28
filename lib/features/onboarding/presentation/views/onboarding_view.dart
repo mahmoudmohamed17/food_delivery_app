@@ -74,7 +74,7 @@ class _OnboardingViewState extends State<OnboardingView> {
                     child: CustomButton(
                       text: AppStrings.getStarted,
                       buttonColor: AppColors.primaryColor,
-                      textStyle: AppTextStyle.bold14.copyWith(
+                      textStyle: AppTextStyle.bold14(context).copyWith(
                         color: Colors.white,
                       ),
                       onPressed: () async {

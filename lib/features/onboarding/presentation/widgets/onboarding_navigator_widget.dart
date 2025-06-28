@@ -29,7 +29,7 @@ class OnboardingNavigatorWidget extends StatelessWidget {
           width: double.infinity,
           child: CustomButton(
             text: AppStrings.next,
-            textStyle: AppTextStyle.bold14.copyWith(color: Colors.white),
+            textStyle: AppTextStyle.bold14(context).copyWith(color: Colors.white),
             buttonColor: AppColors.primaryColor,
             onPressed: () {
               _pageController.animateToPage(
@@ -44,7 +44,7 @@ class OnboardingNavigatorWidget extends StatelessWidget {
           width: double.infinity,
           child: CustomButton(
             text: AppStrings.skip,
-            textStyle: AppTextStyle.bold14.copyWith(
+            textStyle: AppTextStyle.bold14(context).copyWith(
               color: AppColors.subTextColor,
             ),
             onPressed: () async {

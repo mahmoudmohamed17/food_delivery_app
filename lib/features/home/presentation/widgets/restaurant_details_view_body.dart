@@ -26,7 +26,7 @@ class RestaurantDetailsViewBody extends StatelessWidget {
           sliver: SliverToBoxAdapter(
             child: Text(
               AppStrings.spicyRestaurant,
-              style: AppTextStyle.bold20.copyWith(
+              style: AppTextStyle.bold20(context).copyWith(
                 color: AppColors.primaryTextColor,
               ),
             ),
@@ -38,7 +38,7 @@ class RestaurantDetailsViewBody extends StatelessWidget {
           sliver: SliverToBoxAdapter(
             child: Text(
               AppStrings.maccenasDescription,
-              style: AppTextStyle.regular14.copyWith(
+              style: AppTextStyle.regular14(context).copyWith(
                 color: AppColors.subTextColor,
               ),
             ),

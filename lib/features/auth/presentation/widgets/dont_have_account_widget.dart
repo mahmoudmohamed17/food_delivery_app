@@ -15,7 +15,7 @@ class DontHaveAccountWidget extends StatelessWidget {
       children: [
         Text(
           AppStrings.dontHaveAccount,
-          style: AppTextStyle.regular16.copyWith(color: AppColors.subTextColor),
+          style: AppTextStyle.regular16(context).copyWith(color: AppColors.subTextColor),
         ),
         TextButton(
           onPressed: () {
@@ -23,7 +23,7 @@ class DontHaveAccountWidget extends StatelessWidget {
           },
           child: Text(
             AppStrings.signUp,
-            style: AppTextStyle.regular16.copyWith(
+            style: AppTextStyle.regular16(context).copyWith(
               color: AppColors.primaryColor,
             ),
           ),

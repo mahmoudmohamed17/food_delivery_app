@@ -39,7 +39,7 @@ class _RememberMeAndForgotPasswordWidgetState
             ),
             Text(
               AppStrings.rememberMe,
-              style: AppTextStyle.regular14.copyWith(
+              style: AppTextStyle.regular14(context).copyWith(
                 color: AppColors.subTextColor,
               ),
             ),
@@ -51,7 +51,7 @@ class _RememberMeAndForgotPasswordWidgetState
           },
           child: Text(
             AppStrings.forgotPassword,
-            style: AppTextStyle.regular14.copyWith(
+            style: AppTextStyle.regular14(context).copyWith(
               color: AppColors.primaryColor,
             ),
           ),

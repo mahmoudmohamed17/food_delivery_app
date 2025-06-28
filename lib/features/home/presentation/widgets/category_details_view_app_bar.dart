@@ -44,7 +44,7 @@ class _CategoryDetailsViewAppBarState
             children: [
               Text(
                 AppStrings.burger.toUpperCase(),
-                style: AppTextStyle.bold12.copyWith(
+                style: AppTextStyle.bold12(context).copyWith(
                   color: AppColors.primaryTextColor,
                 ),
               ),

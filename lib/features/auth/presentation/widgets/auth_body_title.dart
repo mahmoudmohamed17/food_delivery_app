@@ -15,12 +15,12 @@ class AuthBodyTitle extends StatelessWidget {
         Text(
           title,
           textAlign: TextAlign.center,
-          style: AppTextStyle.bold30.copyWith(color: Colors.white),
+          style: AppTextStyle.bold30(context).copyWith(color: Colors.white),
         ),
         Text(
           subTitle,
           textAlign: TextAlign.center,
-          style: AppTextStyle.regular16.copyWith(color: Colors.white),
+          style: AppTextStyle.regular16(context).copyWith(color: Colors.white),
         ),
       ],
     );

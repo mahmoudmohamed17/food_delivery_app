@@ -30,7 +30,7 @@ class AccessLocationButton extends StatelessWidget {
         padding: const EdgeInsets.only(right: 8),
         child: Text(
           AppStrings.accessLocation,
-          style: AppTextStyle.bold16.copyWith(color: Colors.white),
+          style: AppTextStyle.bold16(context).copyWith(color: Colors.white),
         ),
       ),
       icon: Padding(

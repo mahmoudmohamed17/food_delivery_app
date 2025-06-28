@@ -78,7 +78,7 @@ class _RestaurantFoodCategoriesTabsState
           const SizedBox(height: 16),
           Text(
             items[_tabController.index].text,
-            style: AppTextStyle.regular20.copyWith(
+            style: AppTextStyle.regular20(context).copyWith(
               color: AppColors.primaryTextColor,
             ),
           ),

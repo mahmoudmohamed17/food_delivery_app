@@ -8,32 +8,32 @@ import 'package:food_delivery_app/features/home/presentation/widgets/restaurant_
 
 class RestaurantInfoWidget extends StatelessWidget {
   const RestaurantInfoWidget({super.key});
-  static final items = [
-    RestaurantInfoItemModel(
-      icon: AppAssets.imagesStar,
-      text: AppStrings.dummyRate,
-      textStyle: AppTextStyle.bold16.copyWith(
-        color: AppColors.primaryTextColor,
-      ),
-    ),
-    RestaurantInfoItemModel(
-      icon: AppAssets.imagesDelivery,
-      text: AppStrings.free,
-      textStyle: AppTextStyle.regular14.copyWith(
-        color: AppColors.primaryTextColor,
-      ),
-    ),
-    RestaurantInfoItemModel(
-      icon: AppAssets.imagesClock,
-      text: AppStrings.min20,
-      textStyle: AppTextStyle.regular14.copyWith(
-        color: AppColors.primaryTextColor,
-      ),
-    ),
-  ];
 
   @override
   Widget build(BuildContext context) {
+    final items = [
+      RestaurantInfoItemModel(
+        icon: AppAssets.imagesStar,
+        text: AppStrings.dummyRate,
+        textStyle: AppTextStyle.bold16(
+          context,
+        ).copyWith(color: AppColors.primaryTextColor),
+      ),
+      RestaurantInfoItemModel(
+        icon: AppAssets.imagesDelivery,
+        text: AppStrings.free,
+        textStyle: AppTextStyle.regular14(
+          context,
+        ).copyWith(color: AppColors.primaryTextColor),
+      ),
+      RestaurantInfoItemModel(
+        icon: AppAssets.imagesClock,
+        text: AppStrings.min20,
+        textStyle: AppTextStyle.regular14(
+          context,
+        ).copyWith(color: AppColors.primaryTextColor),
+      ),
+    ];
     return Row(
       spacing: 12,
       children: List.generate(items.length, (index) {

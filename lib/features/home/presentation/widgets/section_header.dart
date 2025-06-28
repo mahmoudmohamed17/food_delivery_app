@@ -17,7 +17,7 @@ class SectionHeader extends StatelessWidget {
       children: [
         Text(
           title,
-          style: AppTextStyle.regular20.copyWith(
+          style: AppTextStyle.regular20(context).copyWith(
             color: AppColors.primaryTextColor,
           ),
         ),
@@ -29,7 +29,7 @@ class SectionHeader extends StatelessWidget {
             children: [
               Text(
                 AppStrings.seeAll,
-                style: AppTextStyle.regular16.copyWith(
+                style: AppTextStyle.regular16(context).copyWith(
                   color: AppColors.primaryTextColor,
                 ),
               ),

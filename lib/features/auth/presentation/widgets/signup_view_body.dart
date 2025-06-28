@@ -49,7 +49,7 @@ class _SignupViewBodyState extends State<SignupViewBody> {
                 alignment: Alignment.centerLeft,
                 child: Text(
                   AppStrings.name,
-                  style: AppTextStyle.regular14.copyWith(
+                  style: AppTextStyle.regular14(context).copyWith(
                     color: AppColors.primaryTextColor,
                   ),
                 ),
@@ -64,7 +64,7 @@ class _SignupViewBodyState extends State<SignupViewBody> {
                 alignment: Alignment.centerLeft,
                 child: Text(
                   AppStrings.email,
-                  style: AppTextStyle.regular14.copyWith(
+                  style: AppTextStyle.regular14(context).copyWith(
                     color: AppColors.primaryTextColor,
                   ),
                 ),
@@ -79,7 +79,7 @@ class _SignupViewBodyState extends State<SignupViewBody> {
                 alignment: Alignment.centerLeft,
                 child: Text(
                   AppStrings.password,
-                  style: AppTextStyle.regular14.copyWith(
+                  style: AppTextStyle.regular14(context).copyWith(
                     color: AppColors.primaryTextColor,
                   ),
                 ),
@@ -94,7 +94,7 @@ class _SignupViewBodyState extends State<SignupViewBody> {
                 alignment: Alignment.centerLeft,
                 child: Text(
                   AppStrings.reTypePassword,
-                  style: AppTextStyle.regular14.copyWith(
+                  style: AppTextStyle.regular14(context).copyWith(
                     color: AppColors.primaryTextColor,
                   ),
                 ),
@@ -109,7 +109,7 @@ class _SignupViewBodyState extends State<SignupViewBody> {
                 width: double.infinity,
                 child: CustomButton(
                   text: AppStrings.signUpButton,
-                  textStyle: AppTextStyle.bold14.copyWith(color: Colors.white),
+                  textStyle: AppTextStyle.bold14(context).copyWith(color: Colors.white),
                   buttonColor: AppColors.primaryColor,
                   onPressed: () {
                     context.push(Routes.locationAccessView);

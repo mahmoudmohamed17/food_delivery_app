@@ -25,7 +25,7 @@ class VerificationViewBody extends StatelessWidget {
               children: [
                 Text(
                   AppStrings.code,
-                  style: AppTextStyle.regular14.copyWith(
+                  style: AppTextStyle.regular14(context).copyWith(
                     color: AppColors.primaryTextColor,
                   ),
                 ),
@@ -44,7 +44,7 @@ class VerificationViewBody extends StatelessWidget {
               child: CustomButton(
                 text: AppStrings.verify,
                 buttonColor: AppColors.primaryColor,
-                textStyle: AppTextStyle.bold16.copyWith(color: Colors.white),
+                textStyle: AppTextStyle.bold16(context).copyWith(color: Colors.white),
                 onPressed: () {},
               ),
             ),

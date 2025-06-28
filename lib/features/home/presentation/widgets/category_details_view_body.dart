@@ -21,9 +21,9 @@ class CategoryDetailsViewBody extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Text(
                 AppStrings.popularBurgers,
-                style: AppTextStyle.regular20.copyWith(
-                  color: AppColors.primaryTextColor,
-                ),
+                style: AppTextStyle.regular20(
+                  context,
+                ).copyWith(color: AppColors.primaryTextColor),
               ),
             ),
           ),
@@ -35,9 +35,9 @@ class CategoryDetailsViewBody extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Text(
                 AppStrings.openRestaurants,
-                style: AppTextStyle.regular20.copyWith(
-                  color: AppColors.primaryTextColor,
-                ),
+                style: AppTextStyle.regular20(
+                  context,
+                ).copyWith(color: AppColors.primaryTextColor),
               ),
             ),
           ),

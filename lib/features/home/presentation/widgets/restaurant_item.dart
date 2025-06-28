@@ -43,7 +43,7 @@ class RestaurantItem extends StatelessWidget {
                   child: Text(
                     AppStrings.roseGarden,
                     overflow: TextOverflow.ellipsis,
-                    style: AppTextStyle.regular20.copyWith(
+                    style: AppTextStyle.regular20(context).copyWith(
                       color: AppColors.primaryTextColor,
                     ),
                   ),
@@ -54,7 +54,7 @@ class RestaurantItem extends StatelessWidget {
                   child: Text(
                     AppStrings.burgerChickenRicheWings,
                     overflow: TextOverflow.ellipsis,
-                    style: AppTextStyle.regular14.copyWith(
+                    style: AppTextStyle.regular14(context).copyWith(
                       color: AppColors.subTextColor,
                     ),
                   ),

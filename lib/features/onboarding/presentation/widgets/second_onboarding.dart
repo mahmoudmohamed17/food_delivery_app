@@ -18,7 +18,7 @@ class SecondOnboarding extends StatelessWidget {
         Text(
           AppStrings.onboardingTitle2,
           textAlign: TextAlign.center,
-          style: AppTextStyle.bold24.copyWith(
+          style: AppTextStyle.bold24(context).copyWith(
             color: AppColors.primaryTextColor,
           ),
         ),
@@ -26,7 +26,7 @@ class SecondOnboarding extends StatelessWidget {
         Text(
           AppStrings.onboardingSubtitle2,
           textAlign: TextAlign.center,
-          style: AppTextStyle.regular16.copyWith(color: AppColors.subTextColor),
+          style: AppTextStyle.regular16(context).copyWith(color: AppColors.subTextColor),
         ),
       ],
     );

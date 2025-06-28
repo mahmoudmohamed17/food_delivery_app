@@ -62,19 +62,19 @@ class _ResendCodeTimerWidgetState extends State<ResendCodeTimerWidget> {
           child: Text(
             AppStrings.resendCode,
             style: _isResendEnabled
-                ? AppTextStyle.bold14.copyWith(
+                ? AppTextStyle.bold14(context).copyWith(
                     decoration: TextDecoration.underline,
                     decorationThickness: 2.0,
                     color: AppColors.primaryTextColor,
                   )
-                : AppTextStyle.regular14.copyWith(
+                : AppTextStyle.regular14(context).copyWith(
                     color: AppColors.primaryTextColor,
                   ),
           ),
         ),
         Text(
           'in $_seconds seconds.',
-          style: AppTextStyle.regular14.copyWith(
+          style: AppTextStyle.regular14(context).copyWith(
             color: AppColors.primaryTextColor,
           ),
         ),

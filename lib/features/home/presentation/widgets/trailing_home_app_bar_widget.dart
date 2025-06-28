@@ -42,7 +42,7 @@ class TrailingHomeAppBarWidget extends StatelessWidget {
               padding: EdgeInsets.all(10),
               child: Text(
                 '2',
-                style: AppTextStyle.bold16.copyWith(color: Colors.white),
+                style: AppTextStyle.bold16(context).copyWith(color: Colors.white),
               ),
             ),
           ),

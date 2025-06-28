@@ -17,7 +17,9 @@ class HomeViewAppBar extends StatelessWidget {
       leading: LeadingHomeAppBarWidget(),
       title: Text(
         AppStrings.deliverTo,
-        style: AppTextStyle.bold12.copyWith(color: AppColors.primaryColor),
+        style: AppTextStyle.bold12(
+          context,
+        ).copyWith(color: AppColors.primaryColor),
       ),
       subtitle: Row(
         mainAxisSize: MainAxisSize.min,
@@ -25,9 +27,9 @@ class HomeViewAppBar extends StatelessWidget {
         children: [
           Text(
             AppStrings.halalLabOffice,
-            style: AppTextStyle.regular14.copyWith(
-              color: AppColors.subTextColor,
-            ),
+            style: AppTextStyle.regular14(
+              context,
+            ).copyWith(color: AppColors.subTextColor),
           ),
           IconButton(
             padding: EdgeInsets.zero,
@@ -44,11 +46,7 @@ class HomeViewAppBar extends StatelessWidget {
           ),
         ],
       ),
-      trailing: SizedBox(
-        width: 50,
-        child: TrailingHomeAppBarWidget(),
-      ),
+      trailing: SizedBox(width: 50, child: TrailingHomeAppBarWidget()),
     );
   }
 }
-

@@ -29,7 +29,7 @@ class LocationAccessView extends StatelessWidget {
               Text(
                 AppStrings.accessLocationHint,
                 textAlign: TextAlign.center,
-                style: AppTextStyle.regular16.copyWith(
+                style: AppTextStyle.regular16(context).copyWith(
                   color: AppColors.subTextColor,
                 ),
               ),

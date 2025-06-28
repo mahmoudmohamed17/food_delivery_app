@@ -43,7 +43,7 @@ class CategoryItem extends StatelessWidget {
                     child: Text(
                       model.title,
                       overflow: TextOverflow.ellipsis,
-                      style: AppTextStyle.bold18.copyWith(
+                      style: AppTextStyle.bold18(context).copyWith(
                         color: AppColors.primaryTextColor,
                       ),
                     ),
@@ -56,7 +56,7 @@ class CategoryItem extends StatelessWidget {
                 children: [
                   Text(
                     AppStrings.starting,
-                    style: AppTextStyle.regular14.copyWith(
+                    style: AppTextStyle.regular14(context).copyWith(
                       color: AppColors.subTextColor,
                     ),
                   ),
@@ -66,7 +66,7 @@ class CategoryItem extends StatelessWidget {
                       r'$'
                       '${model.startingPrice.toStringAsFixed(2)}',
                       overflow: TextOverflow.ellipsis,
-                      style: AppTextStyle.regular16.copyWith(
+                      style: AppTextStyle.regular16(context).copyWith(
                         color: AppColors.primaryTextColor,
                       ),
                     ),

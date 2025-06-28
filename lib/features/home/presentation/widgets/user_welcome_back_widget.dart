@@ -16,13 +16,13 @@ class UserWelcomeBackWidget extends StatelessWidget {
         children: [
           TextSpan(
             text: AppStrings.heyUser,
-            style: AppTextStyle.regular16.copyWith(
+            style: AppTextStyle.regular16(context).copyWith(
               color: AppColors.primaryTextColor,
             ),
           ),
           TextSpan(
             text: AppStrings.welcomeBack,
-            style: AppTextStyle.bold16.copyWith(
+            style: AppTextStyle.bold16(context).copyWith(
               color: AppColors.primaryTextColor,
             ),
           ),

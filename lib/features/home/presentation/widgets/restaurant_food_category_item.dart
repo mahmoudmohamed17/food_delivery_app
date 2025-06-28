@@ -28,7 +28,7 @@ class RestaurantFoodCategoryItem extends StatelessWidget {
       padding: EdgeInsets.symmetric(vertical: 12, horizontal: 18),
       child: Text(
         model.text,
-        style: AppTextStyle.regular16.copyWith(
+        style: AppTextStyle.regular16(context).copyWith(
           color: isActive ? Colors.white : AppColors.primaryTextColor,
         ),
       ),
