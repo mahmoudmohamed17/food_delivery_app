@@ -63,8 +63,8 @@ class CategoryItem extends StatelessWidget {
                   Flexible(
                     flex: 1,
                     child: Text(
-                      '${model.startingPrice.toStringAsFixed(2)}'
-                      r'$',
+                      r'$'
+                      '${model.startingPrice.toStringAsFixed(2)}',
                       overflow: TextOverflow.ellipsis,
                       style: AppTextStyle.regular16.copyWith(
                         color: AppColors.primaryTextColor,

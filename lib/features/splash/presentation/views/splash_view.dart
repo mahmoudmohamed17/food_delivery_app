@@ -17,12 +17,17 @@ class _SplashViewState extends State<SplashView> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    Future.delayed(const Duration(seconds: 2), () async {
-      if (context.mounted) {
-        // ignore: use_build_context_synchronously
-        navigateToNextView(context);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) {
+        context.go(Routes.signinView);
       }
     });
+    // Future.delayed(const Duration(seconds: 2), () async {
+    //   if (context.mounted) {
+    //     // ignore: use_build_context_synchronously
+    //     navigateToNextView(context);
+    //   }
+    // });
   }
 
   void navigateToNextView(BuildContext context) {

@@ -17,7 +17,7 @@ class CustomSearchTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      style: AppTextStyle.regular14,
+      style: AppTextStyle.regular14(context),
       controller: controller,
       onTap: () {
         /// Type the logic of Cubit
@@ -26,9 +26,9 @@ class CustomSearchTextField extends StatelessWidget {
       },
       decoration: InputDecoration(
         hintText: hintText,
-        hintStyle: AppTextStyle.regular14.copyWith(
-          color: AppColors.subTextColor,
-        ),
+        hintStyle: AppTextStyle.regular14(
+          context,
+        ).copyWith(color: AppColors.subTextColor),
         prefixIcon: SvgPicture.asset(
           AppAssets.imagesSearch,
           fit: BoxFit.scaleDown,

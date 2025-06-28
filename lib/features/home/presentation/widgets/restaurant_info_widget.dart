@@ -35,7 +35,7 @@ class RestaurantInfoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      spacing: 16,
+      spacing: 12,
       children: List.generate(items.length, (index) {
         return Padding(
           padding: EdgeInsets.only(right: 24),

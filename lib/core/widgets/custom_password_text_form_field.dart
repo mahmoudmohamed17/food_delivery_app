@@ -25,7 +25,7 @@ class _CustomPasswordTextFormFieldState
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      style: AppTextStyle.regular14,
+      style: AppTextStyle.regular14(context),
       controller: widget.controller,
       obscureText: !_isPasswordSeen,
       obscuringCharacter: '*',
@@ -39,7 +39,7 @@ class _CustomPasswordTextFormFieldState
       keyboardType: widget.textInputType,
       decoration: InputDecoration(
         hintText: widget.hintText,
-        hintStyle: AppTextStyle.regular14.copyWith(
+        hintStyle: AppTextStyle.regular14(context).copyWith(
           color: AppColors.subTextColor,
         ),
         suffixIcon: IconButton(

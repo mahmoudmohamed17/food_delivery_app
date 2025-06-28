@@ -16,7 +16,7 @@ class CustomTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      style: AppTextStyle.regular14,
+      style: AppTextStyle.regular14(context),
       controller: controller,
       validator: (value) {
         if (value!.isEmpty) {
@@ -28,7 +28,7 @@ class CustomTextFormField extends StatelessWidget {
       keyboardType: textInputType,
       decoration: InputDecoration(
         hintText: hintText,
-        hintStyle: AppTextStyle.regular14.copyWith(
+        hintStyle: AppTextStyle.regular14(context).copyWith(
           color: AppColors.subTextColor,
         ),
         fillColor: AppColors.backgrdContainerColor,
