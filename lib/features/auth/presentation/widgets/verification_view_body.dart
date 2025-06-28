@@ -30,16 +30,16 @@ class VerificationViewBody extends StatelessWidget {
                     context,
                   ).copyWith(color: AppColors.primaryTextColor),
                 ),
-                ResendCodeTimerWidget(),
+                const ResendCodeTimerWidget(),
               ],
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             OTPWidget(
               onCompleted: (value) {
                 log('OTP code: $value');
               },
             ),
-            SizedBox(height: 32),
+            const SizedBox(height: 32),
             SizedBox(
               width: double.infinity,
               child: CustomButton(
@@ -61,7 +61,7 @@ class VerificationViewBody extends StatelessWidget {
         icon: FontAwesomeIcons.chevronLeft,
         iconSize: 20,
       ),
-      title: AuthBodyTitle(
+      title: const AuthBodyTitle(
         title: AppStrings.verification,
         subTitle: AppStrings.codeSent,
       ),

@@ -34,7 +34,7 @@ class RestaurantItem extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -43,24 +43,24 @@ class RestaurantItem extends StatelessWidget {
                   child: Text(
                     AppStrings.roseGarden,
                     overflow: TextOverflow.ellipsis,
-                    style: AppTextStyle.regular20(context).copyWith(
-                      color: AppColors.primaryTextColor,
-                    ),
+                    style: AppTextStyle.regular20(
+                      context,
+                    ).copyWith(color: AppColors.primaryTextColor),
                   ),
                 ),
-                SizedBox(height: 4),
+                const SizedBox(height: 4),
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
                     AppStrings.burgerChickenRicheWings,
                     overflow: TextOverflow.ellipsis,
-                    style: AppTextStyle.regular14(context).copyWith(
-                      color: AppColors.subTextColor,
-                    ),
+                    style: AppTextStyle.regular14(
+                      context,
+                    ).copyWith(color: AppColors.subTextColor),
                   ),
                 ),
-                SizedBox(height: 16),
-                RestaurantInfoWidget(),
+                const SizedBox(height: 16),
+                const RestaurantInfoWidget(),
               ],
             ),
           ],

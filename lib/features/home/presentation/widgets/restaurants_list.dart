@@ -10,7 +10,7 @@ class RestaurantsList extends StatelessWidget {
       children: List.generate(3, (index) {
         return Padding(
           padding: EdgeInsets.only(bottom: index == 4 ? 0 : 32),
-          child: RestaurantItem(),
+          child: const RestaurantItem(),
         );
       }),
     );

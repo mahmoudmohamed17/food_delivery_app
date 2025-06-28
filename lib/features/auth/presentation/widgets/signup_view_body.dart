@@ -55,12 +55,12 @@ class _SignupViewBodyState extends State<SignupViewBody> {
                   ).copyWith(color: AppColors.primaryTextColor),
                 ),
               ),
-              SizedBox(height: 8),
+              const SizedBox(height: 8),
               CustomTextFormField(
                 hintText: AppStrings.johnDoe,
                 controller: _nameController,
               ),
-              SizedBox(height: 24),
+              const SizedBox(height: 24),
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
@@ -70,12 +70,12 @@ class _SignupViewBodyState extends State<SignupViewBody> {
                   ).copyWith(color: AppColors.primaryTextColor),
                 ),
               ),
-              SizedBox(height: 8),
+              const SizedBox(height: 8),
               CustomTextFormField(
                 hintText: AppStrings.exampleEmail,
                 controller: _emailController,
               ),
-              SizedBox(height: 24),
+              const SizedBox(height: 24),
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
@@ -85,12 +85,12 @@ class _SignupViewBodyState extends State<SignupViewBody> {
                   ).copyWith(color: AppColors.primaryTextColor),
                 ),
               ),
-              SizedBox(height: 8),
+              const SizedBox(height: 8),
               CustomPasswordTextFormField(
                 hintText: AppStrings.passwordValue,
                 controller: _passwordController,
               ),
-              SizedBox(height: 24),
+              const SizedBox(height: 24),
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
@@ -100,12 +100,12 @@ class _SignupViewBodyState extends State<SignupViewBody> {
                   ).copyWith(color: AppColors.primaryTextColor),
                 ),
               ),
-              SizedBox(height: 8),
+              const SizedBox(height: 8),
               CustomPasswordTextFormField(
                 hintText: AppStrings.passwordValue,
                 controller: _confirmPasswordController,
               ),
-              SizedBox(height: 32),
+              const SizedBox(height: 32),
               SizedBox(
                 width: double.infinity,
                 child: CustomButton(
@@ -130,7 +130,7 @@ class _SignupViewBodyState extends State<SignupViewBody> {
         icon: FontAwesomeIcons.chevronLeft,
         iconSize: 20,
       ),
-      title: AuthBodyTitle(
+      title: const AuthBodyTitle(
         title: AppStrings.signUp,
         subTitle: AppStrings.signUpHint,
       ),

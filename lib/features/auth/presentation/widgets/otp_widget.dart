@@ -60,7 +60,7 @@ class _OTPWidgetState extends State<OTPWidget> {
             keyboardType: TextInputType.number,
             textAlign: TextAlign.center,
             maxLength: 1,
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               counterText: '',
               fillColor: AppColors.backgrdContainerColor,
               filled: true,

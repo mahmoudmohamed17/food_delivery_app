@@ -35,13 +35,13 @@ class _RememberMeAndForgotPasswordWidgetState
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(4),
               ),
-              side: BorderSide(color: AppColors.subTextColor, width: 2.0),
+              side: const BorderSide(color: AppColors.subTextColor, width: 2.0),
             ),
             Text(
               AppStrings.rememberMe,
-              style: AppTextStyle.regular14(context).copyWith(
-                color: AppColors.subTextColor,
-              ),
+              style: AppTextStyle.regular14(
+                context,
+              ).copyWith(color: AppColors.subTextColor),
             ),
           ],
         ),
@@ -51,9 +51,9 @@ class _RememberMeAndForgotPasswordWidgetState
           },
           child: Text(
             AppStrings.forgotPassword,
-            style: AppTextStyle.regular14(context).copyWith(
-              color: AppColors.primaryColor,
-            ),
+            style: AppTextStyle.regular14(
+              context,
+            ).copyWith(color: AppColors.primaryColor),
           ),
         ),
       ],

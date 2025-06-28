@@ -28,11 +28,11 @@ class CustomTextFormField extends StatelessWidget {
       keyboardType: textInputType,
       decoration: InputDecoration(
         hintText: hintText,
-        hintStyle: AppTextStyle.regular14(context).copyWith(
-          color: AppColors.subTextColor,
-        ),
+        hintStyle: AppTextStyle.regular14(
+          context,
+        ).copyWith(color: AppColors.subTextColor),
         fillColor: AppColors.backgrdContainerColor,
-        contentPadding: EdgeInsets.all(24),
+        contentPadding: const EdgeInsets.all(24),
         filled: true,
         enabledBorder: buildBorder(),
         focusedBorder: buildBorder(),
@@ -40,4 +40,3 @@ class CustomTextFormField extends StatelessWidget {
     );
   }
 }
-

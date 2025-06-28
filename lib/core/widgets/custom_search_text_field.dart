@@ -9,21 +9,19 @@ class CustomSearchTextField extends StatelessWidget {
   const CustomSearchTextField({
     super.key,
     required this.hintText,
-    required this.controller,
+    required this.onTap,
+    this.controller,
   });
   final String hintText;
-  final TextEditingController controller;
+  final TextEditingController? controller;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
     return TextField(
       style: AppTextStyle.regular14(context),
       controller: controller,
-      onTap: () {
-        /// Type the logic of Cubit
-        /// When tapping on it change the home view to the search view
-        /// using the Cubit state
-      },
+      onTap: onTap,
       decoration: InputDecoration(
         hintText: hintText,
         hintStyle: AppTextStyle.regular14(
@@ -32,13 +30,13 @@ class CustomSearchTextField extends StatelessWidget {
         prefixIcon: SvgPicture.asset(
           AppAssets.imagesSearch,
           fit: BoxFit.scaleDown,
-          colorFilter: ColorFilter.mode(
+          colorFilter: const ColorFilter.mode(
             AppColors.subTextColor,
             BlendMode.srcIn,
           ),
         ),
         fillColor: AppColors.backgrdContainerColor,
-        contentPadding: EdgeInsets.all(24),
+        contentPadding: const EdgeInsets.all(24),
         filled: true,
         enabledBorder: buildBorder(),
         focusedBorder: buildBorder(),

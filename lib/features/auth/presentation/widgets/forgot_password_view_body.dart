@@ -42,12 +42,12 @@ class _ForgotPasswordViewBodyState extends State<ForgotPasswordViewBody> {
                 ).copyWith(color: AppColors.primaryTextColor),
               ),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             CustomTextFormField(
               hintText: AppStrings.exampleEmail,
               controller: _emailController,
             ),
-            SizedBox(height: 32),
+            const SizedBox(height: 32),
             SizedBox(
               width: double.infinity,
               child: CustomButton(
@@ -71,7 +71,7 @@ class _ForgotPasswordViewBodyState extends State<ForgotPasswordViewBody> {
         icon: FontAwesomeIcons.chevronLeft,
         iconSize: 20,
       ),
-      title: AuthBodyTitle(
+      title: const AuthBodyTitle(
         title: AppStrings.forgotPassword,
         subTitle: AppStrings.forgotPasswordHint,
       ),

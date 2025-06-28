@@ -29,7 +29,7 @@ class _RestaurantFoodCategoriesListState
       height: 50,
       child: ListView.builder(
         itemCount: items.length,
-        padding: EdgeInsets.symmetric(horizontal: 24),
+        padding: const EdgeInsets.symmetric(horizontal: 24),
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
           return GestureDetector(

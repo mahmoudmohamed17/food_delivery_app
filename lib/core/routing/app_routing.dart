@@ -14,33 +14,42 @@ import 'package:go_router/go_router.dart';
 // GoRouter configuration
 final router = GoRouter(
   routes: [
-    GoRoute(path: '/', builder: (context, state) => SplashView()),
+    GoRoute(path: '/', builder: (context, state) => const SplashView()),
     GoRoute(
       path: Routes.onboardingView,
-      builder: (context, state) => OnboardingView(),
+      builder: (context, state) => const OnboardingView(),
     ),
-    GoRoute(path: Routes.signinView, builder: (context, state) => SigninView()),
-    GoRoute(path: Routes.signupView, builder: (context, state) => SignupView()),
+    GoRoute(
+      path: Routes.signinView,
+      builder: (context, state) => const SigninView(),
+    ),
+    GoRoute(
+      path: Routes.signupView,
+      builder: (context, state) => const SignupView(),
+    ),
     GoRoute(
       path: Routes.forgotPasswordView,
-      builder: (context, state) => ForgotPasswordView(),
+      builder: (context, state) => const ForgotPasswordView(),
     ),
     GoRoute(
       path: Routes.verificationView,
-      builder: (context, state) => VerificationView(),
+      builder: (context, state) => const VerificationView(),
     ),
     GoRoute(
       path: Routes.locationAccessView,
-      builder: (context, state) => LocationAccessView(),
+      builder: (context, state) => const LocationAccessView(),
     ),
-    GoRoute(path: Routes.homeView, builder: (context, state) => HomeView()),
+    GoRoute(
+      path: Routes.homeView,
+      builder: (context, state) => const HomeView(),
+    ),
     GoRoute(
       path: Routes.restaurantDetailsView,
-      builder: (context, state) => RestaurantDetailsView(),
+      builder: (context, state) => const RestaurantDetailsView(),
     ),
     GoRoute(
       path: Routes.foodCategoryDetailsView,
-      builder: (context, state) => CategoryDetailsView(),
+      builder: (context, state) => const CategoryDetailsView(),
     ),
   ],
 );

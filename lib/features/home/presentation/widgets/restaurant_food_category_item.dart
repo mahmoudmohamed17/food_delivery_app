@@ -25,12 +25,12 @@ class RestaurantFoodCategoryItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(32),
       ),
       alignment: Alignment.center,
-      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 18),
+      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 18),
       child: Text(
         model.text,
-        style: AppTextStyle.regular16(context).copyWith(
-          color: isActive ? Colors.white : AppColors.primaryTextColor,
-        ),
+        style: AppTextStyle.regular16(
+          context,
+        ).copyWith(color: isActive ? Colors.white : AppColors.primaryTextColor),
       ),
     );
   }

@@ -50,7 +50,7 @@ class _OnboardingViewState extends State<OnboardingView> {
             Expanded(
               child: PageView(
                 controller: _pageController,
-                children: [
+                children: const [
                   FirstOnboarding(),
                   SecondOnboarding(),
                   ThirdOnboarding(),
@@ -62,7 +62,7 @@ class _OnboardingViewState extends State<OnboardingView> {
               child: DotsIndicator(
                 dotsCount: 3,
                 position: _currentPage.toDouble(),
-                decorator: DotsDecorator(
+                decorator: const DotsDecorator(
                   color: AppColors.extraLightPrimaryColor,
                   activeColor: AppColors.primaryColor,
                 ),
@@ -74,9 +74,9 @@ class _OnboardingViewState extends State<OnboardingView> {
                     child: CustomButton(
                       text: AppStrings.getStarted,
                       buttonColor: AppColors.primaryColor,
-                      textStyle: AppTextStyle.bold14(context).copyWith(
-                        color: Colors.white,
-                      ),
+                      textStyle: AppTextStyle.bold14(
+                        context,
+                      ).copyWith(color: Colors.white),
                       onPressed: () async {
                         context.go(Routes.signinView);
                         await SharedPrefs.setBool(isOnboardingSeen, true);
@@ -87,7 +87,7 @@ class _OnboardingViewState extends State<OnboardingView> {
                     currentPage: _currentPage,
                     pageController: _pageController,
                   ),
-            SizedBox(height: 24),
+            const SizedBox(height: 24),
           ],
         ),
       ),

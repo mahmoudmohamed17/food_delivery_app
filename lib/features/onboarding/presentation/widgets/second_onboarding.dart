@@ -14,19 +14,21 @@ class SecondOnboarding extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         SvgPicture.asset(AppAssets.imagesOnboarding2),
-        SizedBox(height: 4),
+        const SizedBox(height: 4),
         Text(
           AppStrings.onboardingTitle2,
           textAlign: TextAlign.center,
-          style: AppTextStyle.bold24(context).copyWith(
-            color: AppColors.primaryTextColor,
-          ),
+          style: AppTextStyle.bold24(
+            context,
+          ).copyWith(color: AppColors.primaryTextColor),
         ),
-        SizedBox(height: 16),
+        const SizedBox(height: 16),
         Text(
           AppStrings.onboardingSubtitle2,
           textAlign: TextAlign.center,
-          style: AppTextStyle.regular16(context).copyWith(color: AppColors.subTextColor),
+          style: AppTextStyle.regular16(
+            context,
+          ).copyWith(color: AppColors.subTextColor),
         ),
       ],
     );

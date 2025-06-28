@@ -27,7 +27,7 @@ class _RestaurantDetailsViewHeaderState
         CarouselSlider(
           items: List.generate(5, (index) {
             return ClipRRect(
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 bottomLeft: Radius.circular(24),
                 bottomRight: Radius.circular(24),
               ),
@@ -75,7 +75,7 @@ class _RestaurantDetailsViewHeaderState
           child: AnimatedSmoothIndicator(
             activeIndex: _imageIndex,
             count: 5,
-            effect: ScrollingDotsEffect(
+            effect: const ScrollingDotsEffect(
               fixedCenter: true,
               dotColor: AppColors.extraLightPrimaryColor,
               activeDotColor: AppColors.primaryColor,

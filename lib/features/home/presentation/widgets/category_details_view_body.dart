@@ -14,8 +14,8 @@ class CategoryDetailsViewBody extends StatelessWidget {
     return SafeArea(
       child: CustomScrollView(
         slivers: [
-          SliverToBoxAdapter(child: CategoryDetailsViewAppBar()),
-          SliverToBoxAdapter(child: SizedBox(height: 24)),
+          const SliverToBoxAdapter(child: CategoryDetailsViewAppBar()),
+          const SliverToBoxAdapter(child: SizedBox(height: 24)),
           SliverToBoxAdapter(
             child: Align(
               alignment: Alignment.centerLeft,
@@ -27,9 +27,9 @@ class CategoryDetailsViewBody extends StatelessWidget {
               ),
             ),
           ),
-          SliverToBoxAdapter(child: SizedBox(height: 24)),
-          FoodItemsGrid(),
-          SliverToBoxAdapter(child: SizedBox(height: 24)),
+          const SliverToBoxAdapter(child: SizedBox(height: 24)),
+          const FoodItemsGrid(),
+          const SliverToBoxAdapter(child: SizedBox(height: 24)),
           SliverToBoxAdapter(
             child: Align(
               alignment: Alignment.centerLeft,
@@ -41,8 +41,8 @@ class CategoryDetailsViewBody extends StatelessWidget {
               ),
             ),
           ),
-          SliverToBoxAdapter(child: SizedBox(height: 16)),
-          SliverToBoxAdapter(child: RestaurantsList()),
+          const SliverToBoxAdapter(child: SizedBox(height: 16)),
+          const SliverToBoxAdapter(child: RestaurantsList()),
         ],
       ),
     );

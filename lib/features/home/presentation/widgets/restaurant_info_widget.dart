@@ -38,7 +38,7 @@ class RestaurantInfoWidget extends StatelessWidget {
       spacing: 12,
       children: List.generate(items.length, (index) {
         return Padding(
-          padding: EdgeInsets.only(right: 24),
+          padding: const EdgeInsets.only(right: 24),
           child: RestaurantInfoItem(model: items[index]),
         );
       }),

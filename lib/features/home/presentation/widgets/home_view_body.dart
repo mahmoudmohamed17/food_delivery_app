@@ -14,25 +14,25 @@ class HomeViewBody extends StatelessWidget {
     return SafeArea(
       child: CustomScrollView(
         slivers: [
-          SliverToBoxAdapter(child: HomeViewAppBar()),
-          SliverToBoxAdapter(child: SizedBox(height: 20)),
-          SliverToBoxAdapter(
+          const SliverToBoxAdapter(child: HomeViewAppBar()),
+          const SliverToBoxAdapter(child: SizedBox(height: 20)),
+          const SliverToBoxAdapter(
             child: Align(
               alignment: Alignment.centerLeft,
               child: UserWelcomeBackWidget(),
             ),
           ),
-          SliverToBoxAdapter(child: SizedBox(height: 20)),
+          const SliverToBoxAdapter(child: SizedBox(height: 20)),
           SliverToBoxAdapter(
             child: CustomSearchTextField(
               hintText: AppStrings.searchDishes,
-              controller: TextEditingController(),
+              onTap: () {},
             ),
           ),
-          SliverToBoxAdapter(child: SizedBox(height: 32)),
-          SliverToBoxAdapter(child: AllCategoriesWidget()),
-          SliverToBoxAdapter(child: SizedBox(height: 32)),
-          SliverToBoxAdapter(child: OpenRestaurantsWidget()),
+          const SliverToBoxAdapter(child: SizedBox(height: 32)),
+          const SliverToBoxAdapter(child: AllCategoriesWidget()),
+          const SliverToBoxAdapter(child: SizedBox(height: 32)),
+          const SliverToBoxAdapter(child: OpenRestaurantsWidget()),
         ],
       ),
     );

@@ -17,14 +17,13 @@ class CategoryDetailsViewAppBar extends StatelessWidget {
           icon: FontAwesomeIcons.chevronLeft,
           iconSize: 20,
           backgrnColor: AppColors.iconBackgrnColor,
-          iconColor: Colors.black,
           onTap: () {
             context.pop();
           },
         ),
-        SizedBox(width: 16),
-        CategoryFoodBadge(),
-        Spacer(),
+        const SizedBox(width: 16),
+        const CategoryFoodBadge(),
+        const Spacer(),
         CustomIconButton(
           onTap: () {},
           icon: FontAwesomeIcons.magnifyingGlass,
@@ -32,7 +31,7 @@ class CategoryDetailsViewAppBar extends StatelessWidget {
           iconColor: Colors.white,
           backgrnColor: AppColors.authBackgrdColor,
         ),
-        SizedBox(width: 16),
+        const SizedBox(width: 16),
         CustomIconButton(
           onTap: () {},
           svgPicture: AppAssets.imagesFilter,

@@ -11,8 +11,8 @@ class OpenRestaurantsWidget extends StatelessWidget {
     return Column(
       children: [
         SectionHeader(title: AppStrings.openRestaurants, onTap: () {}),
-        SizedBox(height: 20),
-        RestaurantsList(),
+        const SizedBox(height: 20),
+        const RestaurantsList(),
       ],
     );
   }

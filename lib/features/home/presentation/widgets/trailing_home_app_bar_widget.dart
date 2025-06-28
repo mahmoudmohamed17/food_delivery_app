@@ -23,12 +23,12 @@ class TrailingHomeAppBarWidget extends StatelessWidget {
           top: -14,
           right: 0,
           child: DecoratedBox(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: AppColors.primaryColor,
               shape: BoxShape.circle,
             ),
             child: Padding(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               child: Text(
                 '2',
                 style: AppTextStyle.bold16(

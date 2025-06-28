@@ -46,7 +46,7 @@ class _RestaurantFoodCategoriesTabsState
   @override
   Widget build(BuildContext context) {
     return SliverPadding(
-      padding: EdgeInsets.symmetric(horizontal: 24),
+      padding: const EdgeInsets.symmetric(horizontal: 24),
       sliver: SliverList(
         delegate: SliverChildListDelegate([
           // Tab Bar
@@ -58,10 +58,9 @@ class _RestaurantFoodCategoriesTabsState
             },
             indicatorWeight: 0.0,
             dividerHeight: 0.0,
-            indicator: BoxDecoration(color: Colors.transparent),
-            overlayColor: WidgetStatePropertyAll(Colors.transparent),
+            indicator: const BoxDecoration(color: Colors.transparent),
+            overlayColor: const WidgetStatePropertyAll(Colors.transparent),
             labelPadding: EdgeInsets.zero,
-            indicatorPadding: EdgeInsets.zero,
             tabAlignment: TabAlignment.start,
             tabs: List.generate(items.length, (index) {
               return Padding(
@@ -78,9 +77,9 @@ class _RestaurantFoodCategoriesTabsState
           const SizedBox(height: 16),
           Text(
             items[_tabController.index].text,
-            style: AppTextStyle.regular20(context).copyWith(
-              color: AppColors.primaryTextColor,
-            ),
+            style: AppTextStyle.regular20(
+              context,
+            ).copyWith(color: AppColors.primaryTextColor),
           ),
         ]),
       ),

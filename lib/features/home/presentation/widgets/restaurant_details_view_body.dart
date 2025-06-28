@@ -14,44 +14,44 @@ class RestaurantDetailsViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomScrollView(
       slivers: [
-        SliverToBoxAdapter(child: RestaurantDetailsViewHeader()),
-        SliverToBoxAdapter(child: SizedBox(height: 24)),
-        SliverPadding(
+        const SliverToBoxAdapter(child: RestaurantDetailsViewHeader()),
+        const SliverToBoxAdapter(child: SizedBox(height: 24)),
+        const SliverPadding(
           padding: EdgeInsets.symmetric(horizontal: 24),
           sliver: SliverToBoxAdapter(child: RestaurantInfoWidget()),
         ),
-        SliverToBoxAdapter(child: SizedBox(height: 16)),
+        const SliverToBoxAdapter(child: SizedBox(height: 16)),
         SliverPadding(
-          padding: EdgeInsets.symmetric(horizontal: 24),
+          padding: const EdgeInsets.symmetric(horizontal: 24),
           sliver: SliverToBoxAdapter(
             child: Text(
               AppStrings.spicyRestaurant,
-              style: AppTextStyle.bold20(context).copyWith(
-                color: AppColors.primaryTextColor,
-              ),
+              style: AppTextStyle.bold20(
+                context,
+              ).copyWith(color: AppColors.primaryTextColor),
             ),
           ),
         ),
-        SliverToBoxAdapter(child: SizedBox(height: 8)),
+        const SliverToBoxAdapter(child: SizedBox(height: 8)),
         SliverPadding(
-          padding: EdgeInsets.symmetric(horizontal: 24),
+          padding: const EdgeInsets.symmetric(horizontal: 24),
           sliver: SliverToBoxAdapter(
             child: Text(
               AppStrings.maccenasDescription,
-              style: AppTextStyle.regular14(context).copyWith(
-                color: AppColors.subTextColor,
-              ),
+              style: AppTextStyle.regular14(
+                context,
+              ).copyWith(color: AppColors.subTextColor),
             ),
           ),
         ),
-        SliverToBoxAdapter(child: SizedBox(height: 32)),
-        RestaurantFoodCategoriesTabs(),
-        SliverToBoxAdapter(child: SizedBox(height: 16)),
-        SliverPadding(
+        const SliverToBoxAdapter(child: SizedBox(height: 32)),
+        const RestaurantFoodCategoriesTabs(),
+        const SliverToBoxAdapter(child: SizedBox(height: 16)),
+        const SliverPadding(
           padding: EdgeInsets.symmetric(horizontal: 24),
           sliver: FoodItemsGrid(),
         ),
-        SliverToBoxAdapter(child: SizedBox(height: 32)),
+        const SliverToBoxAdapter(child: SizedBox(height: 32)),
       ],
     );
   }

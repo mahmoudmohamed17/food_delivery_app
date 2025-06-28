@@ -25,11 +25,11 @@ class CategoryItem extends StatelessWidget {
                 color: Colors.grey[350]!,
                 spreadRadius: 0.5,
                 blurRadius: 5,
-                offset: Offset(1, 1),
+                offset: const Offset(1, 1),
               ),
             ],
           ),
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             spacing: 4,
@@ -43,9 +43,9 @@ class CategoryItem extends StatelessWidget {
                     child: Text(
                       model.title,
                       overflow: TextOverflow.ellipsis,
-                      style: AppTextStyle.bold18(context).copyWith(
-                        color: AppColors.primaryTextColor,
-                      ),
+                      style: AppTextStyle.bold18(
+                        context,
+                      ).copyWith(color: AppColors.primaryTextColor),
                     ),
                   ),
                 ),
@@ -56,19 +56,18 @@ class CategoryItem extends StatelessWidget {
                 children: [
                   Text(
                     AppStrings.starting,
-                    style: AppTextStyle.regular14(context).copyWith(
-                      color: AppColors.subTextColor,
-                    ),
+                    style: AppTextStyle.regular14(
+                      context,
+                    ).copyWith(color: AppColors.subTextColor),
                   ),
                   Flexible(
-                    flex: 1,
                     child: Text(
                       r'$'
                       '${model.startingPrice.toStringAsFixed(2)}',
                       overflow: TextOverflow.ellipsis,
-                      style: AppTextStyle.regular16(context).copyWith(
-                        color: AppColors.primaryTextColor,
-                      ),
+                      style: AppTextStyle.regular16(
+                        context,
+                      ).copyWith(color: AppColors.primaryTextColor),
                     ),
                   ),
                 ],

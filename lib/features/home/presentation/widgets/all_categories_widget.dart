@@ -14,7 +14,10 @@ class AllCategoriesWidget extends StatelessWidget {
       children: [
         SectionHeader(title: AppStrings.allCategories, onTap: () {}),
         SizedBox(height: (context.height * 0.22) / 2),
-        SizedBox(height: context.height * 0.1847, child: CategoriesListView()),
+        SizedBox(
+          height: context.height * 0.1847,
+          child: const CategoriesListView(),
+        ),
       ],
     );
   }

@@ -17,9 +17,9 @@ class SectionHeader extends StatelessWidget {
       children: [
         Text(
           title,
-          style: AppTextStyle.regular20(context).copyWith(
-            color: AppColors.primaryTextColor,
-          ),
+          style: AppTextStyle.regular20(
+            context,
+          ).copyWith(color: AppColors.primaryTextColor),
         ),
         InkWell(
           onTap: onTap,
@@ -29,15 +29,15 @@ class SectionHeader extends StatelessWidget {
             children: [
               Text(
                 AppStrings.seeAll,
-                style: AppTextStyle.regular16(context).copyWith(
-                  color: AppColors.primaryTextColor,
-                ),
+                style: AppTextStyle.regular16(
+                  context,
+                ).copyWith(color: AppColors.primaryTextColor),
               ),
               RotatedBox(
                 quarterTurns: 3,
                 child: SvgPicture.asset(
                   AppAssets.imagesArrow,
-                  colorFilter: ColorFilter.mode(
+                  colorFilter: const ColorFilter.mode(
                     AppColors.subTextColor,
                     BlendMode.srcIn,
                   ),

@@ -22,14 +22,20 @@ class AuthTemplateBodyWidget extends StatelessWidget {
       children: [
         SvgPicture.asset(
           AppAssets.imagesEllipseUpForAuth,
-          colorFilter: ColorFilter.mode(Color(0xff2C313C), BlendMode.srcIn),
+          colorFilter: const ColorFilter.mode(
+            Color(0xff2C313C),
+            BlendMode.srcIn,
+          ),
           fit: BoxFit.fill,
         ),
         Align(
           alignment: Alignment.topRight,
           child: SvgPicture.asset(
             AppAssets.imagesVector,
-            colorFilter: ColorFilter.mode(Color(0xff2C313C), BlendMode.srcIn),
+            colorFilter: const ColorFilter.mode(
+              Color(0xff2C313C),
+              BlendMode.srcIn,
+            ),
           ),
         ),
         Positioned(
@@ -39,7 +45,7 @@ class AuthTemplateBodyWidget extends StatelessWidget {
             onTap: () {
               context.pop();
             },
-            child: backArrow ?? SizedBox.shrink(),
+            child: backArrow ?? const SizedBox.shrink(),
           ),
         ),
         Positioned(
@@ -54,14 +60,14 @@ class AuthTemplateBodyWidget extends StatelessWidget {
           right: 0,
           left: 0,
           child: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(24),
                 topRight: Radius.circular(24),
               ),
             ),
-            padding: EdgeInsets.all(24),
+            padding: const EdgeInsets.all(24),
             child: body,
           ),
         ),

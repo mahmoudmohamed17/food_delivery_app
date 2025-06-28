@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:food_delivery_app/core/constants/app_strings.dart';
 import 'package:food_delivery_app/core/extensions/context_extension.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
+import 'package:food_delivery_app/core/widgets/custom_icon_button.dart';
 
 class FoodItem extends StatelessWidget {
   const FoodItem({super.key});
@@ -20,11 +21,11 @@ class FoodItem extends StatelessWidget {
             color: Colors.grey[350]!,
             spreadRadius: 0.5,
             blurRadius: 5,
-            offset: Offset(1, 1),
+            offset: const Offset(1, 1),
           ),
         ],
       ),
-      padding: EdgeInsets.all(8),
+      padding: const EdgeInsets.all(10),
       child: Column(
         children: [
           Expanded(
@@ -33,7 +34,7 @@ class FoodItem extends StatelessWidget {
               child: Image.asset(AppAssets.imagesBurger),
             ),
           ),
-          SizedBox(height: 4),
+          const SizedBox(height: 4),
           SizedBox(
             width: context.width,
             child: Align(
@@ -50,7 +51,7 @@ class FoodItem extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 4),
+          const SizedBox(height: 4),
           SizedBox(
             width: context.width,
             child: Align(
@@ -67,7 +68,7 @@ class FoodItem extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 4),
+          const SizedBox(height: 4),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -78,30 +79,13 @@ class FoodItem extends StatelessWidget {
                   context,
                 ).copyWith(color: AppColors.primaryTextColor),
               ),
-              ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.primaryColor,
-                  elevation: 0,
-                  shadowColor: Colors.transparent,
-                  visualDensity: VisualDensity(
-                    horizontal: VisualDensity.minimumDensity,
-                    vertical: VisualDensity.minimumDensity,
-                  ),
-                  shape: CircleBorder(),
-                  padding: EdgeInsets.zero,
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: SvgPicture.asset(
-                    AppAssets.imagesPlus,
-                    colorFilter: ColorFilter.mode(
-                      Colors.white,
-                      BlendMode.srcIn,
-                    ),
-                    fit: BoxFit.scaleDown,
-                  ),
-                ),
+              CustomIconButton(
+                onTap: () {},
+                icon: FontAwesomeIcons.plus,
+                backgrnColor: AppColors.primaryColor,
+                iconColor: Colors.white,
+                backgrnRadius: 20,
+                iconSize: 20,
               ),
             ],
           ),

@@ -23,15 +23,18 @@ class LocationAccessView extends StatelessWidget {
                 radius: 150,
                 child: SvgPicture.asset(AppAssets.imagesLocationAccess),
               ),
-              SizedBox(height: 64),
-              SizedBox(width: double.infinity, child: AccessLocationButton()),
-              SizedBox(height: 24),
+              const SizedBox(height: 64),
+              const SizedBox(
+                width: double.infinity,
+                child: AccessLocationButton(),
+              ),
+              const SizedBox(height: 24),
               Text(
                 AppStrings.accessLocationHint,
                 textAlign: TextAlign.center,
-                style: AppTextStyle.regular16(context).copyWith(
-                  color: AppColors.subTextColor,
-                ),
+                style: AppTextStyle.regular16(
+                  context,
+                ).copyWith(color: AppColors.subTextColor),
               ),
             ],
           ),

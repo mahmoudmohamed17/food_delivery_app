@@ -37,12 +37,12 @@ class AccessLocationButton extends StatelessWidget {
       icon: Padding(
         padding: const EdgeInsets.only(left: 8),
         child: DecoratedBox(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: AppColors.lightPrimaryColor,
             shape: BoxShape.circle,
           ),
           child: Padding(
-            padding: EdgeInsetsGeometry.all(6),
+            padding: const EdgeInsetsGeometry.all(6),
             child: SvgPicture.asset(
               AppAssets.imagesMapPin,
               height: 24,

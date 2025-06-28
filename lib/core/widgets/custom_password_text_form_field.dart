@@ -39,9 +39,9 @@ class _CustomPasswordTextFormFieldState
       keyboardType: widget.textInputType,
       decoration: InputDecoration(
         hintText: widget.hintText,
-        hintStyle: AppTextStyle.regular14(context).copyWith(
-          color: AppColors.subTextColor,
-        ),
+        hintStyle: AppTextStyle.regular14(
+          context,
+        ).copyWith(color: AppColors.subTextColor),
         suffixIcon: IconButton(
           onPressed: () {
             setState(() {
@@ -54,7 +54,7 @@ class _CustomPasswordTextFormFieldState
           ),
         ),
         fillColor: AppColors.backgrdContainerColor,
-        contentPadding: EdgeInsets.all(24),
+        contentPadding: const EdgeInsets.all(24),
         filled: true,
         enabledBorder: buildBorder(),
         focusedBorder: buildBorder(),

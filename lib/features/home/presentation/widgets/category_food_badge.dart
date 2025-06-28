@@ -20,10 +20,10 @@ class _CategoryFoodBadgeState extends State<CategoryFoodBadge> {
       decoration: BoxDecoration(
         border: Border.all(color: AppColors.iconColor, width: 1.5),
         color: Colors.transparent,
-        borderRadius: BorderRadius.all(Radius.circular(50)),
+        borderRadius: const BorderRadius.all(Radius.circular(50)),
       ),
       alignment: Alignment.center,
-      padding: EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
       child: Row(
         spacing: 8,
         children: [

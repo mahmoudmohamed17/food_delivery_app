@@ -10,6 +10,7 @@ class CustomIconButton extends StatelessWidget {
     this.backgrnColor = Colors.white,
     this.iconColor = Colors.black,
     this.iconSize = 24,
+    this.backgrnRadius = 24,
   });
   final IconData? icon;
   final String? svgPicture;
@@ -17,6 +18,7 @@ class CustomIconButton extends StatelessWidget {
   final Color backgrnColor;
   final Color iconColor;
   final double iconSize;
+  final double backgrnRadius;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,7 @@ class CustomIconButton extends StatelessWidget {
       splashColor: Colors.transparent,
       child: CircleAvatar(
         backgroundColor: backgrnColor,
-        radius: 24,
+        radius: backgrnRadius,
         child: svgPicture == null
             ? Icon(icon, color: iconColor, size: iconSize)
             : SvgPicture.asset(svgPicture!),

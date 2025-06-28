@@ -53,12 +53,12 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   ).copyWith(color: AppColors.primaryTextColor),
                 ),
               ),
-              SizedBox(height: 8),
+              const SizedBox(height: 8),
               CustomTextFormField(
                 hintText: AppStrings.exampleEmail,
                 controller: _emailController,
               ),
-              SizedBox(height: 24),
+              const SizedBox(height: 24),
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
@@ -68,14 +68,14 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   ).copyWith(color: AppColors.primaryTextColor),
                 ),
               ),
-              SizedBox(height: 8),
+              const SizedBox(height: 8),
               CustomPasswordTextFormField(
                 hintText: AppStrings.passwordValue,
                 controller: _passwordController,
               ),
-              SizedBox(height: 24),
-              RememberMeAndForgotPasswordWidget(),
-              SizedBox(height: 24),
+              const SizedBox(height: 24),
+              const RememberMeAndForgotPasswordWidget(),
+              const SizedBox(height: 24),
               SizedBox(
                 width: double.infinity,
                 child: CustomButton(
@@ -93,22 +93,22 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   },
                 ),
               ),
-              SizedBox(height: 24),
-              DontHaveAccountWidget(),
-              SizedBox(height: 16),
+              const SizedBox(height: 24),
+              const DontHaveAccountWidget(),
+              const SizedBox(height: 16),
               Text(
                 AppStrings.or,
                 style: AppTextStyle.regular16(
                   context,
                 ).copyWith(color: AppColors.subTextColor),
               ),
-              SizedBox(height: 12),
-              SocialAuthWidget(),
+              const SizedBox(height: 12),
+              const SocialAuthWidget(),
             ],
           ),
         ),
       ),
-      title: AuthBodyTitle(
+      title: const AuthBodyTitle(
         title: AppStrings.logIn,
         subTitle: AppStrings.logInHint,
       ),
