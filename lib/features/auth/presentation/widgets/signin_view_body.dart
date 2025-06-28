@@ -99,7 +99,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   context,
                 ).copyWith(color: AppColors.subTextColor),
               ),
-              SizedBox(height: 16),
+              SizedBox(height: 12),
               SocialAuthWidget(),
             ],
           ),

@@ -1,15 +1,16 @@
 import 'dart:developer';
-
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:food_delivery_app/core/constants/app_strings.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
-import 'package:food_delivery_app/core/widgets/custom_arrow_back_widget.dart';
 import 'package:food_delivery_app/core/widgets/custom_button.dart';
+import 'package:food_delivery_app/core/widgets/custom_icon_button.dart';
 import 'package:food_delivery_app/features/auth/presentation/widgets/auth_body_title.dart';
 import 'package:food_delivery_app/features/auth/presentation/widgets/auth_template_body_widget.dart';
 import 'package:food_delivery_app/features/auth/presentation/widgets/otp_widget.dart';
 import 'package:food_delivery_app/features/auth/presentation/widgets/resend_code_timer_widget.dart';
+import 'package:go_router/go_router.dart';
 
 class VerificationViewBody extends StatelessWidget {
   const VerificationViewBody({super.key});
@@ -25,9 +26,9 @@ class VerificationViewBody extends StatelessWidget {
               children: [
                 Text(
                   AppStrings.code,
-                  style: AppTextStyle.regular14(context).copyWith(
-                    color: AppColors.primaryTextColor,
-                  ),
+                  style: AppTextStyle.regular14(
+                    context,
+                  ).copyWith(color: AppColors.primaryTextColor),
                 ),
                 ResendCodeTimerWidget(),
               ],
@@ -44,14 +45,22 @@ class VerificationViewBody extends StatelessWidget {
               child: CustomButton(
                 text: AppStrings.verify,
                 buttonColor: AppColors.primaryColor,
-                textStyle: AppTextStyle.bold16(context).copyWith(color: Colors.white),
+                textStyle: AppTextStyle.bold16(
+                  context,
+                ).copyWith(color: Colors.white),
                 onPressed: () {},
               ),
             ),
           ],
         ),
       ),
-      backArrow: CustomArrowBackWidget(),
+      backArrow: CustomIconButton(
+        onTap: () {
+          context.pop();
+        },
+        icon: FontAwesomeIcons.chevronLeft,
+        iconSize: 20,
+      ),
       title: AuthBodyTitle(
         title: AppStrings.verification,
         subTitle: AppStrings.codeSent,

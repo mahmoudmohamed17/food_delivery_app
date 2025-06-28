@@ -35,11 +35,11 @@ class FoodItem extends StatelessWidget {
           ),
           SizedBox(height: 4),
           SizedBox(
-            width: context.width * 0.408,
+            width: context.width,
             child: Align(
               alignment: Alignment.centerLeft,
               child: FractionallySizedBox(
-                widthFactor: 0.85,
+                widthFactor: 0.9,
                 child: Text(
                   AppStrings.burgerFerguson,
                   overflow: TextOverflow.ellipsis,
@@ -52,11 +52,11 @@ class FoodItem extends StatelessWidget {
           ),
           SizedBox(height: 4),
           SizedBox(
-            width: context.width * 0.408,
+            width: context.width,
             child: Align(
               alignment: Alignment.centerLeft,
               child: FractionallySizedBox(
-                widthFactor: 0.85,
+                widthFactor: 0.9,
                 child: Text(
                   AppStrings.spicyRestaurant,
                   overflow: TextOverflow.ellipsis,

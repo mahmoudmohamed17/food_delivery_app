@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:food_delivery_app/core/utils/app_assets.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
+import 'package:food_delivery_app/core/widgets/custom_icon_button.dart';
 
 class TrailingHomeAppBarWidget extends StatelessWidget {
   const TrailingHomeAppBarWidget({super.key});
@@ -12,26 +12,15 @@ class TrailingHomeAppBarWidget extends StatelessWidget {
     return Stack(
       clipBehavior: Clip.none,
       children: [
-        IconButton(
-          visualDensity: VisualDensity(
-            horizontal: VisualDensity.minimumDensity,
-            vertical: VisualDensity.minimumDensity,
-          ),
-          padding: EdgeInsets.zero,
-          onPressed: () {},
-          icon: DecoratedBox(
-            decoration: BoxDecoration(
-              color: AppColors.authBackgrdColor,
-              shape: BoxShape.circle,
-            ),
-            child: Padding(
-              padding: EdgeInsets.all(16),
-              child: SvgPicture.asset(AppAssets.imagesBasket),
-            ),
-          ),
+        CustomIconButton(
+          icon: FontAwesomeIcons.bagShopping,
+          backgrnColor: AppColors.authBackgrdColor,
+          iconColor: Colors.white,
+          iconSize: 20,
+          onTap: () {},
         ),
         Positioned(
-          top: -12,
+          top: -14,
           right: 0,
           child: DecoratedBox(
             decoration: BoxDecoration(
@@ -42,7 +31,9 @@ class TrailingHomeAppBarWidget extends StatelessWidget {
               padding: EdgeInsets.all(10),
               child: Text(
                 '2',
-                style: AppTextStyle.bold16(context).copyWith(color: Colors.white),
+                style: AppTextStyle.bold16(
+                  context,
+                ).copyWith(color: Colors.white),
               ),
             ),
           ),

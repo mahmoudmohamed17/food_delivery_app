@@ -1,102 +1,39 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:food_delivery_app/core/constants/app_strings.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
-import 'package:food_delivery_app/core/utils/app_text_styles.dart';
-import 'package:food_delivery_app/core/widgets/custom_arrow_back_widget.dart';
-import 'package:go_router/go_router.dart';
+import 'package:food_delivery_app/core/widgets/custom_icon_button.dart';
+import 'package:food_delivery_app/features/home/presentation/widgets/category_food_badge.dart';
 
-class CategoryDetailsViewAppBar extends StatefulWidget {
+class CategoryDetailsViewAppBar extends StatelessWidget {
   const CategoryDetailsViewAppBar({super.key});
 
-  @override
-  State<CategoryDetailsViewAppBar> createState() =>
-      _CategoryDetailsViewAppBarState();
-}
-
-class _CategoryDetailsViewAppBarState
-    extends State<CategoryDetailsViewAppBar>{
-  bool _isTapped = false;
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        InkWell(
-          onTap: () {
-            context.pop();
-          },
-          child: CustomArrowBackWidget(
-            backgrnColor: AppColors.iconBackgrnColor,
-          ),
+        CustomIconButton(
+          icon: FontAwesomeIcons.chevronLeft,
+          iconSize: 20,
+          backgrnColor: AppColors.iconBackgrnColor,
+          iconColor: Colors.black,
+          onTap: () {},
         ),
         SizedBox(width: 16),
-        Container(
-          decoration: BoxDecoration(
-            border: Border.all(color: AppColors.iconColor, width: 1.5),
-            color: Colors.white,
-            borderRadius: BorderRadius.all(Radius.circular(50)),
-          ),
-          alignment: Alignment.center,
-          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-          child: Row(
-            spacing: 2,
-            children: [
-              Text(
-                AppStrings.burger.toUpperCase(),
-                style: AppTextStyle.bold12(context).copyWith(
-                  color: AppColors.primaryTextColor,
-                ),
-              ),
-              IconButton(
-                onPressed: () {
-                  setState(() {
-                    _isTapped = !_isTapped;
-                  });
-                },
-                visualDensity: VisualDensity(
-                  horizontal: VisualDensity.minimumDensity,
-                  vertical: VisualDensity.minimumDensity,
-                ),
-                padding: EdgeInsets.zero,
-                icon: RotatedBox(
-                  quarterTurns: _isTapped ? 2 : 0,
-                  child: SvgPicture.asset(
-                    AppAssets.imagesArrowDown,
-                    height: 16,
-                    width: 16,
-                    colorFilter: ColorFilter.mode(
-                      AppColors.primaryColor,
-                      BlendMode.srcIn,
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
+        CategoryFoodBadge(),
         Spacer(),
-        InkWell(
+        CustomIconButton(
           onTap: () {},
-          borderRadius: BorderRadius.all(Radius.circular(24)),
-          child: CircleAvatar(
-            backgroundColor: AppColors.authBackgrdColor,
-            radius: 24,
-            child: SvgPicture.asset(
-              AppAssets.imagesSearch,
-              colorFilter: ColorFilter.mode(Colors.white, BlendMode.srcIn),
-            ),
-          ),
+          icon: FontAwesomeIcons.magnifyingGlass,
+          iconSize: 20,
+          iconColor: Colors.white,
+          backgrnColor: AppColors.authBackgrdColor,
         ),
         SizedBox(width: 16),
-        InkWell(
+        CustomIconButton(
           onTap: () {},
-          borderRadius: BorderRadius.all(Radius.circular(24)),
-          child: CircleAvatar(
-            backgroundColor: AppColors.iconBackgrnColor,
-            radius: 24,
-            child: SvgPicture.asset(AppAssets.imagesFilter),
-          ),
+          svgPicture: AppAssets.imagesFilter,
+          backgrnColor: AppColors.iconBackgrnColor,
         ),
       ],
     );

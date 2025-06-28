@@ -21,6 +21,7 @@ class _SplashViewState extends State<SplashView> {
       await Future.delayed(const Duration(seconds: 2), () {});
       if (!mounted) return;
       navigateToNextView(context);
+      // context.go(Routes.signinView);
     });
   }
 

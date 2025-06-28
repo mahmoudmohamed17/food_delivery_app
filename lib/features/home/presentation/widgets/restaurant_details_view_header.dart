@@ -1,10 +1,10 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:food_delivery_app/core/extensions/context_extension.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
-import 'package:food_delivery_app/core/widgets/custom_arrow_back_widget.dart';
+import 'package:food_delivery_app/core/widgets/custom_icon_button.dart';
 import 'package:go_router/go_router.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -52,19 +52,17 @@ class _RestaurantDetailsViewHeaderState
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              InkWell(
+              CustomIconButton(
+                icon: FontAwesomeIcons.chevronLeft,
+                iconSize: 20,
                 onTap: () {
                   context.pop();
                 },
-                child: CustomArrowBackWidget(),
               ),
-              CircleAvatar(
-                backgroundColor: Colors.white,
-                radius: 24,
-                child: RotatedBox(
-                  quarterTurns: 1,
-                  child: SvgPicture.asset(AppAssets.imagesMore),
-                ),
+              CustomIconButton(
+                icon: FontAwesomeIcons.ellipsis,
+                iconSize: 20,
+                onTap: () {},
               ),
             ],
           ),

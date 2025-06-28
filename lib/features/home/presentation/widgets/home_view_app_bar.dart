@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:food_delivery_app/core/constants/app_strings.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/leading_home_app_bar_widget.dart';
+import 'package:food_delivery_app/core/widgets/custom_icon_button.dart';
 import 'package:food_delivery_app/features/home/presentation/widgets/trailing_home_app_bar_widget.dart';
 
 class HomeViewAppBar extends StatelessWidget {
@@ -14,7 +15,12 @@ class HomeViewAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       contentPadding: EdgeInsets.zero,
-      leading: LeadingHomeAppBarWidget(),
+      leading: CustomIconButton(
+        icon: FontAwesomeIcons.barsStaggered,
+        iconSize: 20,
+        backgrnColor: AppColors.iconBackgrnColor,
+        onTap: () {},
+      ),
       title: Text(
         AppStrings.deliverTo,
         style: AppTextStyle.bold12(
