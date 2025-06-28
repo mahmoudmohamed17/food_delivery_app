@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:food_delivery_app/core/extensions/context_extension.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:go_router/go_router.dart';
 
@@ -33,7 +34,7 @@ class AuthTemplateBodyWidget extends StatelessWidget {
         ),
         Positioned(
           left: 24,
-          top: 40,
+          top: context.height * 0.05,
           child: GestureDetector(
             onTap: () {
               context.pop();
@@ -41,9 +42,14 @@ class AuthTemplateBodyWidget extends StatelessWidget {
             child: backArrow ?? SizedBox.shrink(),
           ),
         ),
-        Positioned(top: 100, right: 0, left: 0, child: title),
         Positioned(
-          top: 230,
+          top: context.height * 0.141,
+          right: 0,
+          left: 0,
+          child: title,
+        ),
+        Positioned(
+          top: context.height * 0.278,
           bottom: 0,
           right: 0,
           left: 0,

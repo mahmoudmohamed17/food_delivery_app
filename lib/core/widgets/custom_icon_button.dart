@@ -22,7 +22,7 @@ class CustomIconButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-      borderRadius: BorderRadius.all(Radius.circular(24)),
+      splashColor: Colors.transparent,
       child: CircleAvatar(
         backgroundColor: backgrnColor,
         radius: 24,

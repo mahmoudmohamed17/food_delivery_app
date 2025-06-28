@@ -19,13 +19,13 @@ class _CategoryFoodBadgeState extends State<CategoryFoodBadge> {
     return Container(
       decoration: BoxDecoration(
         border: Border.all(color: AppColors.iconColor, width: 1.5),
-        color: Colors.white,
+        color: Colors.transparent,
         borderRadius: BorderRadius.all(Radius.circular(50)),
       ),
       alignment: Alignment.center,
-      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      padding: EdgeInsets.symmetric(horizontal: 18, vertical: 12),
       child: Row(
-        spacing: 2,
+        spacing: 8,
         children: [
           Text(
             AppStrings.burger.toUpperCase(),
@@ -33,26 +33,16 @@ class _CategoryFoodBadgeState extends State<CategoryFoodBadge> {
               context,
             ).copyWith(color: AppColors.primaryTextColor),
           ),
-          IconButton(
-            onPressed: () {
+          InkWell(
+            onTap: () {
               setState(() {
                 _isTapped = !_isTapped;
               });
             },
-            visualDensity: VisualDensity(
-              horizontal: VisualDensity.minimumDensity,
-              vertical: VisualDensity.minimumDensity,
-            ),
-            padding: EdgeInsets.zero,
-            icon: RotatedBox(
-              quarterTurns: _isTapped ? 2 : 0,
-              child: Icon(
-                _isTapped
-                    ? FontAwesomeIcons.caretDown
-                    : FontAwesomeIcons.caretUp,
-                size: 16,
-                color: AppColors.primaryColor,
-              ),
+            child: Icon(
+              _isTapped ? FontAwesomeIcons.caretUp : FontAwesomeIcons.caretDown,
+              size: 18,
+              color: AppColors.primaryColor,
             ),
           ),
         ],

@@ -4,6 +4,7 @@ import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/widgets/custom_icon_button.dart';
 import 'package:food_delivery_app/features/home/presentation/widgets/category_food_badge.dart';
+import 'package:go_router/go_router.dart';
 
 class CategoryDetailsViewAppBar extends StatelessWidget {
   const CategoryDetailsViewAppBar({super.key});
@@ -17,7 +18,9 @@ class CategoryDetailsViewAppBar extends StatelessWidget {
           iconSize: 20,
           backgrnColor: AppColors.iconBackgrnColor,
           iconColor: Colors.black,
-          onTap: () {},
+          onTap: () {
+            context.pop();
+          },
         ),
         SizedBox(width: 16),
         CategoryFoodBadge(),

@@ -85,8 +85,11 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   ).copyWith(color: Colors.white),
                   buttonColor: AppColors.primaryColor,
                   onPressed: () async {
-                    context.go(Routes.homeView);
+                    // TO-DO: use a cubit login method
+                    final router = GoRouter.of(context);
                     await SharedPrefs.setBool(isUserAuthenticated, true);
+                    if (!mounted) return;
+                    router.go(Routes.homeView);
                   },
                 ),
               ),
