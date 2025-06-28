@@ -55,7 +55,7 @@ class _HomeViewAppBarState extends State<HomeViewAppBar> {
           ),
         ],
       ),
-      trailing: const SizedBox(width: 50, child: TrailingHomeAppBarWidget()),
+      trailing: const SizedBox(width: 48, child: TrailingHomeAppBarWidget()),
     );
   }
 }

@@ -20,21 +20,14 @@ class TrailingHomeAppBarWidget extends StatelessWidget {
           onTap: () {},
         ),
         Positioned(
-          top: -14,
+          top: -12,
           right: 0,
-          child: DecoratedBox(
-            decoration: const BoxDecoration(
-              color: AppColors.primaryColor,
-              shape: BoxShape.circle,
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(10),
-              child: Text(
-                '2',
-                style: AppTextStyle.bold16(
-                  context,
-                ).copyWith(color: Colors.white),
-              ),
+          child: CircleAvatar(
+            radius: 16,
+            backgroundColor: AppColors.primaryColor,
+            child: Text(
+              '2',
+              style: AppTextStyle.bold16(context).copyWith(color: Colors.white),
             ),
           ),
         ),
