@@ -48,9 +48,9 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                 alignment: Alignment.centerLeft,
                 child: Text(
                   AppStrings.email,
-                  style: AppTextStyle.regular14(context).copyWith(
-                    color: AppColors.primaryTextColor,
-                  ),
+                  style: AppTextStyle.regular14(
+                    context,
+                  ).copyWith(color: AppColors.primaryTextColor),
                 ),
               ),
               SizedBox(height: 8),
@@ -63,9 +63,9 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                 alignment: Alignment.centerLeft,
                 child: Text(
                   AppStrings.password,
-                  style: AppTextStyle.regular14(context).copyWith(
-                    color: AppColors.primaryTextColor,
-                  ),
+                  style: AppTextStyle.regular14(
+                    context,
+                  ).copyWith(color: AppColors.primaryTextColor),
                 ),
               ),
               SizedBox(height: 8),
@@ -75,12 +75,14 @@ class _SigninViewBodyState extends State<SigninViewBody> {
               ),
               SizedBox(height: 24),
               RememberMeAndForgotPasswordWidget(),
-              SizedBox(height: 32),
+              SizedBox(height: 24),
               SizedBox(
                 width: double.infinity,
                 child: CustomButton(
                   text: AppStrings.logInButton,
-                  textStyle: AppTextStyle.bold14(context).copyWith(color: Colors.white),
+                  textStyle: AppTextStyle.bold14(
+                    context,
+                  ).copyWith(color: Colors.white),
                   buttonColor: AppColors.primaryColor,
                   onPressed: () async {
                     context.go(Routes.homeView);
@@ -88,18 +90,17 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                   },
                 ),
               ),
-              SizedBox(height: 32),
-              DontHaveAccountWidget(),
               SizedBox(height: 24),
+              DontHaveAccountWidget(),
+              SizedBox(height: 16),
               Text(
                 AppStrings.or,
-                style: AppTextStyle.regular16(context).copyWith(
-                  color: AppColors.subTextColor,
-                ),
+                style: AppTextStyle.regular16(
+                  context,
+                ).copyWith(color: AppColors.subTextColor),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 16),
               SocialAuthWidget(),
-              SizedBox(height: 24),
             ],
           ),
         ),

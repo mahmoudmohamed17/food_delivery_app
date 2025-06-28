@@ -17,25 +17,11 @@ class _SplashViewState extends State<SplashView> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) {
-        context.go(Routes.signinView);
-      }
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      await Future.delayed(const Duration(seconds: 2), () {});
+      if (!mounted) return;
+      navigateToNextView(context);
     });
-    // Future.delayed(const Duration(seconds: 2), () async {
-    //   if (context.mounted) {
-    //     // ignore: use_build_context_synchronously
-    //     navigateToNextView(context);
-    //   }
-    // });
-  }
-
-  void navigateToNextView(BuildContext context) {
-    SharedPrefs.getBool(isOnboardingSeen)
-        ? SharedPrefs.getBool(isUserAuthenticated)
-              ? context.go(Routes.homeView)
-              : context.go(Routes.signinView)
-        : context.go(Routes.onboardingView);
   }
 
   @override
@@ -57,5 +43,13 @@ class _SplashViewState extends State<SplashView> {
         ],
       ),
     );
+  }
+
+  void navigateToNextView(BuildContext context) {
+    SharedPrefs.getBool(isOnboardingSeen)
+        ? SharedPrefs.getBool(isUserAuthenticated)
+              ? context.go(Routes.homeView)
+              : context.go(Routes.signinView)
+        : context.go(Routes.onboardingView);
   }
 }
