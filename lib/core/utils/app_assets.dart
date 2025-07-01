@@ -82,6 +82,8 @@ class AppAssets {
 
   static const String imagesOnboarding3 = "assets/images/onboarding3.svg";
 
+  static const String imagesOnion = "assets/images/onion.svg";
+
   static const String imagesPasta = "assets/images/pasta.png";
 
   static const String imagesPaypal = "assets/images/paypal.svg";
