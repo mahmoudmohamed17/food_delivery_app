@@ -6,9 +6,15 @@ import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/widgets/custom_icon_button.dart';
 import 'package:go_router/go_router.dart';
 
-class FoodDetailsViewHeader extends StatelessWidget {
+class FoodDetailsViewHeader extends StatefulWidget {
   const FoodDetailsViewHeader({super.key});
 
+  @override
+  State<FoodDetailsViewHeader> createState() => _FoodDetailsViewHeaderState();
+}
+
+class _FoodDetailsViewHeaderState extends State<FoodDetailsViewHeader> {
+  bool _isAddedToFav = false;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -43,9 +49,16 @@ class FoodDetailsViewHeader extends StatelessWidget {
                     },
                   ),
                   CustomIconButton(
-                    icon: FontAwesomeIcons.ellipsis,
+                    icon: FontAwesomeIcons.solidHeart,
                     iconSize: 20,
-                    onTap: () {},
+                    iconColor: _isAddedToFav
+                        ? AppColors.primaryColor
+                        : Colors.grey[300]!,
+                    onTap: () {
+                      setState(() {
+                        _isAddedToFav = !_isAddedToFav;
+                      });
+                    },
                   ),
                 ],
               ),

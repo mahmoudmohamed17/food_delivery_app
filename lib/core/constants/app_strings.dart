@@ -53,7 +53,7 @@ class AppStrings {
   static const String european = "European";
   static const String price64 = "\$64";
   static const String price32 = "\$32";
-  static const String size14 = "14''";
+  static const String size14 = "14";
   static const String quantity2 = "2";
   static const String quantity1 = "1";
   static const String deliveryAddress = "DELIVERY ADDRESS";
@@ -87,7 +87,7 @@ class AppStrings {
   static const String filter = "FILTER";
   static const String popularBurgers = "Popular Burgers";
   static const String burgerBistro = "Burger Bistro";
-  static const String roseGarden = "Rose Garden Restaurant";
+  static const String roseGarden = "Rose Garden";
   static const String price40 = "\$40";
   static const String smokinBurger = "Smokin' Burger";
   static const String cofenioRestaurant = "Cofenio Restaurant";
@@ -106,8 +106,8 @@ class AppStrings {
   static const String free = "Free";
   static const String min20Value = "20 min";
   static const String size = "SIZE:";
-  static const String size10 = "10''";
-  static const String size16 = "16''";
+  static const String size10 = "10";
+  static const String size16 = "16";
   static const String ingredients = "INGRIDENTS";
   static const String addToCart = "ADD TO CART";
   static const String maccenasDescription =

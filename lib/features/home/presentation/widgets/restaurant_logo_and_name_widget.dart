@@ -11,7 +11,7 @@ class RestaurantLogoAndNameWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisSize: MainAxisSize.min,
-      spacing: 8,
+      spacing: 12,
       children: [
         Image.asset(AppAssets.imagesRestaurantLogo),
         Text(
