@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/features/home/data/utils/show_purchase_bottom_sheet.dart';
 import 'package:food_delivery_app/features/home/presentation/widgets/food_details_view_body.dart';
 
 class FoodDetailsView extends StatelessWidget {
@@ -6,9 +7,13 @@ class FoodDetailsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white,
-      body: FoodDetailsViewBody(),
+      body: GestureDetector(
+        onTap: () => showPurchaseBottomSheet(context),
+        behavior: HitTestBehavior.opaque,
+        child: const FoodDetailsViewBody(),
+      ),
     );
   }
 }

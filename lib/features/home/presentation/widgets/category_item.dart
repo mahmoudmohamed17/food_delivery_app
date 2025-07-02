@@ -52,7 +52,6 @@ class CategoryItem extends StatelessWidget {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                spacing: (context.width * 0.4) / 10,
                 children: [
                   Text(
                     AppStrings.starting,

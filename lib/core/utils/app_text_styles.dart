@@ -72,6 +72,12 @@ class AppTextStyle {
     );
   }
 
+  static TextStyle regular28(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, fontSize: 28),
+      fontWeight: FontWeight.normal,
+    );
+  }
   static TextStyle regular20(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 20),
