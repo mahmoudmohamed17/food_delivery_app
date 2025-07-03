@@ -2,8 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery_app/features/home/data/utils/show_purchase_bottom_sheet.dart';
 import 'package:food_delivery_app/features/home/presentation/widgets/food_details_view_body.dart';
 
-class FoodDetailsView extends StatelessWidget {
+class FoodDetailsView extends StatefulWidget {
   const FoodDetailsView({super.key});
+
+  @override
+  State<FoodDetailsView> createState() => _FoodDetailsViewState();
+}
+
+class _FoodDetailsViewState extends State<FoodDetailsView> {
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      showPurchaseBottomSheet(context);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
