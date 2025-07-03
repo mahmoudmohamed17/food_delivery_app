@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/extensions/context_extension.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/food_item.dart';
+import 'package:food_delivery_app/features/restaurant_details/presentation/widgets/food_item.dart';
 
 class FoodItemsGrid extends StatelessWidget {
   const FoodItemsGrid({super.key});

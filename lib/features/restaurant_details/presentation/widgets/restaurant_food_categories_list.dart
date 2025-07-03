@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/constants/app_strings.dart';
 import 'package:food_delivery_app/features/home/data/models/restaurant_food_category_model.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/restaurant_food_category_item.dart';
+import 'package:food_delivery_app/features/restaurant_details/presentation/widgets/restaurant_food_category_item.dart';
 
 class RestaurantFoodCategoriesList extends StatefulWidget {
   const RestaurantFoodCategoriesList({super.key});

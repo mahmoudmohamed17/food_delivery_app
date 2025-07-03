@@ -5,8 +5,8 @@ import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 
-class SectionHeader extends StatelessWidget {
-  const SectionHeader({super.key, required this.title, required this.onTap});
+class HomeSectionHeader extends StatelessWidget {
+  const HomeSectionHeader({super.key, required this.title, required this.onTap});
   final String title;
   final VoidCallback onTap;
 

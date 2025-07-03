@@ -5,7 +5,7 @@ import 'package:food_delivery_app/core/routing/routes.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/restaurant_info_widget.dart';
+import 'package:food_delivery_app/features/restaurant_details/presentation/widgets/restaurant_info_widget.dart';
 import 'package:go_router/go_router.dart';
 
 class RestaurantItem extends StatelessWidget {

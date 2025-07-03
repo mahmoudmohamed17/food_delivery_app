@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/constants/app_strings.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/food_details_view_header.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/food_ingredients_widget.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/food_size_selection_widget.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/restaurant_info_widget.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/restaurant_logo_and_name_widget.dart';
+import 'package:food_delivery_app/features/food_details/presentation/widgets/food_details_view_header.dart';
+import 'package:food_delivery_app/features/food_details/presentation/widgets/food_ingredients_widget.dart';
+import 'package:food_delivery_app/features/food_details/presentation/widgets/food_size_selection_widget.dart';
+import 'package:food_delivery_app/features/restaurant_details/presentation/widgets/restaurant_info_widget.dart';
+import 'package:food_delivery_app/features/restaurant_details/presentation/widgets/restaurant_logo_and_name_widget.dart';
 
 class FoodDetailsViewBody extends StatelessWidget {
   const FoodDetailsViewBody({super.key});

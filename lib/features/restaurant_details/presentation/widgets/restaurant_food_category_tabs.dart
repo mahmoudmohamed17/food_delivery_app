@@ -3,18 +3,18 @@ import 'package:food_delivery_app/core/constants/app_strings.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 import 'package:food_delivery_app/features/home/data/models/restaurant_food_category_model.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/restaurant_food_category_item.dart';
+import 'package:food_delivery_app/features/restaurant_details/presentation/widgets/restaurant_food_category_item.dart';
 
-class RestaurantFoodCategoriesTabs extends StatefulWidget {
-  const RestaurantFoodCategoriesTabs({super.key});
+class RestaurantFoodCategoryTabs extends StatefulWidget {
+  const RestaurantFoodCategoryTabs({super.key});
 
   @override
-  State<RestaurantFoodCategoriesTabs> createState() =>
-      _RestaurantFoodCategoriesTabsState();
+  State<RestaurantFoodCategoryTabs> createState() =>
+      _RestaurantFoodCategoryTabsState();
 }
 
-class _RestaurantFoodCategoriesTabsState
-    extends State<RestaurantFoodCategoriesTabs>
+class _RestaurantFoodCategoryTabsState
+    extends State<RestaurantFoodCategoryTabs>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
 

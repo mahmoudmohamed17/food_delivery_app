@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app/features/home/data/utils/show_purchase_bottom_sheet.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/food_details_view_body.dart';
+import 'package:food_delivery_app/features/food_details/data/utils/show_purchase_bottom_sheet.dart';
+import 'package:food_delivery_app/features/food_details/presentation/widgets/food_details_view_body.dart';
 
 class FoodDetailsView extends StatefulWidget {
   const FoodDetailsView({super.key});

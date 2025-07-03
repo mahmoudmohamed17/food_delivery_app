@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/category_details_view_body.dart';
+import 'package:food_delivery_app/features/category_details/presentation/widgets/category_details_view_body.dart';
 
 class CategoryDetailsView extends StatelessWidget {
   const CategoryDetailsView({super.key});

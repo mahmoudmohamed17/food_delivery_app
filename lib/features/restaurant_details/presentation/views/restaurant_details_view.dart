@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/restaurant_details_view_body.dart';
+import 'package:food_delivery_app/features/restaurant_details/presentation/widgets/restaurant_details_view_body.dart';
 
 class RestaurantDetailsView extends StatelessWidget {
   const RestaurantDetailsView({super.key});

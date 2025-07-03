@@ -4,7 +4,7 @@ import 'package:food_delivery_app/core/extensions/context_extension.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 import 'package:food_delivery_app/core/widgets/custom_button.dart';
-import 'package:food_delivery_app/features/home/presentation/widgets/purchase_counter_item_widget.dart';
+import 'package:food_delivery_app/features/food_details/presentation/widgets/purchase_counter_item_widget.dart';
 
 class PurchaseBottomSheetBody extends StatefulWidget {
   const PurchaseBottomSheetBody({super.key});
