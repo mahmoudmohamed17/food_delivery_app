@@ -73,9 +73,9 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                 hintText: AppStrings.passwordValue,
                 controller: _passwordController,
               ),
-              const SizedBox(height: 24),
+              const SizedBox(height: 16),
               const RememberMeAndForgotPasswordWidget(),
-              const SizedBox(height: 24),
+              const SizedBox(height: 20),
               SizedBox(
                 width: double.infinity,
                 child: CustomButton(

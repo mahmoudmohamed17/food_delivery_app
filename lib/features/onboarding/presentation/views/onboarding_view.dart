@@ -58,7 +58,7 @@ class _OnboardingViewState extends State<OnboardingView> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 24),
+              padding: const EdgeInsets.symmetric(vertical: 16),
               child: DotsIndicator(
                 dotsCount: 3,
                 position: _currentPage.toDouble(),

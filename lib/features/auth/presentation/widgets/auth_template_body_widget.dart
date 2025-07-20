@@ -49,13 +49,13 @@ class AuthTemplateBodyWidget extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: context.height * 0.141,
+          top: context.height * 0.138,
           right: 0,
           left: 0,
           child: title,
         ),
         Positioned(
-          top: context.height * 0.278,
+          top: context.height * 0.275,
           bottom: 0,
           right: 0,
           left: 0,

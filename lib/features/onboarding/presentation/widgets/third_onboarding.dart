@@ -13,7 +13,7 @@ class ThirdOnboarding extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        SvgPicture.asset(AppAssets.imagesOnboarding3),
+        Expanded(child: SvgPicture.asset(AppAssets.imagesOnboarding3)),
         const SizedBox(height: 4),
         Text(
           AppStrings.onboardingTitle3,
