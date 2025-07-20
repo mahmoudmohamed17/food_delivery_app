@@ -16,6 +16,7 @@ class HomeViewAppBar extends StatefulWidget {
 
 class _HomeViewAppBarState extends State<HomeViewAppBar> {
   bool _isTapped = false;
+
   @override
   Widget build(BuildContext context) {
     return ListTile(
@@ -23,7 +24,9 @@ class _HomeViewAppBarState extends State<HomeViewAppBar> {
       leading: CustomIconButton(
         svgPicture: AppAssets.imagesMenu,
         backgrnColor: AppColors.iconBackgrnColor,
-        onTap: () {},
+        onTap: () {
+          Scaffold.of(context).openDrawer();
+        },
       ),
       title: Text(
         AppStrings.deliverTo,

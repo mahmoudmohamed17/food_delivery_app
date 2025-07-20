@@ -3,7 +3,7 @@ import 'package:food_delivery_app/core/constants/app_strings.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
-import 'package:food_delivery_app/features/home/data/models/restaurant_info_item_model.dart';
+import 'package:food_delivery_app/features/restaurant_details/data/models/restaurant_info_item_model.dart';
 import 'package:food_delivery_app/features/restaurant_details/presentation/widgets/restaurant_info_item.dart';
 
 class RestaurantInfoWidget extends StatelessWidget {

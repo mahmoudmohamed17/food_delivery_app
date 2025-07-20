@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:food_delivery_app/features/home/data/models/restaurant_info_item_model.dart';
+import 'package:food_delivery_app/features/restaurant_details/data/models/restaurant_info_item_model.dart';
 
 class RestaurantInfoItem extends StatelessWidget {
   const RestaurantInfoItem({super.key, required this.model});

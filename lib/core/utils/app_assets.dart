@@ -34,6 +34,8 @@ class AppAssets {
 
   static const String imagesDonate = "assets/images/donate.svg";
 
+  static const String imagesDummyUserPic = "assets/images/dummy-user-pic.png";
+
   static const String imagesEllipseDown = "assets/images/ellipse_down.svg";
 
   static const String imagesEllipseUp = "assets/images/ellipse_up.svg";

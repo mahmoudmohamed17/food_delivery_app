@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/features/home/presentation/widgets/home_view_body.dart';
+import 'package:food_delivery_app/features/home/presentation/widgets/home_view_drawer.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -12,6 +13,7 @@ class HomeView extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
         child: HomeViewBody(),
       ),
+      drawer: HomeViewDrawer(),
     );
   }
 }

@@ -16,6 +16,7 @@ class AppStrings {
   static const String expireDate = "EXPIRE DATE";
   static const String cvc = "CVC";
   static const String mmYYYY = "mm/yyyy";
+  static const String contactUs = "Contact Us";
   static const String stars = "***";
   static const String addMakePayment = "ADD & MAKE PAYMENT";
   static const String moveToEditLocation = "Move to edit location";
@@ -23,6 +24,7 @@ class AppStrings {
   static const String royalLnAddress = "3235 Royal Ln.Meso,New Jersy 34567";
   static const String street = "STREET";
   static const String postCode = "POST CODE";
+  static const String temrsAndPolicies = "Temrs & Policies";
   static const String skip = "Skip";
   static const String hasonNagar = "Hason Nagar";
   static const String postCodeValue = "34567";
@@ -156,10 +158,12 @@ class AppStrings {
   static const String signUpHint = "Please sign up to get started";
   static const String or = "Or";
   static const String profile = "Profile";
+  static const String myProfile = "My Profile";
   static const String personalInfo = "Personal Info";
   static const String addresses = "Addresses";
   static const String cartTitle = "Cart";
   static const String favourite = "Favourite";
+  static const String favourites = "Favourites";
   static const String notifications = "Notifications";
   static const String paymentMethod = "Payment Method";
   static const String faqs = "FAQs";
@@ -194,6 +198,7 @@ class AppStrings {
   static const String oneItem = "01 Items";
   static const String hurryOffers = "Hurry Offers!";
   static const String coupon1243CD2 = "#1243CD2";
+  static const String coupons = "Coupons";
   static const String couponDescription = "Use the cupon get 25% discount";
   static const String gotIt = "GOT IT";
   static const String payment = "Payment";

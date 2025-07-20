@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
-import 'package:food_delivery_app/features/home/data/models/restaurant_food_category_model.dart';
+import 'package:food_delivery_app/features/restaurant_details/data/models/restaurant_food_category_model.dart';
 
 class RestaurantFoodCategoryItem extends StatelessWidget {
   const RestaurantFoodCategoryItem({

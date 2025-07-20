@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
-import 'package:food_delivery_app/features/home/data/models/ingredient_item_model.dart';
+import 'package:food_delivery_app/features/restaurant_details/data/models/ingredient_item_model.dart';
 
 class IngredientItem extends StatelessWidget {
   const IngredientItem({super.key, required this.model});
