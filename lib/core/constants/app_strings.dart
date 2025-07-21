@@ -73,6 +73,9 @@ class AppStrings {
   static const String bio = "BIO";
   static const String bioValue = "I love fast food";
   static const String save = "SAVE";
+  static const String oneDollars = r"$";
+  static const String twoDollars = r"$$";
+  static const String threeDollars = r"$$$";
   static const String restaurantView = "Restaurant View";
   static const String filterYourSearch = "Filter your search";
   static const String offers = "OFFERS";

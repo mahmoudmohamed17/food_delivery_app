@@ -4,6 +4,7 @@ import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/widgets/custom_icon_button.dart';
 import 'package:food_delivery_app/features/category_details/presentation/widgets/category_food_badge.dart';
+import 'package:food_delivery_app/features/category_details/presentation/widgets/filtering_dialog.dart';
 import 'package:go_router/go_router.dart';
 
 class CategoryDetailsViewAppBar extends StatelessWidget {
@@ -33,7 +34,15 @@ class CategoryDetailsViewAppBar extends StatelessWidget {
         ),
         const SizedBox(width: 16),
         CustomIconButton(
-          onTap: () {},
+          onTap: () {
+            showDialog(
+              context: context,
+              barrierDismissible: false,
+              builder: (context) {
+                return const FilteringDialog();
+              },
+            );
+          },
           svgPicture: AppAssets.imagesFilter,
           backgrnColor: AppColors.iconBackgrnColor,
         ),

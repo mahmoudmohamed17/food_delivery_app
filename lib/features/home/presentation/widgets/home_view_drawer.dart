@@ -67,7 +67,6 @@ class HomeViewDrawer extends StatelessWidget {
               'mahmoud@example.com',
               style: AppTextStyle.regular14(context),
             ),
-            onDetailsPressed: () {},
             currentAccountPicture: const Image(
               image: AssetImage(AppAssets.imagesDummyUserPic),
             ),
