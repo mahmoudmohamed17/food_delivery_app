@@ -21,6 +21,7 @@ class AppStrings {
   static const String addMakePayment = "ADD & MAKE PAYMENT";
   static const String moveToEditLocation = "Move to edit location";
   static const String address = "ADDRESS";
+  static const String addressProfile = "Address";
   static const String royalLnAddress = "3235 Royal Ln.Meso,New Jersy 34567";
   static const String street = "STREET";
   static const String postCode = "POST CODE";

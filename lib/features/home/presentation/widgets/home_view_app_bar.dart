@@ -24,7 +24,7 @@ class _HomeViewAppBarState extends State<HomeViewAppBar> {
     return BlocBuilder<EnableSearchCubit, bool>(
       builder: (context, state) {
         return ListTile(
-          contentPadding: EdgeInsets.zero,
+          contentPadding: EdgeInsets.only(top: state ? 8 : 0),
           leading: state
               ? CustomIconButton(
                   icon: FontAwesomeIcons.chevronLeft,
@@ -32,8 +32,8 @@ class _HomeViewAppBarState extends State<HomeViewAppBar> {
                   iconSize: 20,
                   backgrnColor: AppColors.iconBackgrnColor,
                   onTap: () {
-                    BlocProvider.of<EnableSearchCubit>(context).disableSearch();
                     FocusScope.of(context).unfocus();
+                    context.read<EnableSearchCubit>().disableSearch();
                   },
                 )
               : CustomIconButton(

@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:food_delivery_app/core/constants/app_strings.dart';
+import 'package:food_delivery_app/core/routing/routes.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 import 'package:food_delivery_app/features/home/data/models/drawer_item_model.dart';
 import 'package:food_delivery_app/features/home/presentation/widgets/drawer_item.dart';
+import 'package:go_router/go_router.dart';
 
 class HomeViewDrawer extends StatelessWidget {
   const HomeViewDrawer({super.key});
@@ -16,7 +18,9 @@ class HomeViewDrawer extends StatelessWidget {
       DrawerItemModel(
         title: AppStrings.myProfile,
         icon: FontAwesomeIcons.solidCircleUser,
-        onTap: () {},
+        onTap: () {
+          context.push(Routes.profileView);
+        },
       ),
       DrawerItemModel(
         title: AppStrings.myOrders,

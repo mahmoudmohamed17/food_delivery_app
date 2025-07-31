@@ -41,7 +41,7 @@ class HomeViewBody extends StatelessWidget {
             child: CustomSearchTextField(
               hintText: AppStrings.searchDishes,
               onTap: () {
-                BlocProvider.of<EnableSearchCubit>(context).enableSearch();
+                context.read<EnableSearchCubit>().enableSearch();
               },
             ),
           ),
