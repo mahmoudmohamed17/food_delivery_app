@@ -12,7 +12,6 @@ class SettingsItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: model.onTap,
-      focusColor: Colors.red,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -27,11 +26,7 @@ class SettingsItem extends StatelessWidget {
                 ),
                 padding: const EdgeInsets.all(8),
                 alignment: Alignment.center,
-                child:  Icon(
-                  model.icon,
-                  color: model.iconColor,
-                  size: 18,
-                ),
+                child: Icon(model.icon, color: model.iconColor, size: 18),
               ),
               Text(model.label, style: AppTextStyle.regular14(context)),
             ],

@@ -20,7 +20,7 @@ class SettingsThirdBlock extends StatelessWidget {
       ),
       SettingsItemModel(
         label: AppStrings.userReviews,
-        icon: FontAwesomeIcons.shareNodes,
+        icon: FontAwesomeIcons.shapes,
         iconColor: const Color(0xff45E5E5),
         onTap: () {},
       ),

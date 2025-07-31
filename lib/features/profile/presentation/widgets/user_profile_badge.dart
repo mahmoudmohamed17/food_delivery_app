@@ -14,7 +14,7 @@ class UserProfileBadge extends StatelessWidget {
       children: [
         const CircleAvatar(radius: 55, backgroundColor: AppColors.primaryColor),
         SizedBox(
-          width: context.width * 0.55,
+          width: context.width * 0.50,
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,

@@ -14,7 +14,7 @@ class ProfileView extends StatelessWidget {
     return const Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+          padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
           child: CustomScrollView(
             slivers: [
               SliverToBoxAdapter(child: ProfileViewAppBar()),
