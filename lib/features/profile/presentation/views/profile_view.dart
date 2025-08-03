@@ -12,11 +12,13 @@ class ProfileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
           child: CustomScrollView(
             slivers: [
+              SliverToBoxAdapter(child: SizedBox(height: 16)),
               SliverToBoxAdapter(child: ProfileViewAppBar()),
               SliverToBoxAdapter(child: SizedBox(height: 24)),
               SliverToBoxAdapter(child: UserProfileBadge()),

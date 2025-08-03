@@ -13,10 +13,10 @@ class CustomSettingsContainer extends StatelessWidget {
         color: AppColors.backgrdContainerColor,
         borderRadius: BorderRadius.all(Radius.circular(16)),
       ),
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(20),
       child: Column(
         mainAxisSize: MainAxisSize.min,
-        spacing: 12,
+        spacing: 16,
         children: children,
       ),
     );

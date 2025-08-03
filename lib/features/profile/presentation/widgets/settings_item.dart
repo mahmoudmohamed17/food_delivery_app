@@ -10,29 +10,32 @@ class SettingsItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: model.onTap,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            spacing: 8,
-            children: [
-              Container(
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                  shape: BoxShape.circle,
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: model.onTap,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              spacing: 8,
+              children: [
+                Container(
+                  decoration: const BoxDecoration(
+                    color: Colors.white,
+                    shape: BoxShape.circle,
+                  ),
+                  padding: const EdgeInsets.all(8),
+                  alignment: Alignment.center,
+                  child: Icon(model.icon, color: model.iconColor, size: 18),
                 ),
-                padding: const EdgeInsets.all(8),
-                alignment: Alignment.center,
-                child: Icon(model.icon, color: model.iconColor, size: 18),
-              ),
-              Text(model.label, style: AppTextStyle.regular14(context)),
-            ],
-          ),
-          const Icon(FontAwesomeIcons.chevronRight, size: 18),
-        ],
+                Text(model.label, style: AppTextStyle.medium16(context)),
+              ],
+            ),
+            const Icon(FontAwesomeIcons.chevronRight, size: 18),
+          ],
+        ),
       ),
     );
   }
