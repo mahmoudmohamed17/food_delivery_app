@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:food_delivery_app/core/constants/app_strings.dart';
 import 'package:food_delivery_app/core/widgets/custom_search_text_field.dart';
-import 'package:food_delivery_app/features/home/data/managers/enable_search_cubit/enable_search_cubit.dart';
 import 'package:food_delivery_app/features/home/presentation/widgets/all_categories_widget.dart';
 import 'package:food_delivery_app/features/home/presentation/widgets/home_view_app_bar.dart';
 import 'package:food_delivery_app/features/home/presentation/widgets/open_restaurants_widget.dart';
@@ -18,31 +16,17 @@ class HomeViewBody extends StatelessWidget {
         slivers: [
           const SliverToBoxAdapter(child: HomeViewAppBar()),
           const SliverToBoxAdapter(child: SizedBox(height: 20)),
-          BlocBuilder<EnableSearchCubit, bool>(
-            builder: (context, state) {
-              return state
-                  ? const SliverToBoxAdapter(child: SizedBox.shrink())
-                  : const SliverToBoxAdapter(
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: UserWelcomeBackWidget(),
-                      ),
-                    );
-            },
+          const SliverToBoxAdapter(
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: UserWelcomeBackWidget(),
+            ),
           ),
-          BlocBuilder<EnableSearchCubit, bool>(
-            builder: (context, state) {
-              return state
-                  ? const SliverToBoxAdapter(child: SizedBox.shrink())
-                  : const SliverToBoxAdapter(child: SizedBox(height: 20));
-            },
-          ),
+          const SliverToBoxAdapter(child: SizedBox(height: 20)),
           SliverToBoxAdapter(
             child: CustomSearchTextField(
               hintText: AppStrings.searchDishes,
-              onTap: () {
-                context.read<EnableSearchCubit>().enableSearch();
-              },
+              onTap: () {},
             ),
           ),
           const SliverToBoxAdapter(child: SizedBox(height: 32)),
