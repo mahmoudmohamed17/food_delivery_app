@@ -8,6 +8,7 @@ import 'package:food_delivery_app/features/category_details/presentation/views/c
 import 'package:food_delivery_app/features/food_details/presentation/views/food_details_view.dart';
 import 'package:food_delivery_app/features/home/presentation/views/home_view.dart';
 import 'package:food_delivery_app/features/profile/presentation/views/edit_profile_view.dart';
+import 'package:food_delivery_app/features/profile/presentation/views/my_address_view.dart';
 import 'package:food_delivery_app/features/profile/presentation/views/personal_info_view.dart';
 import 'package:food_delivery_app/features/profile/presentation/views/profile_view.dart';
 import 'package:food_delivery_app/features/restaurant_details/presentation/views/restaurant_details_view.dart';
@@ -70,6 +71,10 @@ final router = GoRouter(
     GoRoute(
       path: Routes.editProfileView,
       builder: (context, state) => const EditProfileView(),
+    ),
+    GoRoute(
+      path: Routes.myAddressView,
+      builder: (context, state) => const MyAddressView(),
     ),
   ],
 );

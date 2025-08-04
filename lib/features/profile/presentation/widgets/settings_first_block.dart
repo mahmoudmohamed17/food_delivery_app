@@ -26,7 +26,9 @@ class SettingsFirstBlock extends StatelessWidget {
         label: AppStrings.addressProfile,
         icon: FontAwesomeIcons.map,
         iconColor: const Color(0xff504CFB),
-        onTap: () {},
+        onTap: () {
+          context.push(Routes.myAddressView);
+        },
       ),
     ];
 
