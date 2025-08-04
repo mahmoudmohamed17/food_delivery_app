@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
@@ -14,7 +13,7 @@ class UserAddressWidget extends StatelessWidget {
   });
   final String label;
   final String address;
-  final String labelIcon;
+  final IconData labelIcon;
   final Color iconColor;
 
   @override
@@ -35,10 +34,7 @@ class UserAddressWidget extends StatelessWidget {
               shape: BoxShape.circle,
             ),
             padding: const EdgeInsets.all(8),
-            child: SvgPicture.asset(
-              labelIcon,
-              colorFilter: ColorFilter.mode(iconColor, BlendMode.srcIn),
-            ),
+            child: Icon(labelIcon, color: iconColor),
           ),
           Expanded(
             child: Column(
