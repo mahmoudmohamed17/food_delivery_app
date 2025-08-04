@@ -6,18 +6,24 @@ import 'package:food_delivery_app/core/widgets/build_border.dart';
 class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField({
     super.key,
-    required this.hintText,
+     this.hintText,
     this.textInputType = TextInputType.text,
-    required this.controller,
+    this.controller,
+    this.initialVAlue, this.onFieldSubmitted,
   });
-  final String hintText;
+  final String? hintText;
   final TextInputType textInputType;
-  final TextEditingController controller;
+  final TextEditingController? controller;
+  final String? initialVAlue;
+  final Function(String?)? onFieldSubmitted;
+
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       style: AppTextStyle.regular14(context),
       controller: controller,
+      initialValue: initialVAlue,
+      onFieldSubmitted: onFieldSubmitted,
       validator: (value) {
         if (value!.isEmpty) {
           return '$hintText is required';

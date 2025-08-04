@@ -11,4 +11,5 @@ class Routes {
   static const foodDetailsView = '/foodDetailsView';
   static const profileView = '/profileView';
   static const personalInfoView = '/personalInfoView';
+  static const editProfileView = '/editProfileView';
 }

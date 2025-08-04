@@ -22,7 +22,7 @@ class ProfileView extends StatelessWidget {
               SliverToBoxAdapter(child: ProfileViewAppBar()),
               SliverToBoxAdapter(child: SizedBox(height: 24)),
               SliverToBoxAdapter(child: UserProfileBadge()),
-              SliverToBoxAdapter(child: SizedBox(height: 20)),
+              SliverToBoxAdapter(child: SizedBox(height: 32)),
               SliverToBoxAdapter(child: SettingsFirstBlock()),
               SliverToBoxAdapter(child: SizedBox(height: 16)),
               SliverToBoxAdapter(child: SettingsSecondBlock()),

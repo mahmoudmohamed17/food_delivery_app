@@ -45,7 +45,7 @@ class PersonalInfoView extends StatelessWidget {
               const PersonalViewAppBar(),
               const SizedBox(height: 24),
               const UserProfileBadge(),
-              const SizedBox(height: 20),
+              const SizedBox(height: 32),
               CustomSettingsContainer(
                 children: items
                     .map(
