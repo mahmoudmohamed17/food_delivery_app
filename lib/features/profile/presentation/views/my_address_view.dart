@@ -51,6 +51,7 @@ class MyAddressView extends StatelessWidget {
                   buttonColor: AppColors.primaryColor,
                 ),
               ),
+              const SizedBox(height: 16),
             ],
           ),
         ),

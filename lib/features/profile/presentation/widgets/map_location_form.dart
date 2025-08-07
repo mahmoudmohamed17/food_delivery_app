@@ -4,18 +4,18 @@ import 'package:food_delivery_app/core/constants/app_strings.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 import 'package:food_delivery_app/core/widgets/custom_button.dart';
-import 'package:food_delivery_app/features/profile/presentation/widgets/add_address_input_field.dart';
-import 'package:food_delivery_app/features/profile/presentation/widgets/map_labels_selection_widget.dart';
+import 'package:food_delivery_app/features/profile/presentation/widgets/location_input_field.dart';
+import 'package:food_delivery_app/features/profile/presentation/widgets/location_label_selection_widget.dart';
 
-class MapLocationInputFields extends StatelessWidget {
-  const MapLocationInputFields({super.key});
+class MapLocationForm extends StatelessWidget {
+  const MapLocationForm({super.key});
 
   @override
   Widget build(BuildContext context) {
     return ListView(
       padding: const EdgeInsets.symmetric(horizontal: 24),
       children: [
-        AddAddressInputField(
+        LocationInputField(
           onSubmitted: (value) {},
           label: AppStrings.address,
           hintText: AppStrings.royalLnAddress,
@@ -30,14 +30,14 @@ class MapLocationInputFields extends StatelessWidget {
           spacing: 16,
           children: [
             Expanded(
-              child: AddAddressInputField(
+              child: LocationInputField(
                 onSubmitted: (value) {},
                 label: AppStrings.street,
                 hintText: AppStrings.hasonNagar,
               ),
             ),
             Expanded(
-              child: AddAddressInputField(
+              child: LocationInputField(
                 onSubmitted: (value) {},
                 label: AppStrings.postCode,
                 hintText: AppStrings.postCodeValue,
@@ -46,13 +46,13 @@ class MapLocationInputFields extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 24),
-        AddAddressInputField(
+        LocationInputField(
           onSubmitted: (value) {},
           label: AppStrings.appartment,
           hintText: AppStrings.appartmentValue,
         ),
         const SizedBox(height: 24),
-        const MapLabelsSelectionWidget(),
+        const LocationLabelSelectionWidget(),
         const SizedBox(height: 24),
         SizedBox(
           width: double.infinity,
@@ -70,5 +70,3 @@ class MapLocationInputFields extends StatelessWidget {
     );
   }
 }
-
-

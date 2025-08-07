@@ -3,8 +3,8 @@ import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 import 'package:food_delivery_app/core/widgets/custom_text_field.dart';
 
-class AddAddressInputField extends StatelessWidget {
-  const AddAddressInputField({
+class LocationInputField extends StatelessWidget {
+  const LocationInputField({
     super.key,
     required this.label,
     required this.hintText,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/extensions/context_extension.dart';
-import 'package:food_delivery_app/features/profile/presentation/widgets/map_location_input_fields.dart';
-import 'package:food_delivery_app/features/profile/presentation/widgets/user_map_location_widget.dart';
+import 'package:food_delivery_app/features/profile/presentation/widgets/map_location_form.dart';
+import 'package:food_delivery_app/features/profile/presentation/widgets/map_widget.dart';
 
 class AddNewAddressView extends StatelessWidget {
   const AddNewAddressView({super.key});
@@ -14,10 +14,10 @@ class AddNewAddressView extends StatelessWidget {
         children: [
           SizedBox(
             height: context.height * 0.40,
-            child: const UserMapLocationWidget(),
+            child: const MapWidget(),
           ),
           const SizedBox(height: 32),
-          const Expanded(child: MapLocationInputFields()),
+          const Expanded(child: MapLocationForm()),
         ],
       ),
     );

@@ -6,8 +6,8 @@ import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/widgets/custom_icon_button.dart';
 import 'package:go_router/go_router.dart';
 
-class UserMapLocationWidget extends StatelessWidget {
-  const UserMapLocationWidget({
+class MapWidget extends StatelessWidget {
+  const MapWidget({
     super.key,
   });
 

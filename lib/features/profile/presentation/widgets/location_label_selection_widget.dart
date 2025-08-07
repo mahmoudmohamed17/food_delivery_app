@@ -1,13 +1,12 @@
 import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/constants/app_strings.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
-import 'package:food_delivery_app/features/profile/presentation/widgets/selecting_label_widget.dart';
+import 'package:food_delivery_app/features/profile/presentation/widgets/label_selecting_widget.dart';
 
-class MapLabelsSelectionWidget extends StatelessWidget {
-  const MapLabelsSelectionWidget({super.key});
+class LocationLabelSelectionWidget extends StatelessWidget {
+  const LocationLabelSelectionWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +21,7 @@ class MapLabelsSelectionWidget extends StatelessWidget {
             context,
           ).copyWith(color: AppColors.primaryTextColor),
         ),
-        SelectingLabelWidget(
+        LabelSelectingWidget(
           onTap: (obj) {
             log('Object: $obj');
           },
