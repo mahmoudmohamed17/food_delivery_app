@@ -14,4 +14,5 @@ class Routes {
   static const editProfileView = '/editProfileView';
   static const myAddressView = '/myAddressView';
   static const addNewAddressView = '/addNewAddressView';
+  static const myOrdersView = '/myOrdersView';
 }

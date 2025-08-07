@@ -11,4 +11,6 @@ class AppColors {
   static const iconColor = Color(0xffB4B9CA);
   static const facebookBackgrdColor = Color(0xff395998);
   static const authBackgrdColor = Color(0xff1E1E2E);
+  static const completedColor = Color(0xff059C6A);
+  static const cancelColor = Color(0xffFF0000);
 }

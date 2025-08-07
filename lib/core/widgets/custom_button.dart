@@ -7,12 +7,14 @@ class CustomButton extends StatelessWidget {
     this.onPressed,
     this.buttonColor = Colors.white,
     this.textStyle,
+    this.borderColor,
   });
   final String text;
   final TextStyle? textStyle;
   final Color buttonColor;
+  final Color? borderColor;
   final void Function()? onPressed;
-  
+
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
@@ -23,6 +25,7 @@ class CustomButton extends StatelessWidget {
         shadowColor: Colors.transparent,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadiusGeometry.circular(12),
+          side: BorderSide(color: borderColor ?? buttonColor, width: 1.5),
         ),
         padding: const EdgeInsets.all(16),
       ),

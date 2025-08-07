@@ -25,17 +25,9 @@ class HomeViewDrawer extends StatelessWidget {
       DrawerItemModel(
         title: AppStrings.myOrders,
         icon: FontAwesomeIcons.burger,
-        onTap: () {},
-      ),
-      DrawerItemModel(
-        title: AppStrings.favourites,
-        icon: FontAwesomeIcons.solidHeart,
-        onTap: () {},
-      ),
-      DrawerItemModel(
-        title: AppStrings.settings,
-        icon: FontAwesomeIcons.gear,
-        onTap: () {},
+        onTap: () {
+          context.push(Routes.myOrdersView);
+        },
       ),
       DrawerItemModel(
         title: AppStrings.coupons,
