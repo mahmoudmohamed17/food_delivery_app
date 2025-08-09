@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:food_delivery_app/core/constants/app_strings.dart';
+import 'package:food_delivery_app/core/routing/routes.dart';
 import 'package:food_delivery_app/features/profile/data/models/settings_item_model.dart';
 import 'package:food_delivery_app/features/profile/presentation/widgets/custom_settings_container.dart';
 import 'package:food_delivery_app/features/profile/presentation/widgets/settings_item.dart';
+import 'package:go_router/go_router.dart';
 
 class SettingsSecondBlock extends StatelessWidget {
   const SettingsSecondBlock({super.key});
@@ -15,7 +17,9 @@ class SettingsSecondBlock extends StatelessWidget {
         label: AppStrings.cart,
         icon: FontAwesomeIcons.bagShopping,
         iconColor: const Color(0xff51A9FF),
-        onTap: () {},
+        onTap: () {
+          context.push(Routes.cartView);
+        },
       ),
       SettingsItemModel(
         label: AppStrings.favourites,

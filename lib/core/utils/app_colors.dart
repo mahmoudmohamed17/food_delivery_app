@@ -13,4 +13,5 @@ class AppColors {
   static const authBackgrdColor = Color(0xff1E1E2E);
   static const completedColor = Color(0xff059C6A);
   static const cancelColor = Color(0xffFF0000);
+  static const darkModeColor = Color(0xff292939);
 }

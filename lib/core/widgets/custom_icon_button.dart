@@ -24,7 +24,6 @@ class CustomIconButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-      splashColor: Colors.transparent,
       child: CircleAvatar(
         backgroundColor: backgrnColor,
         radius: backgrnRadius,

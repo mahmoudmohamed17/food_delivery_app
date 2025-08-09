@@ -6,9 +6,19 @@ import 'package:food_delivery_app/core/widgets/custom_icon_button.dart';
 import 'package:go_router/go_router.dart';
 
 class CustomAppBarView extends StatelessWidget {
-  const CustomAppBarView({super.key, required this.title, this.trailing});
+  const CustomAppBarView({
+    super.key,
+    required this.title,
+    this.trailing,
+    this.btnColor,
+    this.btnIconColor,
+    this.titleColor,
+  });
   final String title;
   final Widget? trailing;
+  final Color? btnColor;
+  final Color? btnIconColor;
+  final Color? titleColor;
 
   @override
   Widget build(BuildContext context) {
@@ -24,11 +34,16 @@ class CustomAppBarView extends StatelessWidget {
                 context.pop();
               },
               icon: FontAwesomeIcons.chevronLeft,
-              iconColor: AppColors.primaryTextColor,
-              backgrnColor: AppColors.iconBackgrnColor,
+              iconColor: btnIconColor ?? AppColors.primaryTextColor,
+              backgrnColor: btnColor ?? AppColors.iconBackgrnColor,
               iconSize: 18,
             ),
-            Text(title, style: AppTextStyle.regular20(context)),
+            Text(
+              title,
+              style: AppTextStyle.regular20(
+                context,
+              ).copyWith(color: titleColor),
+            ),
           ],
         ),
         ?trailing,
