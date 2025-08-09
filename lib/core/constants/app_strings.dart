@@ -174,7 +174,7 @@ class AppStrings {
   static const String userReviews = "User Reviews";
   static const String settings = "Settings";
   static const String logOut = "Log Out";
-  static const String total = "TOTAL: \$96";
+  static const String total = "TOTAL";
   static const String myOrders = "My Orders";
   static const String ongoing = "Ongoing";
   static const String history = "History";

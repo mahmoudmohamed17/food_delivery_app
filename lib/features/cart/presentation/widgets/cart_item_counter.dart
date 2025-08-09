@@ -18,7 +18,6 @@ class _CartItemCounterState extends State<CartItemCounter> {
   Widget build(BuildContext context) {
     return Row(
       mainAxisSize: MainAxisSize.min,
-      spacing: 4,
       children: [
         CustomCounterButton(
           onTap: () {

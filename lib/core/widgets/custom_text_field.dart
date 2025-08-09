@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
@@ -11,11 +10,13 @@ class CustomTextField extends StatelessWidget {
     this.onSubmitted,
     this.controller,
     this.prefixIcon,
+    this.readOnly = false,
   });
   final String? hintText;
   final void Function(String?)? onSubmitted;
   final TextEditingController? controller;
   final Widget? prefixIcon;
+  final bool readOnly;
 
   @override
   Widget build(BuildContext context) {
@@ -23,6 +24,7 @@ class CustomTextField extends StatelessWidget {
       style: AppTextStyle.regular14(context),
       onSubmitted: onSubmitted,
       controller: controller,
+      readOnly: readOnly,
       decoration: InputDecoration(
         fillColor: AppColors.backgrdContainerColor,
         filled: true,

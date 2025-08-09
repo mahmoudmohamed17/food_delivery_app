@@ -12,11 +12,20 @@ class CartItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      spacing: 16,
+      spacing: 20,
       children: [
-        Expanded(child: Image.asset(AppAssets.imagesPasta, fit: BoxFit.fill)),
         Expanded(
-          flex: 2,
+          child: Container(
+            decoration: const BoxDecoration(
+              color: AppColors.darkModeColor,
+              borderRadius: BorderRadius.all(Radius.circular(24)),
+            ),
+            height: context.height * 0.18,
+            padding: const EdgeInsets.all(8),
+            child: Image.asset(AppAssets.imagesPasta, fit: BoxFit.fill),
+          ),
+        ),
+        Expanded(
           child: Column(
             spacing: 12,
             mainAxisSize: MainAxisSize.min,
