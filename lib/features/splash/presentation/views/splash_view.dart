@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_delivery_app/core/constants/app_constanst.dart';
@@ -32,14 +33,18 @@ class _SplashViewState extends State<SplashView> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Align(
-            alignment: Alignment.topLeft,
-            child: SvgPicture.asset(AppAssets.imagesEllipseUp),
+          BounceInLeft(
+            child: Align(
+              alignment: Alignment.topLeft,
+              child: SvgPicture.asset(AppAssets.imagesEllipseUp),
+            ),
           ),
-          Center(child: SvgPicture.asset(AppAssets.imagesLogo)),
-          Align(
-            alignment: Alignment.bottomRight,
-            child: SvgPicture.asset(AppAssets.imagesEllipseDown),
+          FadeIn(child: Center(child: SvgPicture.asset(AppAssets.imagesLogo))),
+          BounceInRight(
+            child: Align(
+              alignment: Alignment.bottomRight,
+              child: SvgPicture.asset(AppAssets.imagesEllipseDown),
+            ),
           ),
         ],
       ),

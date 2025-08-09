@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/constants/app_strings.dart';
+import 'package:food_delivery_app/core/routing/routes.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 import 'package:food_delivery_app/core/widgets/custom_button.dart';
 import 'package:food_delivery_app/core/widgets/custom_text_field.dart';
+import 'package:go_router/go_router.dart';
 
 class PlaceOrderBottomSheetBody extends StatelessWidget {
   const PlaceOrderBottomSheetBody({super.key});
@@ -44,7 +46,9 @@ class PlaceOrderBottomSheetBody extends StatelessWidget {
         SizedBox(
           width: double.infinity,
           child: CustomButton(
-            onPressed: () {},
+            onPressed: () {
+              context.push(Routes.paymentView);
+            },
             text: AppStrings.placeOrder,
             textStyle: AppTextStyle.bold14(
               context,

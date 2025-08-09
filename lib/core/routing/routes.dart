@@ -16,4 +16,5 @@ class Routes {
   static const addNewAddressView = '/addNewAddressView';
   static const myOrdersView = '/myOrdersView';
   static const cartView = '/cartView';
+  static const paymentView = '/paymentView';
 }
