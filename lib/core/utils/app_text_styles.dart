@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/utils/get_responsive_font_size.dart';
 
 class AppTextStyle {
+  static TextStyle bold52(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, fontSize: 52),
+      fontWeight: FontWeight.bold,
+    );
+  }
   static TextStyle bold30(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 30),

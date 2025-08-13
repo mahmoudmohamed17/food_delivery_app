@@ -17,4 +17,5 @@ class Routes {
   static const myOrdersView = '/myOrdersView';
   static const cartView = '/cartView';
   static const paymentView = '/paymentView';
+  static const dashboardView = '/dashboardView';
 }

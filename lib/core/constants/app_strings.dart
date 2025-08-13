@@ -26,6 +26,8 @@ class AppStrings {
   static const String street = "STREET";
   static const String postCode = "POST CODE";
   static const String temrsAndPolicies = "Temrs & Policies";
+  static const String runningOrders = "RUNNING ORDERS";
+  static const String orderRequest = "ORDER REQUEST";
   static const String skip = "Skip";
   static const String hasonNagar = "Hason Nagar";
   static const String postCodeValue = "34567";
@@ -37,6 +39,7 @@ class AppStrings {
   static const String other = "Other";
   static const String next = "NEXT";
   static const String saveLocation = "SAVE LOCATION";
+  static const String location = "LOCATION";
   static const String myAddress = "My Address";
   static const String homeAddress = "2464 Royal Ln. Mesa, New Jersey 45463";
   static const String workAddress =

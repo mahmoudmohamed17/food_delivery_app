@@ -6,6 +6,7 @@ import 'package:food_delivery_app/features/auth/presentation/views/signup_view.d
 import 'package:food_delivery_app/features/auth/presentation/views/verification_view.dart';
 import 'package:food_delivery_app/features/cart/presentation/views/cart_view.dart';
 import 'package:food_delivery_app/features/category_details/presentation/views/category_details_view.dart';
+import 'package:food_delivery_app/features/dashboard/presentation/views/dashboard_view.dart';
 import 'package:food_delivery_app/features/food_details/presentation/views/food_details_view.dart';
 import 'package:food_delivery_app/features/home/presentation/views/home_view.dart';
 import 'package:food_delivery_app/features/orders/presentation/views/my_orders_view.dart';
@@ -90,6 +91,10 @@ final router = GoRouter(
     GoRoute(
       path: Routes.cartView,
       builder: (context, state) => const CartView(),
+    ),
+    GoRoute(
+      path: Routes.dashboardView,
+      builder: (context, state) => const DashboardView(),
     ),
   ],
 );

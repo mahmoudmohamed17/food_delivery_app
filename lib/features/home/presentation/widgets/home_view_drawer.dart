@@ -32,7 +32,10 @@ class HomeViewDrawer extends StatelessWidget {
       DrawerItemModel(
         title: AppStrings.coupons,
         icon: FontAwesomeIcons.receipt,
-        onTap: () {},
+        onTap: () {
+          /// Change this later
+          context.push(Routes.dashboardView);
+        },
       ),
       DrawerItemModel(
         title: AppStrings.temrsAndPolicies,
